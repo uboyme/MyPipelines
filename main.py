@@ -27,7 +27,7 @@ import json
 import uuid
 import sys
 import subprocess
-
+import traceback
 
 from config import API_KEY, PIPELINES_DIR, LOG_LEVELS
 
@@ -77,28 +77,17 @@ def get_all_pipelines():
                             pipeline.valves if hasattr(pipeline, "valves") else None
                         ),
                     }
-            if pipeline.type == "filter":
-                pipelines[pipeline_id] = {
-                    "module": pipeline_id,
-                    "type": (pipeline.type if hasattr(pipeline, "type") else "pipe"),
-                    "id": pipeline_id,
-                    "name": (
-                        pipeline.name if hasattr(pipeline, "name") else pipeline_id
-                    ),
-                    "pipelines": (
-                        pipeline.valves.pipelines
-                        if hasattr(pipeline, "valves")
-                        and hasattr(pipeline.valves, "pipelines")
-                        else []
-                    ),
-                    "priority": (
-                        pipeline.valves.priority
-                        if hasattr(pipeline, "valves")
-                        and hasattr(pipeline.valves, "priority")
-                        else 0
-                    ),
-                    "valves": pipeline.valves if hasattr(pipeline, "valves") else None,
-                }
+            if pipeline.type in ["filter", "pipe", "manifold"]:
+                    pipelines[pipeline_id] = {
+                        "module": pipeline_id,
+                        "type": pipeline.type,
+                        "id": pipeline_id,
+                        "name": getattr(pipeline, "name", pipeline_id),
+                        "valves": getattr(pipeline, "valves", None),
+                        "pipelines": getattr(pipeline, "valves", {}).get("pipelines", []) if hasattr(pipeline, "valves") else [],
+                        "priority": getattr(pipeline, "valves", {}).get("priority", 0) if hasattr(pipeline, "valves") else 0,
+                    }
+
         else:
             pipelines[pipeline_id] = {
                 "module": pipeline_id,
@@ -107,6 +96,8 @@ def get_all_pipelines():
                 "name": (pipeline.name if hasattr(pipeline, "name") else pipeline_id),
                 "valves": pipeline.valves if hasattr(pipeline, "valves") else None,
             }
+    
+    print(f"[PIPELINE DEBUG] Currently registered: {list(PIPELINE_MODULES.keys())}")
 
     return pipelines
 
@@ -152,11 +143,13 @@ async def load_module_from_path(module_name, module_path):
         # Load the module
         spec = importlib.util.spec_from_file_location(module_name, module_path)
         module = importlib.util.module_from_spec(spec)
+        print(f"➡️ Loading: {module_name} from {module_path}")
         spec.loader.exec_module(module)
         print(f"Loaded module: {module.__name__}")
         if hasattr(module, "Pipeline"):
             return module.Pipeline()
         else:
+            print(f"❌ No Pipeline class found in {module_name}")
             raise Exception("No Pipeline class found")
     except Exception as e:
         print(f"Error loading module: {module_name}")
@@ -229,8 +222,8 @@ async def on_startup():
     for module in PIPELINE_MODULES.values():
         if hasattr(module, "on_startup"):
             await module.on_startup()
-
-
+    app.state.PIPELINES = get_all_pipelines()#change
+    app.state.PIPELINE_MODULES = PIPELINE_MODULES#change
 async def on_shutdown():
     for module in PIPELINE_MODULES.values():
         if hasattr(module, "on_shutdown"):
@@ -284,11 +277,19 @@ async def check_url(request: Request, call_next):
 
 @app.get("/v1/models")
 @app.get("/models")
-async def get_models(user: str = Depends(get_current_user)):
+async def get_models():
     """
     Returns the available pipelines
     """
-    app.state.PIPELINES = get_all_pipelines()
+    pipelines = {
+    pipeline_id: {
+        "id": pipeline_id,
+        "name": getattr(pipeline, "name", pipeline_id),
+        "type": getattr(pipeline, "type", "pipe"),
+        "valves": getattr(pipeline, "valves", None),
+    }
+    for pipeline_id, pipeline in app.state.PIPELINE_MODULES.items()
+    }
     return {
         "data": [
             {
@@ -298,23 +299,19 @@ async def get_models(user: str = Depends(get_current_user)):
                 "created": int(time.time()),
                 "owned_by": "openai",
                 "pipeline": {
-                    "type": pipeline["type"],
+                    "type": pipeline.get("type", "pipe"),
+                    "valves": pipeline.get("valves") is not None,
                     **(
                         {
-                            "pipelines": (
-                                pipeline["valves"].pipelines
-                                if pipeline.get("valves", None)
-                                else []
-                            ),
+                            "pipelines": pipeline.get("pipelines", []),
                             "priority": pipeline.get("priority", 0),
                         }
-                        if pipeline.get("type", "pipe") == "filter"
+                        if pipeline.get("type") == "filter"
                         else {}
-                    ),
-                    "valves": pipeline["valves"] != None,
+                    )
                 },
             }
-            for pipeline in app.state.PIPELINES.values()
+            for pipeline in pipelines.values()
         ],
         "object": "list",
         "pipelines": True,
@@ -453,6 +450,7 @@ async def upload_pipeline(
     except HTTPException as e:
         raise e
     except Exception as e:
+        traceback.print_exc()
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=str(e),
