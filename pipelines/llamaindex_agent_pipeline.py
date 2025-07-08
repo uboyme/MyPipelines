@@ -1,8 +1,8 @@
 """
 title: LlamaIndex Agent Pipeline
 author: caojie
-description: SysML modeling and QA agent with LlamaIndex and DeepSeek API
-dependencies: llama-index, requests, python-dotenv
+description: SysML modeling and QA agent with LlamaIndex and DeepSeek API (official integration)
+dependencies: llama-index, python-dotenv
 """
 
 from typing import List, Union, Generator, Iterator
@@ -10,29 +10,16 @@ from llama_index.core import VectorStoreIndex, StorageContext, load_index_from_s
 from llama_index.readers.file import PDFReader
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.agent.openai import OpenAIAgent
-from llama_index.llms.openai import OpenAI
+from llama_index.llms.deepseek import DeepSeek
 from llama_index.core.tools import FunctionTool
 from llama_index.core.settings import Settings
 from dotenv import load_dotenv
-import os, requests
-
-class DeepSeekLLM(OpenAI):
-    def _get_model_name(self) -> str:
-        return "gpt-3.5-turbo"  # fake name to bypass context size check
-
-    @property
-    def metadata(self):
-        class Meta:
-            context_window = 4096
-            num_output = 1024
-            is_chat_model = True
-            is_function_calling_model = True
-            is_code_model = False
-        return Meta()
+import os
 
 class ToolSet:
-    def __init__(self, index):
+    def __init__(self, index, llm):
         self.query_engine = index.as_query_engine()
+        self.llm = llm
 
     def retrieve_knowledge(self, query: str) -> str:
         response = self.query_engine.query(query)
@@ -49,36 +36,14 @@ Context:
 
 Output:
 """
-
-        api_key = os.getenv("OPENAI_API_KEY")
-        base_url = os.getenv("OPENAI_API_BASE", "https://api.deepseek.com/v1")
-
-        headers = {
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json"
-        }
-
-        data = {
-            "model": "deepseek-chat",
-            "messages": [
-                {"role": "system", "content": "You are a SysML modeling expert."},
-                {"role": "user", "content": prompt}
-            ],
-            "temperature": 0.7
-        }
-
-        response = requests.post(f"{base_url}/chat/completions", headers=headers, json=data)
-        if response.status_code == 200:
-            return response.json()["choices"][0]["message"]["content"]
-        else:
-            return f"Error from DeepSeek API:\n{response.text}"
+        response = self.llm.complete(prompt)
+        return response.text
 
     def get_tools(self):
         return [
             FunctionTool.from_defaults(fn=self.retrieve_knowledge),
             FunctionTool.from_defaults(fn=self.generate_xmi),
         ]
-
 
 class Pipeline:
     def __init__(self):
@@ -92,12 +57,9 @@ class Pipeline:
         embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en")
         Settings.embed_model = embed_model
 
-        llm = DeepSeekLLM(
+        llm = DeepSeek(
             model="deepseek-chat",
-            api_key=os.getenv("OPENAI_API_KEY"),
-            base_url=os.getenv("OPENAI_API_BASE", "https://api.deepseek.com/v1"),
-            is_chat_model=True,
-            strict=False
+            api_key=os.getenv("OPENAI_API_KEY")
         )
         Settings.llm = llm
 
@@ -112,7 +74,7 @@ class Pipeline:
             index = VectorStoreIndex.from_documents(documents)
             index.storage_context.persist(persist_dir=persist_dir)
 
-        tools = ToolSet(index).get_tools()
+        tools = ToolSet(index, llm).get_tools()
         self.agent = OpenAIAgent.from_tools(tools, llm=llm, system_prompt="You are a SysML agent capable of knowledge retrieval and model generation.")
 
     async def on_shutdown(self):
