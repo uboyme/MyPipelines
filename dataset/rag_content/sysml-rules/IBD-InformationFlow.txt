@@ -1,0 +1,45 @@
+In SysML’s Internal Block Diagram (IBD), InformationFlow is used to model the transmission of information or signals between different parts of the system. It does not directly represent a structural connection but semantically describes who transmits what information to whom. Typical applications include representing flows of control commands, data instructions, status feedback, and other non-physical entities. In XMI representation, InformationFlow corresponds to the uml:InformationFlow element, often used in conjunction with Connectors to ensure consistency between model structure and behavior.
+
+Key Elements of InformationFlow
+Each InformationFlow must specify one or more conveyed information items, which are usually of type InformationItem. These represent the abstract content of the transmission.
+
+The conveyed information items do not require detailed attribute definitions but serve to describe the content being transferred. For example, a power control information flow may convey an information item named "Pwr Control" without detailing its internal data structure.
+
+Source and Target
+The two core components of InformationFlow are informationSource and informationTarget, indicating the origin and receiver of the information.
+
+In an IBD, these typically point to Ports of a Block, representing the output interface and the receiving interface, respectively.
+
+These Ports must be predefined in the model and have clear directionality (e.g., using ProxyPort or FlowPort with defined directions).
+
+When nested part structures are involved, informationSource and informationTarget can be precisely located via the path mapping of ConnectorEnd to a specific sub-level port within the subsystem.
+
+RealizingConnector Association
+To enable structured modeling, an InformationFlow can be linked to an existing uml:Connector via the realizingConnector property, indicating that the information flow physically or logically transmits along that specific connector.
+
+This association ensures the modeled information exchange is grounded in an actual structural connection.
+
+If no realizingConnector is defined, the InformationFlow is considered abstract and will not be reflected in the physical connection structure.
+
+Modeling Best Practices
+Each InformationFlow should have a clearly defined name to enhance readability and traceability.
+
+If the conveyed information item originates from an InformationItem’s ownedUseCase, it is recommended to nest the information item within a classifier and reference the transmitted object explicitly via xmi:idref.
+
+This practice supports reuse and consistency verification, especially in complex systems or multi-level subsystems with numerous information flows.
+
+Modeling Constraints
+InformationFlows must not be defined between nonexistent or unconnected source and target ends.
+
+Conveyed information item types must exist within the model and should avoid duplicate definitions.
+
+The information source and target must be recognizable model elements (such as Ports, Properties, or the classes themselves).
+
+When using realizingConnector, its ConnectorEnd references must point to valid connection endpoints.
+
+Recommended Usage
+It is advised to combine InformationFlow modeling with FlowPort or InterfaceBlock to improve semantic expressiveness.
+
+InformationFlow modeling not only enhances the behavioral description capability of the model but also facilitates future simulation, verification, and requirements traceability.
+
+Thus, InformationFlow acts as a critical bridge connecting structural modeling with behavioral modeling.

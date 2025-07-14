@@ -1,0 +1,15 @@
+In SysML, an Activity is a core modeling element used to describe system behavior or control logic flows. It can be used to model the functions performed by the system, the sequence of tasks, the flow of data, and input/output interfaces. An Activity can declare its external interfaces by defining Parameters, representing the inputs and outputs required by the behavior. Each parameter is typically modeled in the diagram through an ActivityParameterNode, which allows the parameter to participate in control flows or data flows as input/output ports. The direction of a parameter (such as in, out, inout) is specified by the direction attribute, directly affecting the semantic meaning of the behavior’s interface.
+
+Besides parameterized interface modeling, an Activity can also serve as a container for composite behavior by aggregating other Activity elements through Properties. This modeling approach is common in task integration or system-level behavior modeling scenarios, where a main Activity organizes multiple sub-activities via aggregation properties, forming a hierarchical behavior structure. The relationships between properties are connected through Associations, indicating the composition relationship between the main activity and sub-activities. This composite modeling pattern facilitates the organization of complex behaviors, supports reuse, replacement, and composition of behaviors, and helps build task libraries or behavior templates.
+
+In more common flow modeling, an Activity can contain multiple Action nodes (such as CallBehaviorAction, OpaqueAction, etc.), which are connected by ControlFlows to describe the control order of behaviors. Control flow models may also include control nodes such as InitialNode, DecisionNode, ForkNode, and MergeNode, used to represent decision points, concurrency, synchronization, and other control logic. This modeling approach suits clearly defined control flows or task scheduling logic.
+
+In complex behavior modeling, StructuredActivityNode can be used to encapsulate local behaviors, forming modular behavior blocks with local variables and flows. Additionally, structures like InterruptibleActivityRegion can express boundaries and logical conditions where behavior interruptions may occur.
+
+Overall, the SysML Activity element provides a highly flexible modeling mechanism supporting multi-level modeling needs — from atomic behavior modeling (e.g., action nodes) to system-level composite behavior modeling (e.g., property aggregation), and to interface modeling (e.g., parameter nodes). In practice, the appropriate modeling style should be chosen based on modeling objectives:
+
+If emphasizing behavioral flow, use Action + ControlFlow;
+
+If emphasizing interface and data interaction, use Parameter + ActivityParameterNode;
+
+If emphasizing structure and hierarchical organization, use the composite activity modeling pattern with Property + Association.

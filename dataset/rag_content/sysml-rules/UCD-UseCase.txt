@@ -1,0 +1,26 @@
+Use Cases are the core elements in Use Case Diagram (UCD) modeling, used to describe the functions or services a system provides to satisfy specific stakeholder needs. Each Use Case must have a clear and unique name to explicitly define its business purpose and scope. The name should accurately reflect the specific business activity or functional requirement represented by the Use Case, ensuring the model’s expression is precise and easily understandable.
+
+Use Cases are generally organized within Packages for classification and management, often grouped by business domain, system functional modules, or task objectives to facilitate structured management and reuse. This hierarchical organization keeps the model well-ordered while supporting decomposition and refinement of complex system functions.
+
+Between Use Cases, “include” and “extend” relationships are commonly used to express reuse and variation logic. The include relationship represents a sub-function that is always executed as part of the including Use Case, embodying modularity and reuse of functionality. For example, a complex “Perform Task” Use Case may include multiple base Use Cases to complete its workflow. The extend relationship, on the other hand, indicates that a Use Case behavior is conditionally extended by another Use Case, supporting variation points and exception handling scenarios, such as an emergency Use Case triggered during fault detection.
+
+Use Cases are connected to Actors (Stakeholders) via Associations, clarifying who initiates or participates in the Use Case, thus reflecting the system functionality’s users and responsibility ownership. This association relationship is key to requirements analysis, helping to clarify the origin of requirements and functional boundaries.
+
+Additionally, Use Cases may define Extension Points, which reserve specific locations within the base Use Case for future extensions or system adaptability, thereby enhancing model flexibility and maintainability. Extension Points are typically identified at certain steps or states of the base Use Case, providing structured insertion points for extending Use Cases.
+
+The Use Case model also supports mapping to business requirements; some Use Cases can be linked to system Requirements or other business rules to enable traceability and verification, ensuring the system functionality fully covers the business objectives.
+
+Summary of Use Case Modeling Rules in UCD
+Define Use Cases with clear, unique names that accurately represent their business purpose.
+
+Organize Use Cases within packages by business domain or functional grouping for structured management.
+
+Use include and extend relationships to model reuse and behavioral variations among Use Cases.
+
+Associate Use Cases with Stakeholders (Actors) to specify users and responsibility boundaries.
+
+Define Extension Points in Use Cases to support flexible future extensions.
+
+Link Use Cases with system requirements to enable traceability and verification.
+
+Adhering to these rules enables the construction of clear, complete, and maintainable system functional models that meet high-quality requirements for analysis and design.

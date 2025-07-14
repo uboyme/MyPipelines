@@ -1,0 +1,67 @@
+The StateMachine is a core element in behavioral modeling, used to describe the possible states a system or object may experience throughout its lifecycle and the transitions between these states. Its modeling mainly follows the following rules:
+
+1. Structural Hierarchy of StateMachine
+A StateMachine usually consists of one or more Region elements. A Region is a container for states. Each Region contains multiple subvertices, including State, Pseudostate (such as initial, choice, history nodes), and FinalState.
+
+Region: A logical area within a state machine that manages states; it supports parallel regions to implement concurrent behaviors in composite states.
+
+State: Represents a specific state, which may contain nested Regions to denote composite states.
+
+Pseudostate: Special nodes within the state machine, such as initial nodes, choice nodes, and history nodes, typically used as control flow starting points or decision nodes.
+
+FinalState: Represents a terminating state of the state machine.
+
+2. Nested States and Composite States
+States can contain internal Regions, forming a hierarchical state structure. Composite states allow multiple parallel Regions inside a single state, enabling multithreaded state behavior. This hierarchical design supports the modeling of complex state machine behaviors.
+
+For example, a State element may include nested Regions, each containing several subvertices, supporting state partitioning at different hierarchical levels.
+
+3. State Behavior Description
+Each state may define various behaviors:
+
+doActivity: Activities executed continuously while the state is active, usually represented by an Activity diagram element containing ControlFlows, ObjectFlows, and Nodes that describe detailed behaviors during state activation.
+
+Entry and Exit Activities: Actions executed upon entering or exiting the state (common in modeling though not shown in the example).
+
+Internal Event Handling: The state machine can respond to events triggering behaviors, described via Trigger and Event elements.
+
+4. Transitions
+States are connected by Transition elements that define the path from a source state to a target state.
+
+Each Transition may contain a guard condition that restricts when the transition can occur.
+
+Trigger defines the event that initiates the transition; common triggers include signals, clocks, or conditions.
+
+Transitions are directed and must specify the source and target states explicitly.
+
+Multiple transitions can exist between states to represent complex switching logic.
+
+5. Events and Triggers
+Events serve as triggering conditions for transitions and are typically referenced within Trigger elements. Events can be:
+
+Signal events (Signal),
+
+Call events (Call),
+
+Time events (Time), etc.
+
+Transitions driven by events propel the dynamic behavior of the state machine.
+
+For example, signals are defined as Signal elements within the state machine and can trigger state transitions.
+
+6. Integration of Activity Diagrams with StateMachine
+The doActivity inside a state can be detailed using the structure of an Activity Diagram, including control flows, object flows, call behavior actions (CallBehaviorAction), and partitions (ActivityPartition). This integration supports detailed behavioral modeling combining activity diagrams and state machines.
+
+7. Visibility and Identification
+All state machine elements support a visibility attribute, commonly set to public.
+
+Each element possesses a unique xmi:id identifier to ensure internal uniqueness and traceability.
+
+The name attribute labels the element for ease of recognition and understanding of the model structure.
+
+8. Resource Allocation
+State machines also support modeling of resource allocation. For example, the stereotype sysml:AllocateActivityPartition can associate state machine activities with specific resources or system partitions to support resource management in systems engineering.
+
+Summary
+In the STM (State Machine Modeling), StateMachines follow principles of hierarchy and modularity. Regions manage states, and States and Pseudostates form a complete state structure. Transitions connect states and are driven by triggers and events. State behaviors are refined using activity diagrams, supporting complex control flows and detailed behaviors. Through resource allocation extensions, state machine models can also reflect system resource assignments. Overall, STM’s StateMachine modeling rules aim to efficiently and clearly express dynamic system behaviors, meeting the demands of complex systems engineering.
+

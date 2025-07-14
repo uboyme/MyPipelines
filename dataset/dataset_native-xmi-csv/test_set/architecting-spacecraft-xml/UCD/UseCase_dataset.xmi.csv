@@ -1,0 +1,64 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1421596384113_41036_46946,The system shall detect and monitor forest fires in the US and Canada and provide the forest fire data in near real time to the Fire Department.,"<packagedElement xmi:type=""uml:Package"" xmi:id=""_18_0_1_ae502ce_1421596353342_545242_46922"" name=""Mission Objectives"">
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596384113_41036_46946"" name=""Detect and Monitor Forest Fires in US and Canada"">
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1421596805481_137166_47141"" visibility=""public"" addition=""_18_0_1_ae502ce_1421596702972_557276_47028""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596702972_557276_47028"" name=""Provide Forest Fire Data in Near Real Time""/>
+  <packagedElement xmi:type=""uml:Association"" xmi:id=""_18_0_1_ae502ce_1421596832143_182191_47206"">
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596832143_306225_47207""/>
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596832143_34823_47208""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596832143_306225_47207""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596832143_34823_47208""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596832143_306225_47207"" visibility=""public"" type=""_18_0_1_ae502ce_1409003908674_676820_13451"" association=""_18_0_1_ae502ce_1421596832143_182191_47206""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596832143_34823_47208"" visibility=""public"" type=""_18_0_1_ae502ce_1421596702972_557276_47028"" association=""_18_0_1_ae502ce_1421596832143_182191_47206""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596845157_931862_47231"" name=""Archive Data""/>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596866747_581518_47255"" name=""Monitor and Maintain Health &amp; Safety of FireSat II""/>
+  <packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_1_ae502ce_1445023470538_385570_47801"">
+    <client xmi:idref=""_18_0_1_ae502ce_1421596384113_41036_46946""/>
+    <supplier xmi:idref=""_18_0_1_ae502ce_1409161510139_989275_14323""/>
+  </packagedElement>
+</packagedElement>","<packagedElement xmi:type=""uml:Actor"" xmi:id=""_18_0_1_ae502ce_1409003908674_676820_13451"" name=""Fire Department""/>
+<sysml:Stakeholder xmi:id=""_18_0_1_ae502ce_1409004090586_647115_13582"" base_Classifier=""_18_0_1_ae502ce_1409003908674_676820_13451"" concern=""_18_5_1_ae502ce_1499620560717_709467_52373""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409161510139_989275_14323"" name=""Detect and Monitor Forest Fires in US and Canada"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334780484_691427_44156"" name=""Image Quality""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334755617_965270_44074"" name=""Detection Time""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334891259_483824_44238"" name=""False Alarm Rate""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334745192_873951_44033"" name=""Coverage""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414342348543_871154_44129"" name=""Location Accuracy""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416076245609_299458_45217"" name=""Weather Environment""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409161510139_260462_14324"" base_Class=""_18_0_1_ae502ce_1409161510139_989275_14323"" Text=""The mission is"" Id=""5.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334780484_5416_44157"" base_Class=""_18_0_1_ae502ce_1414334780484_691427_44156"" Text="""" Id=""5.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334755617_798980_44075"" base_Class=""_18_0_1_ae502ce_1414334755617_965270_44074"" Text="""" Id=""5.1.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416076245610_86856_45218"" base_Class=""_18_0_1_ae502ce_1416076245609_299458_45217"" Text=""The mission performance shall be maintained under the weather environment defined in Table 1."" Id=""5.1.7""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414342348543_10_44130"" base_Class=""_18_0_1_ae502ce_1414342348543_871154_44129"" Text="""" Id=""5.1.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334891259_87434_44239"" base_Class=""_18_0_1_ae502ce_1414334891259_483824_44238"" Text="""" Id=""5.1.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334745192_123972_44034"" base_Class=""_18_0_1_ae502ce_1414334745192_873951_44033"" Text="""" Id=""5.1.5""/>"
+_18_0_1_ae502ce_1409407554808_548210_13478,"The system shall perform its mission by providing observation data, maintaining operations including communication with ground, controlling trajectory, separating from the launch vehicle, launching the spacecraft, and deploying mechanisms, while mitigating failures upon fault detection during execution.","<packagedElement xmi:type=""uml:Package"" xmi:id=""_18_1_ae502ce_1425689388884_550725_56041"" name=""Operational Use Cases"">
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1409407554808_548210_13478"" name=""Control Trajectory""/>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1409408681609_430867_13552"" name=""Launch S/C""/>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1413470944629_4881_43677"" name=""Perform Mission"">
+    <extensionPoint xmi:type=""uml:ExtensionPoint"" xmi:id=""_18_0_1_ae502ce_1414080724956_126323_45861"" name=""fault detected"" visibility=""public"">
+      <extension xmi:idref=""_18_0_1_ae502ce_1414080721461_285969_45860""/>
+    </extensionPoint>
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1414081970092_381997_46093"" visibility=""public"" addition=""_17_0_5_ae502ce_1403990892320_868284_12618""/>
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1414081975895_306228_46099"" visibility=""public"" addition=""_17_0_5_ae502ce_1404347151845_783953_15940""/>
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1414081992836_344664_46117"" visibility=""public"" addition=""_18_0_1_ae502ce_1409407554808_548210_13478""/>
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1414081999373_621171_46123"" visibility=""public"" addition=""_18_0_1_ae502ce_1413469676226_213730_43620""/>
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1414082003023_482174_46129"" visibility=""public"" addition=""_18_0_1_ae502ce_1409408681609_430867_13552""/>
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1413470101551_158617_43664"" visibility=""public"" addition=""_18_0_1_ae502ce_1413470088899_477255_43650""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_17_0_5_ae502ce_1403990892320_868284_12618"" name=""Provide Observation Data""/>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1409326413529_647613_17279"" name=""Mitigate Failures"">
+    <extend xmi:type=""uml:Extend"" xmi:id=""_18_0_1_ae502ce_1414080721461_285969_45860"" visibility=""public"" extendedCase=""_18_0_1_ae502ce_1413470944629_4881_43677"">
+      <extensionLocation xmi:idref=""_18_0_1_ae502ce_1414080724956_126323_45861""/>
+    </extend>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_17_0_5_ae502ce_1404347162438_735948_15953"" name=""Communicate with Ground""/>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1413470088899_477255_43650"" name=""Deploy Mechanisms""/>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_17_0_5_ae502ce_1404347151845_783953_15940"" name=""Maintain Operations"">
+    <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1413471069710_416350_43719"" visibility=""public"" addition=""_17_0_5_ae502ce_1404347162438_735948_15953""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1413469676226_213730_43620"" name=""Separate from L/V""/>
+</packagedElement>",

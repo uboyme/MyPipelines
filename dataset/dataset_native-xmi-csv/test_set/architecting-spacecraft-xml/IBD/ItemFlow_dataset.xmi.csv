@@ -1,0 +1,387 @@
+id,requirement,focus_element,related_elements
+_17_0_5_ae502ce_1404341916312_339591_15222,The Thermal Subsystem shall convey Heater Control from its source component to its target component via the designated connection path.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_17_0_5_ae502ce_1404341916312_431185_15221"" name=""flow for Heater Control"">
+  <conveyed xmi:idref=""_17_0_5_ae502ce_1404341896016_686068_15214""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404341386885_340103_15030""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404334439119_505261_12585""/>
+  <realizingConnector xmi:idref=""_17_0_5_ae502ce_1404341544717_602255_15104""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_17_0_5_ae502ce_1404341916312_339591_15222"" base_InformationFlow=""_17_0_5_ae502ce_1404341916312_431185_15221""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404341896016_686068_15214"" name=""Heater Control""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404334378372_680030_12491"" name=""Thermal Subsystem"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404334439119_505261_12585"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404259958942_847555_15390"" association=""_17_0_5_ae502ce_1404334439119_692944_12584"">
+    <lowerValue xmi:type=""uml:LiteralInteger"" xmi:id=""_18_0_1_ae502ce_1409103145025_691016_14046""/>
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1409103145025_689585_14047"" value=""*""/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404341386885_340103_15030"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404341326107_527310_14960"" association=""_17_0_5_ae502ce_1404341386885_408649_15029""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_17_0_5_ae502ce_1404341544717_602255_15104"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404341544717_653565_15105"" role=""_17_0_5_ae502ce_1404341386885_340103_15030""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404341544717_242280_15106"" role=""_17_0_5_ae502ce_1404334439119_505261_12585""/>
+  </ownedConnector>
+</packagedElement>"
+_17_0_5_ae502ce_1404341949337_626437_15233,The Thermal Subsystem shall transfer Temperature Signals between its internal components.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_17_0_5_ae502ce_1404341949337_610282_15232"" name=""flow for Temperature Signal"">
+  <conveyed xmi:idref=""_17_0_5_ae502ce_1404341932739_919985_15225""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404334443004_688133_12611""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404341386885_340103_15030""/>
+  <realizingConnector xmi:idref=""_17_0_5_ae502ce_1404341536168_437095_15095""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_17_0_5_ae502ce_1404341949337_626437_15233"" base_InformationFlow=""_17_0_5_ae502ce_1404341949337_610282_15232""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404341932739_919985_15225"" name=""Temperature Signal""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404334378372_680030_12491"" name=""Thermal Subsystem"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404334443004_688133_12611"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404259980579_375459_15430"" association=""_17_0_5_ae502ce_1404334443004_495307_12610"">
+    <lowerValue xmi:type=""uml:LiteralInteger"" xmi:id=""_18_0_1_ae502ce_1409102787932_261234_13877""/>
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1409102787932_880041_13878"" value=""*""/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404341386885_340103_15030"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404341326107_527310_14960"" association=""_17_0_5_ae502ce_1404341386885_408649_15029""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_17_0_5_ae502ce_1404341536168_437095_15095"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404341536168_766569_15096"" role=""_17_0_5_ae502ce_1404334443004_688133_12611""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404341536168_968661_15097"" role=""_17_0_5_ae502ce_1404341386885_340103_15030""/>
+  </ownedConnector>
+</packagedElement>"
+_18_0_1_ae502ce_1414676870769_643902_45034,The Communications Subsystem shall transmit RF telemetry to the Spacecraft via the ground command and data interface.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1414676870769_272647_45033"" name=""telemetry1"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1414676765451_490949_45001""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1414676870769_643902_45034"" base_InformationFlow=""_18_0_1_ae502ce_1414676870769_272647_45033"" itemProperty=""_18_0_1_ae502ce_1414676682909_527025_44993""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404257892303_530480_14283"" name=""Communications Subsystem"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1408931440588_373145_13968"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255825258_589871_13694"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404332515899_286636_12094"" name=""Spacecraft-Physical"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414676682909_527025_44993"" name=""telemetry"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1414676765451_490949_45001"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676765451_511149_45002"" role=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676765451_582007_45003"" partWithPort=""_17_0_5_ae502ce_1404337114415_431597_13478"" role=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  </ownedConnector>
+</packagedElement>"
+_18_0_1_ae502ce_1414676846574_909355_45028,The Communications Subsystem shall transmit RF observation data to the spacecraft's ground command and data interface.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1414676846574_261426_45027"" name=""observation data1"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1414676765451_490949_45001""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1414676846574_909355_45028"" base_InformationFlow=""_18_0_1_ae502ce_1414676846574_261426_45027"" itemProperty=""_18_0_1_ae502ce_1414676710739_621875_44995""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404257892303_530480_14283"" name=""Communications Subsystem"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1408931440588_373145_13968"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255825258_589871_13694"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404332515899_286636_12094"" name=""Spacecraft-Physical"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414676710739_621875_44995"" name=""observation data"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1414676765451_490949_45001"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676765451_511149_45002"" role=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676765451_582007_45003"" partWithPort=""_17_0_5_ae502ce_1404337114415_431597_13478"" role=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  </ownedConnector>
+</packagedElement>"
+_18_0_1_ae502ce_1414676889567_302060_45038,The spacecraft shall convey ground commands as RF signals from its ground command and data interface to the communications subsystem's ground command and data interface.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1414676889567_32888_45037"" name=""gndcmd"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1414676765451_490949_45001""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1414676889567_302060_45038"" base_InformationFlow=""_18_0_1_ae502ce_1414676889567_32888_45037"" itemProperty=""_18_0_1_ae502ce_1414676663237_838726_44991""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255825258_589871_13694"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404257892303_530480_14283"" name=""Communications Subsystem"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1408931440588_373145_13968"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404332515899_286636_12094"" name=""Spacecraft-Physical"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414676663237_838726_44991"" name=""gnd cmd"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1414676765451_490949_45001"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676765451_511149_45002"" role=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676765451_582007_45003"" partWithPort=""_17_0_5_ae502ce_1404337114415_431597_13478"" role=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  </ownedConnector>
+</packagedElement>"
+_17_0_5_ae502ce_1404343503533_865480_15558,The spacecraft shall transfer electrical power from the power source component to the power load component.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_17_0_5_ae502ce_1404343503533_438572_15557"" name=""flow for Electrical Power"">
+  <conveyed xmi:idref=""_17_0_5_ae502ce_1403991132985_382972_12699""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404337134055_714338_13556""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404337118876_260780_13504""/>
+  <realizingConnector xmi:idref=""_17_0_5_ae502ce_1404343495733_515819_15547""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_17_0_5_ae502ce_1404343503533_865480_15558"" base_InformationFlow=""_17_0_5_ae502ce_1404343503533_438572_15557""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403991132985_382972_12699"" name=""Electrical Power""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404332515899_286636_12094"" name=""Spacecraft-Physical"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404337118876_260780_13504"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404334659132_58579_12928"" association=""_17_0_5_ae502ce_1404337118876_382841_13503""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404337134055_714338_13556"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404259072134_891757_14557"" association=""_17_0_5_ae502ce_1404337134055_984527_13555""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_17_0_5_ae502ce_1404343495733_515819_15547"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404343495733_367777_15548"" role=""_17_0_5_ae502ce_1404337134055_714338_13556""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404343495733_143806_15549"" role=""_17_0_5_ae502ce_1404337118876_260780_13504""/>
+  </ownedConnector>
+</packagedElement>"
+_17_0_5_ae502ce_1404343280463_452963_15495,The spacecraft shall transfer electrical power from the power generation subsystem to the power consumption subsystem.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_17_0_5_ae502ce_1404343280463_273034_15494"" name=""flow for Electrical Power"">
+  <conveyed xmi:idref=""_17_0_5_ae502ce_1403991132985_382972_12699""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404337134055_714338_13556""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404337123541_397442_13530""/>
+  <realizingConnector xmi:idref=""_17_0_5_ae502ce_1404343259388_180148_15484""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_17_0_5_ae502ce_1404343280463_452963_15495"" base_InformationFlow=""_17_0_5_ae502ce_1404343280463_273034_15494""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403991132985_382972_12699"" name=""Electrical Power""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404332515899_286636_12094"" name=""Spacecraft-Physical"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404337123541_397442_13530"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404334089535_822279_12299"" association=""_17_0_5_ae502ce_1404337123541_823208_13529""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1404337134055_714338_13556"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1404259072134_891757_14557"" association=""_17_0_5_ae502ce_1404337134055_984527_13555""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_17_0_5_ae502ce_1404343259388_180148_15484"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404343259388_160119_15485"" role=""_17_0_5_ae502ce_1404337134055_714338_13556""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_17_0_5_ae502ce_1404343259388_141743_15486"" role=""_17_0_5_ae502ce_1404337123541_397442_13530""/>
+  </ownedConnector>
+</packagedElement>"
+_18_1_ae502ce_1424548591487_160338_56915,The Communications Subsystem shall transmit ground command RF signals via its ground command and data interface to the Antenna.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_1_ae502ce_1424548591487_182202_56914"" name=""gnd cmd"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1409446791702_901441_15038""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1409446791702_31584_15035""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_1_ae502ce_1424548591487_160338_56915"" base_InformationFlow=""_18_1_ae502ce_1424548591487_182202_56914"" itemProperty=""_18_1_ae502ce_1424548413871_291268_56868""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404257892303_530480_14283"" name=""Communications Subsystem"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1408931440588_373145_13968"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_1_ae502ce_1424548413871_291268_56868"" name=""gnd cmd"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1409446791702_31584_15035"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409446791702_735508_15036"" role=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409446791702_237159_15037"" partWithPort=""_18_0_1_ae502ce_1421624410375_811134_49278"" role=""_18_0_1_ae502ce_1409446791702_901441_15038""/>
+  </ownedConnector>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409342240141_169803_21727"" name=""Antenna"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409446791702_901441_15038"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>"
+_18_1_ae502ce_1424548613731_522662_56927,The Antenna shall transmit RF telemetry to the ground command and data interface of the Communications Subsystem.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_1_ae502ce_1424548613731_553953_56926"" name=""telemetry"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1409446791702_901441_15038""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1409446791702_31584_15035""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_1_ae502ce_1424548613731_522662_56927"" base_InformationFlow=""_18_1_ae502ce_1424548613731_553953_56926"" itemProperty=""_18_1_ae502ce_1424548436093_562066_56871""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409342240141_169803_21727"" name=""Antenna"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409446791702_901441_15038"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404257892303_530480_14283"" name=""Communications Subsystem"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1408931440588_373145_13968"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_1_ae502ce_1424548436093_562066_56871"" name=""telemetry"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1409446791702_31584_15035"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409446791702_735508_15036"" role=""_18_0_1_ae502ce_1408931440588_373145_13968""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409446791702_237159_15037"" partWithPort=""_18_0_1_ae502ce_1421624410375_811134_49278"" role=""_18_0_1_ae502ce_1409446791702_901441_15038""/>
+  </ownedConnector>
+</packagedElement>"
+_18_1_ae502ce_1424548239316_466415_56791,The Antenna shall convey RF observation data to the Communications Subsystem through the observation data interface.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_1_ae502ce_1424548239306_609541_56790"" name=""observationData"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1409446791702_901441_15038""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1421625813934_180148_50095""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1421625868862_263081_50173""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_1_ae502ce_1424548239316_466415_56791"" base_InformationFlow=""_18_1_ae502ce_1424548239306_609541_56790"" itemProperty=""_18_1_ae502ce_1424548041946_36496_56778""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409342240141_169803_21727"" name=""Antenna"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409446791702_901441_15038"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404257892303_530480_14283"" name=""Communications Subsystem"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1421625813934_180148_50095"" name=""observation data i/f"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_1_ae502ce_1424548041946_36496_56778"" name=""observation data"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1421625868862_263081_50173"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1421625868862_31757_50174"" partWithPort=""_18_0_1_ae502ce_1421624437605_407025_49328"" role=""_18_0_1_ae502ce_1409446791702_901441_15038""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1421625868862_682021_50175"" role=""_18_0_1_ae502ce_1421625813934_180148_50095""/>
+  </ownedConnector>
+</packagedElement>"
+_18_0_1_ae502ce_1416778055891_196618_52197,The GN&C Subsystem shall supply GPS radio frequency data to the GPS Unit through their respective GPS interfaces.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1416778055891_270186_52196"" name=""gps"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1409108327399_64363_16055""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1409108821620_428814_16717""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1409108821620_529655_16714""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1416778055891_196618_52197"" base_InformationFlow=""_18_0_1_ae502ce_1416778055891_270186_52196"" itemProperty=""_18_0_1_ae502ce_1416778002983_229606_52164""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1404258987519_158155_14441"" name=""GN&amp;C Subsystem"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409108327399_64363_16055"" name=""gps i/f"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1416778002983_229606_52164"" name=""gps"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1409108821620_529655_16714"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409108821620_239731_16715"" role=""_18_0_1_ae502ce_1409108327399_64363_16055""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409108821620_811962_16716"" partWithPort=""_18_0_1_1a82048c_1407803674435_504526_15441"" role=""_18_0_1_ae502ce_1409108821620_428814_16717""/>
+  </ownedConnector>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_1a82048c_1407803636919_494254_15294"" name=""GPS Unit"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409108821620_428814_16717"" name=""gps i/f"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>"
+_18_0_1_ae502ce_1409319546422_662488_14637,The system shall convey Fire Data from Mission Enterprise to the fd element of Mission Context.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1409319546422_78204_14636"" name=""flow for Fire Data"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1409319325932_967895_14525""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1403989796603_386934_12154""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1408738284901_335086_21553""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1409319546422_662488_14637"" base_InformationFlow=""_18_0_1_ae502ce_1409319546422_78204_14636""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409319325932_967895_14525"" name=""Fire Data""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989545967_663563_11686"" name=""Mission Enterprise"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1403989796603_386934_12154"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1403989630306_76000_11814"" association=""_17_0_5_ae502ce_1403989796603_863109_12153""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989524249_58942_11646"" name=""Mission Context"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1408738284901_335086_21553"" name=""fd"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1408738254668_175396_21510"" association=""_18_0_1_ae502ce_1408738284901_774159_21552"">
+    <lowerValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1416079405929_946627_45635""/>
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1416079405929_819410_45636"" value=""*""/>
+  </ownedAttribute>
+</packagedElement>"
+_18_0_1_ae502ce_1418487058490_65428_44357,The Spacecraft shall transmit RF telemetry to the Ground Station via the ground command and data interface.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1418487058475_796380_44356"" name=""telemetry"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1418486832391_748080_44270""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1418486832391_952777_44267""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1418487058490_65428_44357"" base_InformationFlow=""_18_0_1_ae502ce_1418487058475_796380_44356"" itemProperty=""_18_0_1_ae502ce_1414675307852_617746_44757""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255825258_589871_13694"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989630306_76000_11814"" name=""Ground Station"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1418486832391_748080_44270"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" isConjugated=""true"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989545967_663563_11686"" name=""Mission Enterprise"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414675307852_617746_44757"" name=""telemetry"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1418486832391_952777_44267"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1418486832391_53038_44268"" partWithPort=""_17_0_5_ae502ce_1403989791033_987228_12128"" role=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1418486832391_786705_44269"" partWithPort=""_17_0_5_ae502ce_1403989796603_386934_12154"" role=""_18_0_1_ae502ce_1418486832391_748080_44270""/>
+  </ownedConnector>
+</packagedElement>"
+_18_0_1_ae502ce_1414676072720_214898_44855,"The spacecraft shall receive GPS radio frequency signals, including frequency and wavelength data, from the mission context through the GPS interface.","<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1414676072720_707595_44854"" name=""gps"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1409106638796_854271_15319""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1409107015518_254722_15379""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1414676052752_975054_44839""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1414676072720_214898_44855"" base_InformationFlow=""_18_0_1_ae502ce_1414676072720_707595_44854"" itemProperty=""_18_0_1_ae502ce_1414676022433_926661_44833""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989524249_58942_11646"" name=""Mission Context"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1409106638796_854271_15319"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1409106602415_822586_15276"" association=""_18_0_1_ae502ce_1409106638796_35047_15318"">
+    <lowerValue xmi:type=""uml:LiteralInteger"" xmi:id=""_18_0_1_ae502ce_1409106652587_146945_15340""/>
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1409106652602_795146_15341"" value=""*""/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414676022433_926661_44833"" name=""gps"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1414676052752_975054_44839"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676052752_323562_44840"" role=""_18_0_1_ae502ce_1409106638796_854271_15319""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1414676052752_374564_44841"" partWithPort=""_17_0_5_ae502ce_1403989791033_987228_12128"" role=""_18_0_1_ae502ce_1409107015518_254722_15379""/>
+  </ownedConnector>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409107015518_254722_15379"" name=""gps i/f"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>"
+_18_0_1_ae502ce_1418487109986_131195_44363,"The spacecraft shall transmit RF observation data, including frequency and wavelength, to the ground station via the ground command and data interface.","<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1418487109970_110044_44362"" name=""observation data"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1418486832391_748080_44270""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1418486832391_952777_44267""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1418487109986_131195_44363"" base_InformationFlow=""_18_0_1_ae502ce_1418487109970_110044_44362"" itemProperty=""_18_0_1_ae502ce_1414675366916_103283_44759""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255825258_589871_13694"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989630306_76000_11814"" name=""Ground Station"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1418486832391_748080_44270"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" isConjugated=""true"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989545967_663563_11686"" name=""Mission Enterprise"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414675366916_103283_44759"" name=""observation data"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1418486832391_952777_44267"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1418486832391_53038_44268"" partWithPort=""_17_0_5_ae502ce_1403989791033_987228_12128"" role=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1418486832391_786705_44269"" partWithPort=""_17_0_5_ae502ce_1403989796603_386934_12154"" role=""_18_0_1_ae502ce_1418486832391_748080_44270""/>
+  </ownedConnector>
+</packagedElement>"
+_18_5_1_ae502ce_1502474026823_919424_56278,The system shall convey alert messages from the Mission Enterprise to the Fire Department.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_5_1_ae502ce_1502474026821_676100_56277"" name=""flow for Alert"">
+  <conveyed xmi:idref=""_18_5_1_ae502ce_1502473935853_256009_56234""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1403989796603_386934_12154""/>
+  <informationTarget xmi:idref=""_18_0_1_ae502ce_1416079292588_74643_45584""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1409319487127_968734_14614""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_5_1_ae502ce_1502474026823_919424_56278"" base_InformationFlow=""_18_5_1_ae502ce_1502474026821_676100_56277""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_5_1_ae502ce_1502473935853_256009_56234"" name=""Alert Message""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989545967_663563_11686"" name=""Mission Enterprise"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1403989796603_386934_12154"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1403989630306_76000_11814"" association=""_17_0_5_ae502ce_1403989796603_863109_12153""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1408738254668_175396_21510"" name=""Fire Department"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1416079292588_74643_45584"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1416079103852_399632_45480"" association=""_18_0_1_ae502ce_1416079292588_642640_45583"">
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1416079443385_618742_45648"" value=""*""/>
+  </ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989524249_58942_11646"" name=""Mission Context"">
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1409319487127_968734_14614"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409319487127_694119_14615"" role=""_18_0_1_ae502ce_1416079292588_74643_45584""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1409319487127_999235_14616"" role=""_17_0_5_ae502ce_1403989796603_386934_12154""/>
+  </ownedConnector>
+</packagedElement>"
+_18_1_ae502ce_1448327935670_496141_48041,The Mission Enterprise shall receive Telemetry data from the Spacecraft via the LV electrical i/f port.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_1_ae502ce_1448327935654_811999_48040"" name=""flow for Telemetry"">
+  <conveyed xmi:idref=""_17_0_5_ae502ce_1403990737899_289274_12506""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1404255867425_397747_13766""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1403989788209_491148_12102""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1408728257214_722562_20913""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_1_ae502ce_1448327935670_496141_48041"" base_InformationFlow=""_18_1_ae502ce_1448327935654_811999_48040""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403990737899_289274_12506"" name=""Telemetry""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255867425_397747_13766"" name=""LV electrical i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1409014388334_928579_19192""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989545967_663563_11686"" name=""Mission Enterprise"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1403989788209_491148_12102"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1403989552176_432040_11726"" association=""_17_0_5_ae502ce_1403989788209_929908_12101"">
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424287766929_45752_47535"" value=""*""/>
+  </ownedAttribute>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1408728257214_722562_20913"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1408728257214_758667_20914"" partWithPort=""_17_0_5_ae502ce_1403989791033_987228_12128"" role=""_17_0_5_ae502ce_1404255867425_397747_13766""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1408728257214_770983_20915"" role=""_17_0_5_ae502ce_1403989788209_491148_12102""/>
+  </ownedConnector>
+</packagedElement>"
+_18_0_1_ae502ce_1418487029880_759438_44351,The ground station shall transmit ground commands via radio frequency to the spacecraft.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_0_1_ae502ce_1418487029880_100257_44350"" name=""gnd cmd"">
+  <conveyed xmi:idref=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <informationSource xmi:idref=""_18_0_1_ae502ce_1418486832391_748080_44270""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1418486832391_952777_44267""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_0_1_ae502ce_1418487029880_759438_44351"" base_InformationFlow=""_18_0_1_ae502ce_1418487029880_100257_44350"" itemProperty=""_18_0_1_ae502ce_1414675242533_181701_44755""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674806296_973936_44729"" name=""frequency"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414674846388_528842_44732"" name=""wavelength"" visibility=""public"" aggregation=""composite"" isDerived=""true""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989630306_76000_11814"" name=""Ground Station"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1418486832391_748080_44270"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" isConjugated=""true"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255825258_589871_13694"" name=""gnd cmd &amp; data i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989545967_663563_11686"" name=""Mission Enterprise"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414675242533_181701_44755"" name=""gnd cmd"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1418486832391_952777_44267"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1418486832391_53038_44268"" partWithPort=""_17_0_5_ae502ce_1403989791033_987228_12128"" role=""_17_0_5_ae502ce_1404255825258_589871_13694""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1418486832391_786705_44269"" partWithPort=""_17_0_5_ae502ce_1403989796603_386934_12154"" role=""_18_0_1_ae502ce_1418486832391_748080_44270""/>
+  </ownedConnector>
+</packagedElement>"
+_18_1_ae502ce_1448328027781_337879_48083,The Mission Enterprise shall transmit Commands to the Spacecraft via the LV electrical interface.,"<packagedElement xmi:type=""uml:InformationFlow"" xmi:id=""_18_1_ae502ce_1448328027781_49504_48082"" name=""flow for Command"">
+  <conveyed xmi:idref=""_18_0_1_1a82048c_1407802922669_585020_15104""/>
+  <informationSource xmi:idref=""_17_0_5_ae502ce_1403989788209_491148_12102""/>
+  <informationTarget xmi:idref=""_17_0_5_ae502ce_1404255867425_397747_13766""/>
+  <realizingConnector xmi:idref=""_18_0_1_ae502ce_1408728257214_722562_20913""/>
+</packagedElement>
+<sysml:ItemFlow xmi:id=""_18_1_ae502ce_1448328027781_337879_48083"" base_InformationFlow=""_18_1_ae502ce_1448328027781_49504_48082""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_1a82048c_1407802922669_585020_15104"" name=""Command""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989545967_663563_11686"" name=""Mission Enterprise"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_17_0_5_ae502ce_1403989788209_491148_12102"" visibility=""public"" aggregation=""composite"" type=""_17_0_5_ae502ce_1403989552176_432040_11726"" association=""_17_0_5_ae502ce_1403989788209_929908_12101"">
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424287766929_45752_47535"" value=""*""/>
+  </ownedAttribute>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_0_1_ae502ce_1408728257214_722562_20913"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1408728257214_758667_20914"" partWithPort=""_17_0_5_ae502ce_1403989791033_987228_12128"" role=""_17_0_5_ae502ce_1404255867425_397747_13766""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_0_1_ae502ce_1408728257214_770983_20915"" role=""_17_0_5_ae502ce_1403989788209_491148_12102""/>
+  </ownedConnector>
+</packagedElement>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" classifierBehavior=""_17_0_5_ae502ce_1404309694118_920434_11858"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_17_0_5_ae502ce_1404255867425_397747_13766"" name=""LV electrical i/f"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1409014388334_928579_19192""/>
+</packagedElement>"

@@ -1,0 +1,25 @@
+In SysML requirements (REQ) modeling, the DeriveReqt (Derived Requirement) relationship is used to indicate that one requirement is “derived from” another higher-level or more abstract requirement. This relationship reflects the logical deduction process among system requirements and commonly appears during the hierarchical decomposition of system requirements into subsystem-level requirements. It is especially useful for tracing the origin and rationale of requirements and ensuring design consistency.
+
+In the .xmi file, DeriveReqt is a stereotype extension of the UML uml:Abstraction element. Each sysml:DeriveReqt element is bound to a corresponding UML Abstraction element via the base_Abstraction attribute, thereby inheriting UML’s modeling semantics of “abstraction.” The Abstraction itself is a structural dependency representing a semantic dependency between two elements. In the case of DeriveReqt, the two elements must be UML Class elements stereotyped as sysml:Requirement, referenced by the client and supplier properties respectively.
+
+Specifically, the client represents the derived requirement—that is, the newly created, more detailed requirement—while the supplier represents the original requirement from which the derivation is made. This directionality is similar to the “refine” or “satisfy” relationships and must be strictly semantically consistent. For example, if requirement A (supplier) represents an overall system quality requirement, and requirement B (client) refines A’s quality requirement specifically for the “Structural Subsystem,” then the relationship should be modeled as B DeriveReqt A.
+
+Each requirement involved in a DeriveReqt relationship is typically declared as a uml:Class element via <nestedClassifier> or <packagedElement>, with the sysml:Requirement stereotype applied. This stereotype connects to the UML class through the base_Class attribute and defines two core properties:
+
+Id: The requirement identifier, supporting hierarchical numbering schemes (e.g., 3.1.1, 5.2) to express structural decomposition.
+
+Text: A natural language description of the requirement content.
+
+In modeling practice, the use of DeriveReqt includes the following key points:
+
+Clear Requirement Source: Derived requirements must originate logically or functionally from a higher-level requirement; creating low-level requirements without basis is discouraged. The supplier property should explicitly indicate the logical origin.
+
+Supports Downward Decomposition: Commonly used in scenarios where system requirements are progressively derived into subsystem or component requirements. When combined with “Containment” structures, it enables tracing both structural and semantic decomposition paths.
+
+Supports Requirement Verification Traceability: The derivation path provides traceable evidence for verification activities and the formulation of test cases, assisting in building a complete V-model development process.
+
+Graphical Presentation Support: In modeling tools such as MagicDraw or Papyrus, DeriveReqt relationships are shown in Requirement Diagrams as dependency arrows labeled «deriveReqt», pointing from the client (derived requirement) to the supplier (source requirement), facilitating quick identification by engineers.
+
+Avoid Direction Errors: Modelers must carefully ensure the correct directionality of the Abstraction. Reversing client and supplier leads to incorrect derivation logic and negatively impacts requirement verification and design consistency analyses.
+
+In summary, DeriveReqt is a core semantic relationship in SysML requirements modeling. It not only reflects structural logic in the requirements phase but also provides essential support for subsequent requirements traceability, verification workflow establishment, and change management. Modelers should use this relationship judiciously to guarantee the traceability, verifiability, and logical closure of the requirements model.

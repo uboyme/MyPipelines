@@ -1,0 +1,825 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1419700353764_367638_45122,"Maintain parallel operation of the payload sensor, high-rate transmitter amplifier, solar array, and orbit systems during spacecraft missions, adhering to defined duration constraints between event pairs including region visibility changes, communication availability, sun exposure transitions, and orbital cycle boundaries.","<ownedBehavior xmi:type=""uml:Interaction"" xmi:id=""_18_0_1_ae502ce_1419700353764_367638_45122"" name=""Spacecraft Timeline"">
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1419785326029_953493_45306"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419705869324_393729_46738""/>
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419705975405_883165_46850""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1419785326029_27897_45307"" max=""_18_0_1_ae502ce_1419785326045_778554_45312"" min=""_18_0_1_ae502ce_1419785326045_185981_45308""/>
+  </ownedRule>
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1419785372705_445673_45338"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419706001894_392073_46893""/>
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419707113660_774958_47577""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1419785372705_592195_45339"" max=""_18_0_1_ae502ce_1419785372705_810733_45344"" min=""_18_0_1_ae502ce_1419785372705_364991_45340""/>
+  </ownedRule>
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1419785482404_362088_45378"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419706051674_678920_46983""/>
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419706076415_576641_47042""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1419785482404_944070_45379"" max=""_18_0_1_ae502ce_1419785482404_213591_45384"" min=""_18_0_1_ae502ce_1419785482404_284528_45380""/>
+  </ownedRule>
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1419797380392_928134_46181"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419797329692_892865_46112""/>
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419797364512_513511_46149""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1419797380392_982560_46182"" max=""_18_0_1_ae502ce_1419797380392_292962_46187"" min=""_18_0_1_ae502ce_1419797380392_761108_46183""/>
+  </ownedRule>
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1419798308114_373684_46588"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419798214871_530684_46489""/>
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419798280018_831318_46553""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1419798308114_335332_46589"" max=""_18_0_1_ae502ce_1419798308114_152939_46594"" min=""_18_0_1_ae502ce_1419798308114_411389_46590""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419700462528_955112_45165"" visibility=""public"" type=""_17_0_5_ae502ce_1404259739347_953016_15145""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419701164046_120124_45432"" visibility=""public"" type=""_18_0_1_ae502ce_1421626274316_61681_50278""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419797145074_937308_45959"" visibility=""private"" type=""_17_0_5_ae502ce_1404259018532_893090_14497""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419797962983_465026_46325"" visibility=""private"" type=""_18_0_1_ae502ce_1408796371990_968654_21768""/>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419785326045_602782_45311"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419705869324_393729_46738""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419705975405_883165_46850""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419785326045_921883_45315"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419705869324_393729_46738""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419705975405_883165_46850""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419785372705_197308_45343"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419706001894_392073_46893""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419707113660_774958_47577""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419785372705_714928_45347"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419706001894_392073_46893""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419707113660_774958_47577""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419785482404_76293_45383"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419706051674_678920_46983""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419706076415_576641_47042""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419785482404_505921_45387"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419706051674_678920_46983""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419706076415_576641_47042""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419797380392_795222_46186"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419797329692_892865_46112""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419797364512_513511_46149""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419797380392_230886_46190"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419797329692_892865_46112""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419797364512_513511_46149""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419798308114_959692_46593"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419798214871_530684_46489""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419798280018_831318_46553""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419798308114_254014_46597"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419798214871_530684_46489""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419798280018_831318_46553""/>
+  </observation>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419705869324_290957_46739"" visibility=""public"" message=""_18_0_1_ae502ce_1419705869324_393729_46738""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419705975405_865143_46851"" visibility=""public"" message=""_18_0_1_ae502ce_1419705975405_883165_46850""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706001894_250793_46894"" visibility=""public"" message=""_18_0_1_ae502ce_1419706001894_392073_46893""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706051674_188331_46984"" visibility=""public"" message=""_18_0_1_ae502ce_1419706051674_678920_46983""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706076415_280889_47043"" visibility=""public"" message=""_18_0_1_ae502ce_1419706076415_576641_47042""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707113660_182509_47578"" visibility=""public"" message=""_18_0_1_ae502ce_1419707113660_774958_47577""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419714673716_966819_48653"" visibility=""public"" message=""_18_0_1_ae502ce_1419714673716_443959_48652""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419797329692_503459_46113"" visibility=""public"" message=""_18_0_1_ae502ce_1419797329692_892865_46112""/>
+  <formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419797364512_962311_46150"" visibility=""public"" message=""_18_0_1_ae502ce_1419797364512_513511_46149""/>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419798214871_388205_46490"" visibility=""public"" message=""_18_0_1_ae502ce_1419798214871_530684_46489"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419797962983_210593_46324""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419798214871_79296_46491"" visibility=""public"" message=""_18_0_1_ae502ce_1419798214871_530684_46489"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419797962983_210593_46324""/>
+  </fragment>
+  <fragment xmi:type=""uml:CombinedFragment"" xmi:id=""_18_0_1_ae502ce_1419706898458_379126_47414"" visibility=""public"" interactionOperator=""par"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1419701164046_79691_45431""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1419797145074_330979_45958""/>
+    <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419706898458_410402_47415"" visibility=""public"">
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419701208365_769400_45462"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419701208365_208856_45463""/>
+      </fragment>
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419701227023_583370_45478"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419701227023_535575_45479""/>
+      </fragment>
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419701257724_888483_45494"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419701257724_442611_45495""/>
+      </fragment>
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419701347205_222133_45542"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419701347205_6475_45543""/>
+      </fragment>
+    </operand>
+    <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419706955577_363322_47476"" visibility=""public"">
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419701323135_329456_45510"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419701164046_79691_45431""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419701323135_890020_45511""/>
+      </fragment>
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419701336894_975137_45526"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419701164046_79691_45431""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419701336894_487701_45527""/>
+      </fragment>
+    </operand>
+    <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419797214158_687672_46018"" visibility=""public"">
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419797292096_391014_46064"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419797145074_330979_45958""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419797292096_109850_46065""/>
+      </fragment>
+      <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_0_1_ae502ce_1419797306573_894381_46088"" visibility=""public"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419797145074_330979_45958""/>
+        <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419797306573_755439_46089""/>
+      </fragment>
+    </operand>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419705869324_728739_46740"" visibility=""public"" message=""_18_0_1_ae502ce_1419705869324_393729_46738"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419705975405_637750_46852"" visibility=""public"" message=""_18_0_1_ae502ce_1419705975405_883165_46850"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706001894_475957_46895"" visibility=""public"" message=""_18_0_1_ae502ce_1419706001894_392073_46893"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419714673716_871106_48654"" visibility=""public"" message=""_18_0_1_ae502ce_1419714673716_443959_48652"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419707113660_284359_47579"" visibility=""public"" message=""_18_0_1_ae502ce_1419707113660_774958_47577"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419700462528_440768_45164""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706051674_952013_46985"" visibility=""public"" message=""_18_0_1_ae502ce_1419706051674_678920_46983"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419701164046_79691_45431""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706076415_645292_47044"" visibility=""public"" message=""_18_0_1_ae502ce_1419706076415_576641_47042"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419701164046_79691_45431""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419797329692_488532_46114"" visibility=""public"" message=""_18_0_1_ae502ce_1419797329692_892865_46112"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419797145074_330979_45958""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419797364512_341818_46151"" visibility=""public"" message=""_18_0_1_ae502ce_1419797364512_513511_46149"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419797145074_330979_45958""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419798280018_544792_46554"" visibility=""public"" message=""_18_0_1_ae502ce_1419798280018_831318_46553"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419797962983_210593_46324""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419798280018_876863_46555"" visibility=""public"" message=""_18_0_1_ae502ce_1419798280018_831318_46553"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419797962983_210593_46324""/>
+  </fragment>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419700462528_440768_45164"" visibility=""public"" represents=""_18_0_1_ae502ce_1419700462528_955112_45165"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706898458_379126_47414""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419701208365_769400_45462""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419701227023_583370_45478""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419701257724_888483_45494""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419701347205_222133_45542""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419705869324_728739_46740""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419705975405_637750_46852""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706001894_475957_46895""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419714673716_871106_48654""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419707113660_284359_47579""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419701164046_79691_45431"" visibility=""public"" represents=""_18_0_1_ae502ce_1419701164046_120124_45432"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706898458_379126_47414""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419701323135_329456_45510""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419701336894_975137_45526""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706051674_952013_46985""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706076415_645292_47044""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419797145074_330979_45958"" visibility=""public"" represents=""_18_0_1_ae502ce_1419797145074_937308_45959"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706898458_379126_47414""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419797292096_391014_46064""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419797306573_894381_46088""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419797329692_488532_46114""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419797364512_341818_46151""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419797962983_210593_46324"" visibility=""public"" represents=""_18_0_1_ae502ce_1419797962983_465026_46325"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419798214871_388205_46490""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419798214871_79296_46491""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419798280018_544792_46554""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419798280018_876863_46555""/>
+  </lifeline>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419705869324_393729_46738"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419705869324_728739_46740"" sendEvent=""_18_0_1_ae502ce_1419705869324_290957_46739"" signature=""_18_0_1_ae502ce_1416150066000_697155_45102""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419705975405_883165_46850"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419705975405_637750_46852"" sendEvent=""_18_0_1_ae502ce_1419705975405_865143_46851"" signature=""_18_0_1_ae502ce_1416150090399_356501_45103""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419706001894_392073_46893"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419706001894_475957_46895"" sendEvent=""_18_0_1_ae502ce_1419706001894_250793_46894"" signature=""_18_0_1_ae502ce_1416419595840_621967_43760""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419706051674_678920_46983"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419706051674_952013_46985"" sendEvent=""_18_0_1_ae502ce_1419706051674_188331_46984"" signature=""_18_0_1_ae502ce_1416150032184_315619_45100""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419706076415_576641_47042"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419706076415_645292_47044"" sendEvent=""_18_0_1_ae502ce_1419706076415_280889_47043"" signature=""_18_0_1_ae502ce_1416150051889_121786_45101""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419707113660_774958_47577"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419707113660_284359_47579"" sendEvent=""_18_0_1_ae502ce_1419707113660_182509_47578"" signature=""_18_0_1_ae502ce_1416419612158_663689_43761""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419714673716_443959_48652"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419714673716_871106_48654"" sendEvent=""_18_0_1_ae502ce_1419714673716_966819_48653"" signature=""_18_0_1_ae502ce_1416779790386_922432_52506""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419797329692_892865_46112"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419797329692_488532_46114"" sendEvent=""_18_0_1_ae502ce_1419797329692_503459_46113"" signature=""_18_0_1_ae502ce_1419796305300_674169_45633""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419797364512_513511_46149"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419797364512_341818_46151"" sendEvent=""_18_0_1_ae502ce_1419797364512_962311_46150"" signature=""_18_0_1_ae502ce_1419796326220_984554_45640""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419798214871_530684_46489"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419798214871_79296_46491"" sendEvent=""_18_0_1_ae502ce_1419798214871_388205_46490"" signature=""_18_0_1_ae502ce_1419798231939_253825_46504""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419798280018_831318_46553"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419798280018_876863_46555"" sendEvent=""_18_0_1_ae502ce_1419798280018_544792_46554"" signature=""_18_0_1_ae502ce_1419798256150_435377_46513""/>
+</ownedBehavior>","<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419785326045_778554_45312"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419785326045_921883_45315""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419785326045_185981_45308"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419785326045_602782_45311""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419785346247_734555_45331"" value=""t-sensor=on""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419785372705_810733_45344"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419785372705_714928_45347""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419785372705_364991_45340"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419785372705_197308_45343""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419785458739_609917_45363"" value=""t-sensor=on""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419785482404_213591_45384"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419785482404_505921_45387""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419785482404_284528_45380"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419785482404_76293_45383""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419785508269_894737_45411"" value=""t-xmitamp=on""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419797380392_292962_46187"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419797380392_230886_46190""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419797380392_761108_46183"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419797380392_795222_46186""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419797493150_998386_46248"" value=""t-exposed=true""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419798308114_152939_46594"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419798308114_254014_46597""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419798308114_411389_46590"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419798308114_959692_46593""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419798350655_531390_46619"" value=""t-orbit""/>
+</expr>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1404259739347_953016_15145"" name=""Payload Sensor"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1421626274316_61681_50278"" name=""HR Xmit Amplifier"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1404259018532_893090_14497"" name=""Solar Array"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1408796371990_968654_21768"" name=""Orbit"" xmi:type=""uml:Class""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150066000_697155_45102"" name=""RegionX in View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150090399_356501_45103"" name=""RegionX out of View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416419595840_621967_43760"" name=""RegionY in View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150032184_315619_45100"" name=""Comm Available""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150051889_121786_45101"" name=""Comm Unavailable""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416419612158_663689_43761"" name=""RegionY out of View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416779790386_922432_52506"" name=""Fire Detected""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1419796305300_674169_45633"" name=""Sun in View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1419796326220_984554_45640"" name=""Sun out of View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1419798231939_253825_46504"" name=""Start Orbit""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1419798256150_435377_46513"" name=""End Orbit""/>"
+_18_0_1_ae502ce_1419602503549_415951_45010,"The system shall, for each orbit from orbit1 to orbitFinal, execute the Spacecraft Timeline interaction in parallel scenarios—one including user interactions and one without—while ensuring the duration between fire start detection and data distribution to end users remains within specified minimum and maximum time constraints.","<packagedElement xmi:type=""uml:Interaction"" xmi:id=""_18_0_1_ae502ce_1419602503549_415951_45010"" name=""On-Orbit &amp; Data Distribution Events-p"">
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1419602503564_998892_45011"" name=""time-fire start to end user"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419602503611_486560_45048""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1419602503627_997034_45058"" max=""_18_0_1_ae502ce_1419602503627_759135_45060"" min=""_18_0_1_ae502ce_1419602503627_662575_45059""/>
+  </ownedRule>
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1419708219129_330360_48049"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419602503611_486560_45048""/>
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419708153593_986006_47995""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1419708219129_437602_48050"" max=""_18_0_1_ae502ce_1419708219129_817978_48055"" min=""_18_0_1_ae502ce_1419708219129_20069_48051""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419602503611_892973_45034"" visibility=""private"" type=""_17_0_5_ae502ce_1403989630306_76000_11814""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419602503611_380531_45035"" visibility=""private"" type=""_18_0_1_ae502ce_1416079199464_19487_45541""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419602503611_543534_45036"" visibility=""private"" type=""_18_0_1_ae502ce_1408737767931_894310_21387""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419602568913_473283_45273"" visibility=""public"" type=""_17_0_5_ae502ce_1404332515899_286636_12094""/>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419602503611_480212_45037"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419602503611_486560_45048""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419602503611_413872_45038"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419602503611_486560_45048""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419708219129_816736_48054"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419602503611_486560_45048""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419708153593_986006_47995""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1419708219129_81531_48058"">
+    <event xmi:idref=""_18_0_1_ae502ce_1419602503611_486560_45048""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1419708153593_986006_47995""/>
+  </observation>
+  <fragment xmi:type=""uml:CombinedFragment"" xmi:id=""_18_0_1_ae502ce_1419602503611_980530_45053"" visibility=""public"" interactionOperator=""loop"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1416779512336_404717_52480""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1416872137971_656178_43907""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_886938_45051""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+    <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419602503627_666383_45080"" visibility=""public"">
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419602503627_520778_45078"" visibility=""public"" message=""_18_0_1_ae502ce_1419602503611_486560_45048"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419602503627_29432_45079"" visibility=""public"" message=""_18_0_1_ae502ce_1419602503611_486560_45048"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+      </fragment>
+      <fragment xmi:type=""uml:CombinedFragment"" xmi:id=""_18_0_1_ae502ce_1419602503627_914557_45089"" visibility=""public"" interactionOperator=""par"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+        <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+        <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+        <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419602503627_739111_45095"" visibility=""public"">
+          <fragment xmi:type=""uml:InteractionUse"" xmi:id=""_18_0_1_ae502ce_1419701527596_271460_45573"" visibility=""public"" refersTo=""_18_0_1_ae502ce_1419700353764_367638_45122"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+            <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706123122_489202_47097"" visibility=""public"" message=""_18_0_1_ae502ce_1419706123122_450442_47095"" formalGate=""_18_0_1_ae502ce_1419705869324_290957_46739""/>
+            <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706147318_813239_47126"" visibility=""public"" message=""_18_0_1_ae502ce_1419706147318_576984_47124""/>
+            <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706171700_329924_47151"" visibility=""public"" message=""_18_0_1_ae502ce_1419706171700_484053_47149"" formalGate=""_18_0_1_ae502ce_1419705975405_865143_46851""/>
+            <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706193790_204400_47175"" visibility=""public"" message=""_18_0_1_ae502ce_1419706193790_462978_47173"" formalGate=""_18_0_1_ae502ce_1419706001894_250793_46894""/>
+            <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707153006_196447_47623"" visibility=""public"" message=""_18_0_1_ae502ce_1419707153006_800689_47621"" formalGate=""_18_0_1_ae502ce_1419707113660_182509_47578""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706123122_262273_47096"" visibility=""public"" message=""_18_0_1_ae502ce_1419706123122_450442_47095"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706171700_800913_47150"" visibility=""public"" message=""_18_0_1_ae502ce_1419706171700_484053_47149"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706193790_32414_47174"" visibility=""public"" message=""_18_0_1_ae502ce_1419706193790_462978_47173"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706147318_2101_47125"" visibility=""public"" message=""_18_0_1_ae502ce_1419706147318_576984_47124"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419707153006_162199_47622"" visibility=""public"" message=""_18_0_1_ae502ce_1419707153006_800689_47621"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+          </fragment>
+        </operand>
+        <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419602503627_980734_45096"" visibility=""public"">
+          <fragment xmi:type=""uml:InteractionUse"" xmi:id=""_18_0_1_ae502ce_1419707785792_107139_47770"" visibility=""public"" refersTo=""_18_0_1_ae502ce_1419700353764_367638_45122"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+            <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707911013_701963_47870"" visibility=""public"" message=""_18_0_1_ae502ce_1419707911013_476234_47868"" formalGate=""_18_0_1_ae502ce_1419706051674_188331_46984""/>
+            <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707925708_123516_47886"" visibility=""public"" message=""_18_0_1_ae502ce_1419707925708_156055_47884"" formalGate=""_18_0_1_ae502ce_1419706076415_280889_47043""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419707911013_289398_47869"" visibility=""public"" message=""_18_0_1_ae502ce_1419707911013_476234_47868"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419707925708_676016_47885"" visibility=""public"" message=""_18_0_1_ae502ce_1419707925708_156055_47884"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+          </fragment>
+        </operand>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419708153593_889780_47996"" visibility=""public"" message=""_18_0_1_ae502ce_1419708153593_986006_47995"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419708153593_880029_47997"" visibility=""public"" message=""_18_0_1_ae502ce_1419708153593_986006_47995"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_886938_45051""/>
+      </fragment>
+      <guard xmi:type=""uml:InteractionConstraint"" xmi:id=""_18_0_1_ae502ce_1419602503627_342200_45088"">
+        <specification xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419602503627_209709_45094"" value=""orbit1,orbitFinal""/>
+      </guard>
+    </operand>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419708339296_750141_48117"" visibility=""public"" message=""_18_0_1_ae502ce_1419708339296_566246_48116"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419708339296_252532_48118"" visibility=""public"" message=""_18_0_1_ae502ce_1419708339296_566246_48116"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+  </fragment>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419602503611_730433_45050"" visibility=""public"" represents=""_18_0_1_ae502ce_1419602503611_892973_45034"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503627_914557_45089""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706123122_262273_47096""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706171700_800913_47150""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706193790_32414_47174""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419707153006_162199_47622""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419707911013_289398_47869""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419707925708_676016_47885""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419708153593_889780_47996""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419708339296_750141_48117""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419602503611_886938_45051"" visibility=""public"" represents=""_18_0_1_ae502ce_1419602503611_380531_45035"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419708153593_880029_47997""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419602503611_539932_45052"" visibility=""public"" represents=""_18_0_1_ae502ce_1419602503611_543534_45036"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503627_520778_45078""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503627_29432_45079""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503627_914557_45089""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419706147318_2101_47125""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1419602568913_48743_45272"" visibility=""public"" represents=""_18_0_1_ae502ce_1419602568913_473283_45273"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503627_914557_45089""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419701527596_271460_45573""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419707785792_107139_47770""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419708339296_252532_48118""/>
+  </lifeline>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419602503611_486560_45048"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419602503627_29432_45079"" sendEvent=""_18_0_1_ae502ce_1419602503627_520778_45078"" signature=""_18_0_1_ae502ce_1416872253811_347102_43970""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419706123122_450442_47095"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419706123122_489202_47097"" sendEvent=""_18_0_1_ae502ce_1419706123122_262273_47096""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419706147318_576984_47124"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419706147318_813239_47126"" sendEvent=""_18_0_1_ae502ce_1419706147318_2101_47125""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419706171700_484053_47149"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419706171700_329924_47151"" sendEvent=""_18_0_1_ae502ce_1419706171700_800913_47150""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419706193790_462978_47173"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419706193790_204400_47175"" sendEvent=""_18_0_1_ae502ce_1419706193790_32414_47174""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419707153006_800689_47621"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419707153006_196447_47623"" sendEvent=""_18_0_1_ae502ce_1419707153006_162199_47622""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419707911013_476234_47868"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419707911013_701963_47870"" sendEvent=""_18_0_1_ae502ce_1419707911013_289398_47869""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419707925708_156055_47884"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419707925708_123516_47886"" sendEvent=""_18_0_1_ae502ce_1419707925708_676016_47885""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419708153593_986006_47995"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419708153593_880029_47997"" sendEvent=""_18_0_1_ae502ce_1419708153593_889780_47996"" signature=""_18_0_1_ae502ce_1416779754304_69568_52505""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1419708339296_566246_48116"" name=""End Data Collection"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1419708339296_252532_48118"" sendEvent=""_18_0_1_ae502ce_1419708339296_750141_48117""/>
+</packagedElement>","<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419602503627_759135_45060"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419602503611_413872_45038""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419602503627_662575_45059"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419602503611_480212_45037""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419602503627_932418_45083"" value=""t&lt;Tmax""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419708219129_817978_48055"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419708219129_81531_48058""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1419708219129_20069_48051"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1419708219129_816736_48054""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419708257131_224553_48082"" value=""t&lt;Tmax""/>
+</expr>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1403989630306_76000_11814"" name=""Ground Station"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1416079199464_19487_45541"" name=""User"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1408737767931_894310_21387"" name=""Region"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1404332515899_286636_12094"" name=""Spacecraft-Physical"" xmi:type=""uml:Class""/>
+<lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1416779512336_404717_52480"" visibility=""public"" represents=""_18_0_1_ae502ce_1416779512336_353346_52481"">
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417616071_551206_43509""/>
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1416780625489_733804_52584""/>
+</lifeline>
+<lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1416872137971_656178_43907"" visibility=""public"" represents=""_18_0_1_ae502ce_1416872137971_363661_43908"">
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417616071_551206_43509""/>
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1416872265074_597193_43973""/>
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1416872265074_622261_43974""/>
+  <coveredBy xmi:idref=""_18_0_1_ae502ce_1416872179805_764896_43931""/>
+</lifeline>
+<ownedBehavior xmi:id=""_18_0_1_ae502ce_1419700353764_367638_45122"" name=""Spacecraft Timeline"" xmi:type=""uml:Interaction""/>
+<formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419705869324_290957_46739"" visibility=""public"" message=""_18_0_1_ae502ce_1419705869324_393729_46738""/>
+<formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419705975405_865143_46851"" visibility=""public"" message=""_18_0_1_ae502ce_1419705975405_883165_46850""/>
+<formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706001894_250793_46894"" visibility=""public"" message=""_18_0_1_ae502ce_1419706001894_392073_46893""/>
+<formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707113660_182509_47578"" visibility=""public"" message=""_18_0_1_ae502ce_1419707113660_774958_47577""/>
+<formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706051674_188331_46984"" visibility=""public"" message=""_18_0_1_ae502ce_1419706051674_678920_46983""/>
+<formalGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706076415_280889_47043"" visibility=""public"" message=""_18_0_1_ae502ce_1419706076415_576641_47042""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416872253811_347102_43970"" name=""Fire Starts""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416779754304_69568_52505"" name=""Data Distributed to End User""/>"
+_18_0_1_ae502ce_1413909232812_608427_43954,"The mission events shall progress through the following sequence: the Launch Ops Facility sends a Power On signal to the Spacecraft and a Launch signal to the Launch Vehicle; the Launch Vehicle sends a Spacecraft Separation Command to the Spacecraft; the Spacecraft deploys its antenna and solar arrays and notifies the Ground Station of each deployment; the Ground Station sends an On Orbit signal to initiate on-orbit operations; and the Ground Station sends a De-orbit Command to the Spacecraft, which then completes the de-orbit maneuver.","<ownedBehavior xmi:type=""uml:Interaction"" xmi:id=""_18_0_1_ae502ce_1413909232812_608427_43954"" name=""Mission Events"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1413909238530_269308_43988"" visibility=""private"" type=""_17_0_5_ae502ce_1403989552176_432040_11726""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1413909306866_550629_44011"" visibility=""private"" type=""_17_0_5_ae502ce_1403989630306_76000_11814""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1413909326498_943717_44034"" visibility=""private"" type=""_17_0_5_ae502ce_1403989559103_73588_11766""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1413909460043_213979_44059"" visibility=""private"" type=""_18_0_1_ae502ce_1413909437508_538146_44055""/>
+  <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_1_ae502ce_1448823624668_652186_47978"" visibility=""public"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+    <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_1_ae502ce_1448823624668_202761_47979""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138155365_163515_46032"" visibility=""public"" message=""_18_0_1_ae502ce_1416138155365_869460_46031"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909460043_157784_44058""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138155365_410091_46033"" visibility=""public"" message=""_18_0_1_ae502ce_1416138155365_869460_46031"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:StateInvariant"" xmi:id=""_18_1_ae502ce_1448823691039_45380_48042"" visibility=""public"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+    <invariant xmi:type=""uml:Constraint"" xmi:id=""_18_1_ae502ce_1448823691039_243602_48043""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138171557_4879_46042"" visibility=""public"" message=""_18_0_1_ae502ce_1416138171557_852056_46041"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909460043_157784_44058""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138171557_981624_46043"" visibility=""public"" message=""_18_0_1_ae502ce_1416138171557_852056_46041"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909238530_850556_43987""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138511716_989235_46109"" visibility=""public"" message=""_18_0_1_ae502ce_1416138511716_525094_46108"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909238530_850556_43987""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138511716_110591_46110"" visibility=""public"" message=""_18_0_1_ae502ce_1416138511716_525094_46108"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416148220193_781042_45009"" visibility=""public"" message=""_18_0_1_ae502ce_1416148220187_152525_45008"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416148220193_130834_45010"" visibility=""public"" message=""_18_0_1_ae502ce_1416148220187_152525_45008"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416148260871_129997_45027"" visibility=""public"" message=""_18_0_1_ae502ce_1416148260870_775585_45026"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416148260871_951769_45028"" visibility=""public"" message=""_18_0_1_ae502ce_1416148260870_775585_45026"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138644425_204772_46184"" visibility=""public"" message=""_18_0_1_ae502ce_1416138644425_532113_46183"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138644425_989567_46185"" visibility=""public"" message=""_18_0_1_ae502ce_1416138644425_532113_46183"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909306850_577814_44010""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_1_ae502ce_1424290181718_519946_48093"" visibility=""public"" message=""_18_1_ae502ce_1424290181718_683396_48092"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_1_ae502ce_1424290181718_533239_48094"" visibility=""public"" message=""_18_1_ae502ce_1424290181718_683396_48092"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138682053_879782_46220"" visibility=""public"" message=""_18_0_1_ae502ce_1416138682053_879177_46219"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138682053_234642_46221"" visibility=""public"" message=""_18_0_1_ae502ce_1416138682053_879177_46219"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909306850_577814_44010""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_1_ae502ce_1424290457027_187686_48297"" visibility=""public"" message=""_18_1_ae502ce_1424290457027_989612_48296"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909306850_577814_44010""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_1_ae502ce_1424290457027_214034_48298"" visibility=""public"" message=""_18_1_ae502ce_1424290457027_989612_48296"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:InteractionUse"" xmi:id=""_18_1_ae502ce_1462940287134_894714_48383"" visibility=""public"" refersTo=""_18_0_1_ae502ce_1414083152677_667630_46328""/>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138761753_251334_46266"" visibility=""public"" message=""_18_0_1_ae502ce_1416138761753_144123_46265"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909306850_577814_44010""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416138761753_354398_46267"" visibility=""public"" message=""_18_0_1_ae502ce_1416138761753_144123_46265"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416148315706_184282_45045"" visibility=""public"" message=""_18_0_1_ae502ce_1416148315706_483064_45044"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416148315706_92968_45046"" visibility=""public"" message=""_18_0_1_ae502ce_1416148315706_483064_45044"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1413909326498_26540_44033""/>
+  </fragment>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1413909238530_850556_43987"" visibility=""public"" represents=""_18_0_1_ae502ce_1413909238530_269308_43988"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138171557_981624_46043""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138511716_989235_46109""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1413909306850_577814_44010"" visibility=""public"" represents=""_18_0_1_ae502ce_1413909306866_550629_44011"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138644425_989567_46185""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138682053_234642_46221""/>
+    <coveredBy xmi:idref=""_18_1_ae502ce_1424290457027_187686_48297""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138761753_251334_46266""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1413909326498_26540_44033"" visibility=""public"" represents=""_18_0_1_ae502ce_1413909326498_943717_44034"">
+    <coveredBy xmi:idref=""_18_1_ae502ce_1448823624668_652186_47978""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138155365_410091_46033""/>
+    <coveredBy xmi:idref=""_18_1_ae502ce_1448823691039_45380_48042""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138511716_110591_46110""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416148220193_781042_45009""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416148220193_130834_45010""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416148260871_129997_45027""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416148260871_951769_45028""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138644425_204772_46184""/>
+    <coveredBy xmi:idref=""_18_1_ae502ce_1424290181718_519946_48093""/>
+    <coveredBy xmi:idref=""_18_1_ae502ce_1424290181718_533239_48094""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138682053_879782_46220""/>
+    <coveredBy xmi:idref=""_18_1_ae502ce_1424290457027_214034_48298""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138761753_354398_46267""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416148315706_184282_45045""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416148315706_92968_45046""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1413909460043_157784_44058"" visibility=""public"" represents=""_18_0_1_ae502ce_1413909460043_213979_44059"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138155365_163515_46032""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416138171557_4879_46042""/>
+  </lifeline>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416138155365_869460_46031"" name=""Power Up"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416138155365_410091_46033"" sendEvent=""_18_0_1_ae502ce_1416138155365_163515_46032"" signature=""_18_0_1_ae502ce_1416090130524_781635_49039""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416138171557_852056_46041"" name=""Launch"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416138171557_981624_46043"" sendEvent=""_18_0_1_ae502ce_1416138171557_4879_46042"" signature=""_18_0_1_ae502ce_1416090147739_399287_49040""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416138511716_525094_46108"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416138511716_110591_46110"" sendEvent=""_18_0_1_ae502ce_1416138511716_989235_46109"" signature=""_18_0_1_ae502ce_1416136259563_317448_45438""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416138644425_532113_46183"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416138644425_989567_46185"" sendEvent=""_18_0_1_ae502ce_1416138644425_204772_46184"" signature=""_18_0_1_ae502ce_1414065453162_858932_44494""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416138682053_879177_46219"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416138682053_234642_46221"" sendEvent=""_18_0_1_ae502ce_1416138682053_879782_46220"" signature=""_18_0_1_ae502ce_1414065550374_730300_44576""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416138761753_144123_46265"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416138761753_354398_46267"" sendEvent=""_18_0_1_ae502ce_1416138761753_251334_46266"" signature=""_18_0_1_ae502ce_1416088559180_452336_48249""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416148220187_152525_45008"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416148220193_130834_45010"" sendEvent=""_18_0_1_ae502ce_1416148220193_781042_45009"" signature=""_18_0_1_ae502ce_1414068258898_770424_45212""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416148260870_775585_45026"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416148260871_951769_45028"" sendEvent=""_18_0_1_ae502ce_1416148260871_129997_45027"" signature=""_18_0_1_ae502ce_1416137069369_870364_45676""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416148315706_483064_45044"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416148315706_92968_45046"" sendEvent=""_18_0_1_ae502ce_1416148315706_184282_45045"" signature=""_18_0_1_ae502ce_1414081215156_128573_45930""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_1_ae502ce_1424290181718_683396_48092"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_1_ae502ce_1424290181718_533239_48094"" sendEvent=""_18_1_ae502ce_1424290181718_519946_48093"" signature=""_18_0_1_ae502ce_1416137099118_962721_45677""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_1_ae502ce_1424290457027_989612_48296"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_1_ae502ce_1424290457027_214034_48298"" sendEvent=""_18_1_ae502ce_1424290457027_187686_48297"" signature=""_18_0_1_ae502ce_1414078854198_382098_45616""/>
+</ownedBehavior>","<packagedElement xmi:id=""_17_0_5_ae502ce_1403989552176_432040_11726"" name=""Launch Vehicle"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1403989630306_76000_11814"" name=""Ground Station"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1413909437508_538146_44055"" name=""Launch Ops Facility"" xmi:type=""uml:Class""/>
+<ownedBehavior xmi:id=""_18_0_1_ae502ce_1414083152677_667630_46328"" name=""On-Orbit &amp; Data Distribution Events"" xmi:type=""uml:Interaction""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416090130524_781635_49039"" name=""Power On""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416090147739_399287_49040"" name=""Launch""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416136259563_317448_45438"" name=""Spaceraft Separation Command""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1414065453162_858932_44494"" name=""Antenna Deployed""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1414065550374_730300_44576"" name=""Solar Arrray Deployed""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416088559180_452336_48249"" name=""De-obrit Command""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1414068258898_770424_45212"" name=""Spaceraft Separation Complete""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416137069369_870364_45676"" name=""Antenna Deployment Initiate""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1414081215156_128573_45930"" name=""De-orbit Manuever Complete""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416137099118_962721_45677"" name=""Solar Array Deployment Initiate""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1414078854198_382098_45616"" name=""On Orbit""/>"
+_18_0_1_ae502ce_1414083152677_667630_46328,"The on-orbit data distribution system shall, for each orbit from orbit1 to orbitFinal, concurrently monitor region visibility and communication status while ensuring fire detection events trigger data distribution to end users within a maximum time Tmax from fire ignition.","<ownedBehavior xmi:type=""uml:Interaction"" xmi:id=""_18_0_1_ae502ce_1414083152677_667630_46328"" name=""On-Orbit &amp; Data Distribution Events"">
+  <ownedRule xmi:type=""uml:DurationConstraint"" xmi:id=""_18_0_1_ae502ce_1416872449436_568111_43997"" name=""fire detection time"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1416872265074_936031_43972""/>
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1416780625489_635748_52582""/>
+    <specification xmi:type=""uml:DurationInterval"" xmi:id=""_18_0_1_ae502ce_1416872449436_860243_43998"" max=""_18_0_1_ae502ce_1416872449436_236292_44003"" min=""_18_0_1_ae502ce_1416872449436_910339_43999""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414083260684_977677_46381"" visibility=""private"" type=""_17_0_5_ae502ce_1403989559103_73588_11766""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1414083265684_26800_46394"" visibility=""private"" type=""_17_0_5_ae502ce_1403989630306_76000_11814""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1416779512336_353346_52481"" visibility=""private"" type=""_18_0_1_ae502ce_1416079199464_19487_45541""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1416872137971_363661_43908"" visibility=""private"" type=""_18_0_1_ae502ce_1408737767931_894310_21387""/>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1416872449436_101183_44002"">
+    <event xmi:idref=""_18_0_1_ae502ce_1416872265074_936031_43972""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1416780625489_635748_52582""/>
+  </observation>
+  <observation xmi:type=""uml:DurationObservation"" xmi:id=""_18_0_1_ae502ce_1416872449436_156694_44006"">
+    <event xmi:idref=""_18_0_1_ae502ce_1416872265074_936031_43972""/>
+    <event xmi:idref=""_18_0_1_ae502ce_1416780625489_635748_52582""/>
+  </observation>
+  <fragment xmi:type=""uml:CombinedFragment"" xmi:id=""_18_0_1_ae502ce_1416417616071_551206_43509"" visibility=""public"" interactionOperator=""loop"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1416779512336_404717_52480""/>
+    <covered xmi:idref=""_18_0_1_ae502ce_1416872137971_656178_43907""/>
+    <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1416417616071_617393_43510"" visibility=""public"">
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416872265074_597193_43973"" visibility=""public"" message=""_18_0_1_ae502ce_1416872265074_936031_43972"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1416872137971_656178_43907""/>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416872265074_622261_43974"" visibility=""public"" message=""_18_0_1_ae502ce_1416872265074_936031_43972"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1416872137971_656178_43907""/>
+      </fragment>
+      <fragment xmi:type=""uml:CombinedFragment"" xmi:id=""_18_0_1_ae502ce_1416417686981_942363_43531"" visibility=""public"" interactionOperator=""par"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+        <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+        <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1416417686981_533233_43532"" visibility=""public"">
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416418322389_251241_43614"" visibility=""public"" message=""_18_0_1_ae502ce_1416418322389_865605_43613"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416418322389_935503_43615"" visibility=""public"" message=""_18_0_1_ae502ce_1416418322389_865605_43613"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416418514131_197855_43678"" visibility=""public"" message=""_18_0_1_ae502ce_1416418514131_531655_43677"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416418514131_273827_43679"" visibility=""public"" message=""_18_0_1_ae502ce_1416418514131_531655_43677"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419632048_186227_43764"" visibility=""public"" message=""_18_0_1_ae502ce_1416419632048_450352_43763"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419632048_475334_43765"" visibility=""public"" message=""_18_0_1_ae502ce_1416419632048_450352_43763"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419638896_638037_43772"" visibility=""public"" message=""_18_0_1_ae502ce_1416419638896_29295_43771"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419638896_380441_43773"" visibility=""public"" message=""_18_0_1_ae502ce_1416419638896_29295_43771"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+          </fragment>
+        </operand>
+        <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1416419179148_315812_43698"" visibility=""public"">
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419336723_776092_43704"" visibility=""public"" message=""_18_0_1_ae502ce_1416419336723_174606_43703"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419336723_858923_43705"" visibility=""public"" message=""_18_0_1_ae502ce_1416419336723_174606_43703"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_5_2_ae502ce_1505193734390_85394_55610"" visibility=""public"" message=""_18_5_2_ae502ce_1505193734390_874698_55609"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_5_2_ae502ce_1505193734390_953030_55611"" visibility=""public"" message=""_18_5_2_ae502ce_1505193734390_874698_55609"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_5_2_ae502ce_1505193814842_396802_55682"" visibility=""public"" message=""_18_5_2_ae502ce_1505193814842_326588_55681"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_5_2_ae502ce_1505193814842_310178_55683"" visibility=""public"" message=""_18_5_2_ae502ce_1505193814842_326588_55681"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419386222_665377_43724"" visibility=""public"" message=""_18_0_1_ae502ce_1416419386222_283249_43723"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+          </fragment>
+          <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416419386222_165450_43725"" visibility=""public"" message=""_18_0_1_ae502ce_1416419386222_283249_43723"">
+            <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+          </fragment>
+        </operand>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416872179805_764896_43931"" visibility=""public"" message=""_18_0_1_ae502ce_1416872179805_561934_43930"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1416872137971_656178_43907""/>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416872179805_13113_43932"" visibility=""public"" message=""_18_0_1_ae502ce_1416872179805_561934_43930"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416780625489_446897_52583"" visibility=""public"" message=""_18_0_1_ae502ce_1416780625489_635748_52582"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+      </fragment>
+      <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416780625489_733804_52584"" visibility=""public"" message=""_18_0_1_ae502ce_1416780625489_635748_52582"">
+        <covered xmi:idref=""_18_0_1_ae502ce_1416779512336_404717_52480""/>
+      </fragment>
+      <guard xmi:type=""uml:InteractionConstraint"" xmi:id=""_18_0_1_ae502ce_1416417633138_270111_43525"">
+        <specification xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1416417633138_447556_43526"" value=""orbit1,orbitFinal""/>
+      </guard>
+    </operand>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416772797357_162224_51078"" visibility=""public"" message=""_18_0_1_ae502ce_1416772797357_356561_51077"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1414083265684_622978_46393""/>
+  </fragment>
+  <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1416772797357_944220_51079"" visibility=""public"" message=""_18_0_1_ae502ce_1416772797357_356561_51077"">
+    <covered xmi:idref=""_18_0_1_ae502ce_1414083260684_836439_46380""/>
+  </fragment>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1414083260684_836439_46380"" visibility=""public"" represents=""_18_0_1_ae502ce_1414083260684_977677_46381"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417616071_551206_43509""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417686981_942363_43531""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416418322389_935503_43615""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416418514131_273827_43679""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419632048_475334_43765""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419638896_380441_43773""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419336723_858923_43705""/>
+    <coveredBy xmi:idref=""_18_5_2_ae502ce_1505193734390_85394_55610""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419386222_165450_43725""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416872179805_13113_43932""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416772797357_944220_51079""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1414083265684_622978_46393"" visibility=""public"" represents=""_18_0_1_ae502ce_1414083265684_26800_46394"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417616071_551206_43509""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417686981_942363_43531""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416418322389_251241_43614""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416418514131_197855_43678""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419632048_186227_43764""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419638896_638037_43772""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419336723_776092_43704""/>
+    <coveredBy xmi:idref=""_18_5_2_ae502ce_1505193734390_953030_55611""/>
+    <coveredBy xmi:idref=""_18_5_2_ae502ce_1505193814842_396802_55682""/>
+    <coveredBy xmi:idref=""_18_5_2_ae502ce_1505193814842_310178_55683""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416419386222_665377_43724""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416780625489_446897_52583""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416772797357_162224_51078""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1416779512336_404717_52480"" visibility=""public"" represents=""_18_0_1_ae502ce_1416779512336_353346_52481"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417616071_551206_43509""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416780625489_733804_52584""/>
+  </lifeline>
+  <lifeline xmi:type=""uml:Lifeline"" xmi:id=""_18_0_1_ae502ce_1416872137971_656178_43907"" visibility=""public"" represents=""_18_0_1_ae502ce_1416872137971_363661_43908"">
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1419602503611_980530_45053""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416417616071_551206_43509""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416872265074_597193_43973""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416872265074_622261_43974""/>
+    <coveredBy xmi:idref=""_18_0_1_ae502ce_1416872179805_764896_43931""/>
+  </lifeline>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416418322389_865605_43613"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416418322389_935503_43615"" sendEvent=""_18_0_1_ae502ce_1416418322389_251241_43614"" signature=""_18_0_1_ae502ce_1416150066000_697155_45102""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416418514131_531655_43677"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416418514131_273827_43679"" sendEvent=""_18_0_1_ae502ce_1416418514131_197855_43678"" signature=""_18_0_1_ae502ce_1416150090399_356501_45103""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416419336723_174606_43703"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416419336723_858923_43705"" sendEvent=""_18_0_1_ae502ce_1416419336723_776092_43704"" signature=""_18_0_1_ae502ce_1416150032184_315619_45100""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416419386222_283249_43723"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416419386222_165450_43725"" sendEvent=""_18_0_1_ae502ce_1416419386222_665377_43724"" signature=""_18_0_1_ae502ce_1416150051889_121786_45101""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416419632048_450352_43763"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416419632048_475334_43765"" sendEvent=""_18_0_1_ae502ce_1416419632048_186227_43764"" signature=""_18_0_1_ae502ce_1416419595840_621967_43760""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416419638896_29295_43771"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416419638896_380441_43773"" sendEvent=""_18_0_1_ae502ce_1416419638896_638037_43772"" signature=""_18_0_1_ae502ce_1416419612158_663689_43761""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416772797357_356561_51077"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416772797357_944220_51079"" sendEvent=""_18_0_1_ae502ce_1416772797357_162224_51078"" signature=""_18_0_1_ae502ce_1416772138661_92992_51025""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416780625489_635748_52582"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416780625489_733804_52584"" sendEvent=""_18_0_1_ae502ce_1416780625489_446897_52583"" signature=""_18_0_1_ae502ce_1416779754304_69568_52505""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416872179805_561934_43930"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416872179805_13113_43932"" sendEvent=""_18_0_1_ae502ce_1416872179805_764896_43931"" signature=""_18_0_1_ae502ce_1416779790386_922432_52506""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_0_1_ae502ce_1416872265074_936031_43972"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_0_1_ae502ce_1416872265074_622261_43974"" sendEvent=""_18_0_1_ae502ce_1416872265074_597193_43973"" signature=""_18_0_1_ae502ce_1416872253811_347102_43970""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_5_2_ae502ce_1505193734390_874698_55609"" name=""downlink"" visibility=""public"" messageSort=""asynchSignal"" receiveEvent=""_18_5_2_ae502ce_1505193734390_953030_55611"" sendEvent=""_18_5_2_ae502ce_1505193734390_85394_55610""/>
+  <message xmi:type=""uml:Message"" xmi:id=""_18_5_2_ae502ce_1505193814842_326588_55681"" name=""process data"" visibility=""public"" receiveEvent=""_18_5_2_ae502ce_1505193814842_310178_55683"" sendEvent=""_18_5_2_ae502ce_1505193814842_396802_55682""/>
+</ownedBehavior>","<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1416872449436_236292_44003"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1416872449436_156694_44006""/>
+</expr>
+<expr xmi:type=""uml:Duration"" xmi:id=""_18_0_1_ae502ce_1416872449436_910339_43999"">
+  <observation xmi:idref=""_18_0_1_ae502ce_1416872449436_101183_44002""/>
+  <expr xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1416872512421_931846_44014"" value=""t&lt;Tmax""/>
+</expr>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1403989559103_73588_11766"" name=""Spacecraft"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1403989630306_76000_11814"" name=""Ground Station"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1416079199464_19487_45541"" name=""User"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1408737767931_894310_21387"" name=""Region"" xmi:type=""uml:Class""/>
+<fragment xmi:type=""uml:CombinedFragment"" xmi:id=""_18_0_1_ae502ce_1419602503611_980530_45053"" visibility=""public"" interactionOperator=""loop"">
+  <covered xmi:idref=""_18_0_1_ae502ce_1416779512336_404717_52480""/>
+  <covered xmi:idref=""_18_0_1_ae502ce_1416872137971_656178_43907""/>
+  <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+  <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_886938_45051""/>
+  <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+  <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+  <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419602503627_666383_45080"" visibility=""public"">
+    <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419602503627_520778_45078"" visibility=""public"" message=""_18_0_1_ae502ce_1419602503611_486560_45048"">
+      <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+    </fragment>
+    <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419602503627_29432_45079"" visibility=""public"" message=""_18_0_1_ae502ce_1419602503611_486560_45048"">
+      <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+    </fragment>
+    <fragment xmi:type=""uml:CombinedFragment"" xmi:id=""_18_0_1_ae502ce_1419602503627_914557_45089"" visibility=""public"" interactionOperator=""par"">
+      <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+      <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+      <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+      <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419602503627_739111_45095"" visibility=""public"">
+        <fragment xmi:type=""uml:InteractionUse"" xmi:id=""_18_0_1_ae502ce_1419701527596_271460_45573"" visibility=""public"" refersTo=""_18_0_1_ae502ce_1419700353764_367638_45122"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+          <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706123122_489202_47097"" visibility=""public"" message=""_18_0_1_ae502ce_1419706123122_450442_47095"" formalGate=""_18_0_1_ae502ce_1419705869324_290957_46739""/>
+          <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706147318_813239_47126"" visibility=""public"" message=""_18_0_1_ae502ce_1419706147318_576984_47124""/>
+          <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706171700_329924_47151"" visibility=""public"" message=""_18_0_1_ae502ce_1419706171700_484053_47149"" formalGate=""_18_0_1_ae502ce_1419705975405_865143_46851""/>
+          <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419706193790_204400_47175"" visibility=""public"" message=""_18_0_1_ae502ce_1419706193790_462978_47173"" formalGate=""_18_0_1_ae502ce_1419706001894_250793_46894""/>
+          <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707153006_196447_47623"" visibility=""public"" message=""_18_0_1_ae502ce_1419707153006_800689_47621"" formalGate=""_18_0_1_ae502ce_1419707113660_182509_47578""/>
+        </fragment>
+        <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706123122_262273_47096"" visibility=""public"" message=""_18_0_1_ae502ce_1419706123122_450442_47095"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+        </fragment>
+        <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706171700_800913_47150"" visibility=""public"" message=""_18_0_1_ae502ce_1419706171700_484053_47149"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+        </fragment>
+        <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706193790_32414_47174"" visibility=""public"" message=""_18_0_1_ae502ce_1419706193790_462978_47173"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+        </fragment>
+        <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419706147318_2101_47125"" visibility=""public"" message=""_18_0_1_ae502ce_1419706147318_576984_47124"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_539932_45052""/>
+        </fragment>
+        <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419707153006_162199_47622"" visibility=""public"" message=""_18_0_1_ae502ce_1419707153006_800689_47621"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+        </fragment>
+      </operand>
+      <operand xmi:type=""uml:InteractionOperand"" xmi:id=""_18_0_1_ae502ce_1419602503627_980734_45096"" visibility=""public"">
+        <fragment xmi:type=""uml:InteractionUse"" xmi:id=""_18_0_1_ae502ce_1419707785792_107139_47770"" visibility=""public"" refersTo=""_18_0_1_ae502ce_1419700353764_367638_45122"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602568913_48743_45272""/>
+          <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707911013_701963_47870"" visibility=""public"" message=""_18_0_1_ae502ce_1419707911013_476234_47868"" formalGate=""_18_0_1_ae502ce_1419706051674_188331_46984""/>
+          <actualGate xmi:type=""uml:Gate"" xmi:id=""_18_0_1_ae502ce_1419707925708_123516_47886"" visibility=""public"" message=""_18_0_1_ae502ce_1419707925708_156055_47884"" formalGate=""_18_0_1_ae502ce_1419706076415_280889_47043""/>
+        </fragment>
+        <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419707911013_289398_47869"" visibility=""public"" message=""_18_0_1_ae502ce_1419707911013_476234_47868"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+        </fragment>
+        <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419707925708_676016_47885"" visibility=""public"" message=""_18_0_1_ae502ce_1419707925708_156055_47884"">
+          <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+        </fragment>
+      </operand>
+    </fragment>
+    <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419708153593_889780_47996"" visibility=""public"" message=""_18_0_1_ae502ce_1419708153593_986006_47995"">
+      <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_730433_45050""/>
+    </fragment>
+    <fragment xmi:type=""uml:MessageOccurrenceSpecification"" xmi:id=""_18_0_1_ae502ce_1419708153593_880029_47997"" visibility=""public"" message=""_18_0_1_ae502ce_1419708153593_986006_47995"">
+      <covered xmi:idref=""_18_0_1_ae502ce_1419602503611_886938_45051""/>
+    </fragment>
+    <guard xmi:type=""uml:InteractionConstraint"" xmi:id=""_18_0_1_ae502ce_1419602503627_342200_45088"">
+      <specification xmi:type=""uml:LiteralString"" xmi:id=""_18_0_1_ae502ce_1419602503627_209709_45094"" value=""orbit1,orbitFinal""/>
+    </guard>
+  </operand>
+</fragment>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150066000_697155_45102"" name=""RegionX in View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150090399_356501_45103"" name=""RegionX out of View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150032184_315619_45100"" name=""Comm Available""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416150051889_121786_45101"" name=""Comm Unavailable""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416419595840_621967_43760"" name=""RegionY in View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416419612158_663689_43761"" name=""RegionY out of View""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416772138661_92992_51025"" name=""End Data Collection""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416779754304_69568_52505"" name=""Data Distributed to End User""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416779790386_922432_52506"" name=""Fire Detected""/>
+<packagedElement xmi:type=""uml:Signal"" xmi:id=""_18_0_1_ae502ce_1416872253811_347102_43970"" name=""Fire Starts""/>"

@@ -1,0 +1,307 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1414338920760_621271_45402,"The spacecraft shall satisfy the physical constraints for mass, thermal protection, electrical power, payload accommodation, orbit constraints, and structural integrity.","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414338920760_63666_45401"" name=""Physical"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409009622038_349215_14338"" name=""Mass""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339087330_297941_45609"" name=""Thermal Protection""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337950824_282598_45359"" name=""Electrical Power""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416083361530_563757_46302"" name=""Payload Accommodation""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416083978107_492250_46510"" name=""Orbit Constraints""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416082809249_268185_46260"" name=""Structural Integrity""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414338920760_621271_45402"" base_Class=""_18_0_1_ae502ce_1414338920760_63666_45401"" Text="""" Id=""3.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337950824_398345_45360"" base_Class=""_18_0_1_ae502ce_1414337950824_282598_45359"" Text="""" Id=""3.1.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416082809250_183007_46261"" base_Class=""_18_0_1_ae502ce_1416082809249_268185_46260"" Text="""" Id=""3.1.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409009622038_93073_14339"" base_Class=""_18_0_1_ae502ce_1409009622038_349215_14338"" Text="""" Id=""3.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339087330_831297_45610"" base_Class=""_18_0_1_ae502ce_1414339087330_297941_45609"" Text="""" Id=""3.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416083361530_742172_46303"" base_Class=""_18_0_1_ae502ce_1416083361530_563757_46302"" Text=""The spacecraft shall accommodate the selected payload mass, volume, power, data interface, and other physical constraints (e.g., field of view, sunlight avoidance)"" Id=""3.1.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416083978107_77178_46511"" base_Class=""_18_0_1_ae502ce_1416083978107_492250_46510"" Text="""" Id=""3.1.5""/>",
+_18_0_1_ae502ce_1409009582835_743750_14298,"The spacecraft shall accommodate the selected payload by meeting requirements for mass, volume, power, data interface, and physical constraints including field of view and sunlight avoidance.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409009582835_825460_14297"" name=""Spacecraft Specification"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414338920760_63666_45401"" name=""Physical"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409009622038_349215_14338"" name=""Mass""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339087330_297941_45609"" name=""Thermal Protection""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337950824_282598_45359"" name=""Electrical Power""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416083361530_563757_46302"" name=""Payload Accommodation""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416083978107_492250_46510"" name=""Orbit Constraints""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416082809249_268185_46260"" name=""Structural Integrity""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339178964_908924_45732"" name=""Functional and Performance"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339108093_418848_45650"" name=""Fault Management""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337881927_501954_45318"" name=""Probability of Detection""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339150494_613501_45691"" name=""Probability of False Alarm""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337849493_848842_45236"" name=""Downlink Capacity""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337866544_119772_45277"" name=""Data Storage""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339558428_698777_45830"" name=""DeltaV""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414342434952_401510_44191"" name=""Pointing Accuracy""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414338951757_568725_45442"" name=""Quality Characteristics"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337833051_237885_45195"" name=""Reliability""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339509335_611529_45787"" name=""Lifetime""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337817030_375151_45154"" name=""Unit Cost""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339010562_406920_45484"" name=""Launch Vehicle Interface"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339028330_756939_45525"" name=""LV Mechanical Interface""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339046067_318345_45566"" name=""LV Electrical Interface""/>
+  </nestedClassifier>
+</packagedElement>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409009582835_743750_14298"" base_Class=""_18_0_1_ae502ce_1409009582835_825460_14297"" Text="""" Id=""3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414338920760_621271_45402"" base_Class=""_18_0_1_ae502ce_1414338920760_63666_45401"" Text="""" Id=""3.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337950824_398345_45360"" base_Class=""_18_0_1_ae502ce_1414337950824_282598_45359"" Text="""" Id=""3.1.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416082809250_183007_46261"" base_Class=""_18_0_1_ae502ce_1416082809249_268185_46260"" Text="""" Id=""3.1.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337881927_371056_45319"" base_Class=""_18_0_1_ae502ce_1414337881927_501954_45318"" Text="""" Id=""3.2.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409009622038_93073_14339"" base_Class=""_18_0_1_ae502ce_1409009622038_349215_14338"" Text="""" Id=""3.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339178980_979465_45733"" base_Class=""_18_0_1_ae502ce_1414339178964_908924_45732"" Text="""" Id=""3.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339108093_885428_45651"" base_Class=""_18_0_1_ae502ce_1414339108093_418848_45650"" Text="""" Id=""3.2.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339150494_840943_45692"" base_Class=""_18_0_1_ae502ce_1414339150494_613501_45691"" Text="""" Id=""3.2.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414338951757_818536_45443"" base_Class=""_18_0_1_ae502ce_1414338951757_568725_45442"" Text="""" Id=""3.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339087330_831297_45610"" base_Class=""_18_0_1_ae502ce_1414339087330_297941_45609"" Text="""" Id=""3.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414342434952_934923_44192"" base_Class=""_18_0_1_ae502ce_1414342434952_401510_44191"" Text="""" Id=""3.2.7""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337866544_561243_45278"" base_Class=""_18_0_1_ae502ce_1414337866544_119772_45277"" Text="""" Id=""3.2.5""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337833051_820857_45196"" base_Class=""_18_0_1_ae502ce_1414337833051_237885_45195"" Text="""" Id=""3.3.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416083361530_742172_46303"" base_Class=""_18_0_1_ae502ce_1416083361530_563757_46302"" Text=""The spacecraft shall accommodate the selected payload mass, volume, power, data interface, and other physical constraints (e.g., field of view, sunlight avoidance)"" Id=""3.1.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339028330_659228_45526"" base_Class=""_18_0_1_ae502ce_1414339028330_756939_45525"" Text="""" Id=""3.5.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416083978107_77178_46511"" base_Class=""_18_0_1_ae502ce_1416083978107_492250_46510"" Text="""" Id=""3.1.5""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339010562_322590_45485"" base_Class=""_18_0_1_ae502ce_1414339010562_406920_45484"" Id=""3.5"" Text=""""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339558444_729022_45831"" base_Class=""_18_0_1_ae502ce_1414339558428_698777_45830"" Text="""" Id=""3.2.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339509335_920110_45788"" base_Class=""_18_0_1_ae502ce_1414339509335_611529_45787"" Text="""" Id=""3.3.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337817030_980899_45155"" base_Class=""_18_0_1_ae502ce_1414337817030_375151_45154"" Text="""" Id=""3.3.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337849493_162068_45237"" base_Class=""_18_0_1_ae502ce_1414337849493_848842_45236"" Text="""" Id=""3.2.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339046067_594305_45567"" base_Class=""_18_0_1_ae502ce_1414339046067_318345_45566"" Text="""" Id=""3.5.2""/>",
+_18_0_1_ae502ce_1414339178980_979465_45733,"The system shall meet functional and performance requirements for fault management, probability of detection, probability of false alarm, downlink capacity, data storage, delta-V, and pointing accuracy.","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339178964_908924_45732"" name=""Functional and Performance"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339108093_418848_45650"" name=""Fault Management""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337881927_501954_45318"" name=""Probability of Detection""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339150494_613501_45691"" name=""Probability of False Alarm""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337849493_848842_45236"" name=""Downlink Capacity""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337866544_119772_45277"" name=""Data Storage""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339558428_698777_45830"" name=""DeltaV""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414342434952_401510_44191"" name=""Pointing Accuracy""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339178980_979465_45733"" base_Class=""_18_0_1_ae502ce_1414339178964_908924_45732"" Text="""" Id=""3.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337881927_371056_45319"" base_Class=""_18_0_1_ae502ce_1414337881927_501954_45318"" Text="""" Id=""3.2.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339108093_885428_45651"" base_Class=""_18_0_1_ae502ce_1414339108093_418848_45650"" Text="""" Id=""3.2.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339150494_840943_45692"" base_Class=""_18_0_1_ae502ce_1414339150494_613501_45691"" Text="""" Id=""3.2.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414342434952_934923_44192"" base_Class=""_18_0_1_ae502ce_1414342434952_401510_44191"" Text="""" Id=""3.2.7""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337866544_561243_45278"" base_Class=""_18_0_1_ae502ce_1414337866544_119772_45277"" Text="""" Id=""3.2.5""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339558444_729022_45831"" base_Class=""_18_0_1_ae502ce_1414339558428_698777_45830"" Text="""" Id=""3.2.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337849493_162068_45237"" base_Class=""_18_0_1_ae502ce_1414337849493_848842_45236"" Text="""" Id=""3.2.4""/>",
+_18_0_1_ae502ce_1414338951757_818536_45443,"The system shall exhibit the quality characteristics of reliability, lifetime, and unit cost.","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414338951757_568725_45442"" name=""Quality Characteristics"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337833051_237885_45195"" name=""Reliability""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339509335_611529_45787"" name=""Lifetime""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337817030_375151_45154"" name=""Unit Cost""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414338951757_818536_45443"" base_Class=""_18_0_1_ae502ce_1414338951757_568725_45442"" Text="""" Id=""3.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337833051_820857_45196"" base_Class=""_18_0_1_ae502ce_1414337833051_237885_45195"" Text="""" Id=""3.3.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339509335_920110_45788"" base_Class=""_18_0_1_ae502ce_1414339509335_611529_45787"" Text="""" Id=""3.3.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337817030_980899_45155"" base_Class=""_18_0_1_ae502ce_1414337817030_375151_45154"" Text="""" Id=""3.3.4""/>",
+_18_0_1_ae502ce_1414339010562_322590_45485,The system shall provide a launch vehicle interface comprising mechanical and electrical interfaces.,"<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339010562_406920_45484"" name=""Launch Vehicle Interface"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339028330_756939_45525"" name=""LV Mechanical Interface""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339046067_318345_45566"" name=""LV Electrical Interface""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339010562_322590_45485"" base_Class=""_18_0_1_ae502ce_1414339010562_406920_45484"" Id=""3.5"" Text=""""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339028330_659228_45526"" base_Class=""_18_0_1_ae502ce_1414339028330_756939_45525"" Text="""" Id=""3.5.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339046067_594305_45567"" base_Class=""_18_0_1_ae502ce_1414339046067_318345_45566"" Text="""" Id=""3.5.2""/>",
+_18_0_1_ae502ce_1419976363203_911393_49275,"The payload sensor shall satisfy the requirements for quality characteristics including reliability and cost, physical characteristics including mass, size, and power consumption, functional and performance characteristics including sensing capabilities, field of view, data rate, and spectral band, and interface characteristics including electrical and mechanical interfaces.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976363203_258277_49274"" name=""Payload Sensor Specification"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976460470_267234_49459"" name=""Quality Characteristics"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976527894_722845_49581"" name=""Reliability""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976539204_276281_49628"" name=""Cost""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976391798_727322_49331"" name=""Physical"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976550389_717339_49677"" name=""Mass""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976560529_10377_49724"" name=""Size""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976570092_364796_49771"" name=""Power""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976405261_307241_49378"" name=""Functional and Performance"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976632890_942000_49826"" name=""Sensing""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976685704_518537_49873"" name=""Field of View""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976771442_397866_50018"" name=""Data Rate""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1423422301449_36648_55740"" name=""Spectral Band""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976485930_957797_49512"" name=""Interface"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976702459_235073_49920"" name=""Electrical Interface""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976715360_191215_49967"" name=""Mechanical Interface""/>
+  </nestedClassifier>
+</packagedElement>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976363203_911393_49275"" base_Class=""_18_0_1_ae502ce_1419976363203_258277_49274"" Text="""" Id=""80""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976460470_813353_49460"" base_Class=""_18_0_1_ae502ce_1419976460470_267234_49459"" Text="""" Id=""80.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976527894_330508_49582"" base_Class=""_18_0_1_ae502ce_1419976527894_722845_49581"" Text="""" Id=""80.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976539204_664371_49629"" base_Class=""_18_0_1_ae502ce_1419976539204_276281_49628"" Text="""" Id=""80.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976550389_529195_49678"" base_Class=""_18_0_1_ae502ce_1419976550389_717339_49677"" Text=""The sensor mass shall be less than 22 kg."" Id=""80.2.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976570092_778039_49772"" base_Class=""_18_0_1_ae502ce_1419976570092_364796_49771"" Text=""The sensor power consumption shall be less than 60 watts in the on state."" Id=""80.2.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976560529_919122_49725"" base_Class=""_18_0_1_ae502ce_1419976560529_10377_49724"" Text=""The sensor size (length, width, height) shall fit in a rectangular volume of less than 0.5, 0.25, 0.20 metres"" Id=""80.2.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976391798_383012_49332"" base_Class=""_18_0_1_ae502ce_1419976391798_727322_49331"" Text="""" Id=""80.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976405261_996574_49379"" base_Class=""_18_0_1_ae502ce_1419976405261_307241_49378"" Text="""" Id=""80.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976685704_127897_49874"" base_Class=""_18_0_1_ae502ce_1419976685704_518537_49873"" Text=""The sensor shall be able to scan a field of view of at least TBD milliradians."" Id=""80.3.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976632890_928940_49827"" base_Class=""_18_0_1_ae502ce_1419976632890_942000_49826"" Text=""The sensor shall sense thermal emissions with a sensitivity less than TBD, and a resolution of less than 3 miliiradians."" Id=""80.3.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976771442_662801_50019"" base_Class=""_18_0_1_ae502ce_1419976771442_397866_50018"" Text=""The sensor shall be capable of providing a data rate of a minimum of 8 Megabits per second."" Id=""80.3.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976715360_785200_49968"" base_Class=""_18_0_1_ae502ce_1419976715360_191215_49967"" Text="""" Id=""80.4.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976485945_859890_49513"" base_Class=""_18_0_1_ae502ce_1419976485930_957797_49512"" Text="""" Id=""80.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976702459_609128_49921"" base_Class=""_18_0_1_ae502ce_1419976702459_235073_49920"" Text="""" Id=""80.4.1""/>
+<sysml:Requirement xmi:id=""_18_1_ae502ce_1423422301449_247544_55741"" base_Class=""_18_1_ae502ce_1423422301449_36648_55740"" Text=""The spectral band shall be mid range infrared"" Id=""80.3.4""/>",
+_18_0_1_ae502ce_1419976460470_813353_49460,The system shall exhibit the quality characteristics of reliability and cost.,"<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976460470_267234_49459"" name=""Quality Characteristics"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976527894_722845_49581"" name=""Reliability""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976539204_276281_49628"" name=""Cost""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976460470_813353_49460"" base_Class=""_18_0_1_ae502ce_1419976460470_267234_49459"" Text="""" Id=""80.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976527894_330508_49582"" base_Class=""_18_0_1_ae502ce_1419976527894_722845_49581"" Text="""" Id=""80.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976539204_664371_49629"" base_Class=""_18_0_1_ae502ce_1419976539204_276281_49628"" Text="""" Id=""80.1.2""/>",
+_18_0_1_ae502ce_1419976391798_383012_49332,"The sensor shall have a mass less than 22 kilograms, dimensions not exceeding 0.5 meters in length, 0.25 meters in width, and 0.20 meters in height, and power consumption below 60 watts when operational.","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976391798_727322_49331"" name=""Physical"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976550389_717339_49677"" name=""Mass""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976560529_10377_49724"" name=""Size""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976570092_364796_49771"" name=""Power""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976391798_383012_49332"" base_Class=""_18_0_1_ae502ce_1419976391798_727322_49331"" Text="""" Id=""80.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976550389_529195_49678"" base_Class=""_18_0_1_ae502ce_1419976550389_717339_49677"" Text=""The sensor mass shall be less than 22 kg."" Id=""80.2.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976570092_778039_49772"" base_Class=""_18_0_1_ae502ce_1419976570092_364796_49771"" Text=""The sensor power consumption shall be less than 60 watts in the on state."" Id=""80.2.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976560529_919122_49725"" base_Class=""_18_0_1_ae502ce_1419976560529_10377_49724"" Text=""The sensor size (length, width, height) shall fit in a rectangular volume of less than 0.5, 0.25, 0.20 metres"" Id=""80.2.2""/>",
+_18_0_1_ae502ce_1419976405261_996574_49379,"The sensor shall sense thermal emissions in the mid range infrared band with a field of view of at least TBD milliradians, a resolution of less than 3 milliradians, a sensitivity less than TBD, and a minimum data rate of 8 Megabits per second.","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976405261_307241_49378"" name=""Functional and Performance"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976632890_942000_49826"" name=""Sensing""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976685704_518537_49873"" name=""Field of View""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976771442_397866_50018"" name=""Data Rate""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1423422301449_36648_55740"" name=""Spectral Band""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976405261_996574_49379"" base_Class=""_18_0_1_ae502ce_1419976405261_307241_49378"" Text="""" Id=""80.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976685704_127897_49874"" base_Class=""_18_0_1_ae502ce_1419976685704_518537_49873"" Text=""The sensor shall be able to scan a field of view of at least TBD milliradians."" Id=""80.3.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976632890_928940_49827"" base_Class=""_18_0_1_ae502ce_1419976632890_942000_49826"" Text=""The sensor shall sense thermal emissions with a sensitivity less than TBD, and a resolution of less than 3 miliiradians."" Id=""80.3.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976771442_662801_50019"" base_Class=""_18_0_1_ae502ce_1419976771442_397866_50018"" Text=""The sensor shall be capable of providing a data rate of a minimum of 8 Megabits per second."" Id=""80.3.3""/>
+<sysml:Requirement xmi:id=""_18_1_ae502ce_1423422301449_247544_55741"" base_Class=""_18_1_ae502ce_1423422301449_36648_55740"" Text=""The spectral band shall be mid range infrared"" Id=""80.3.4""/>",
+_18_0_1_ae502ce_1419976485945_859890_49513,The system shall provide an Interface consisting of an Electrical Interface and a Mechanical Interface.,"<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976485930_957797_49512"" name=""Interface"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976702459_235073_49920"" name=""Electrical Interface""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976715360_191215_49967"" name=""Mechanical Interface""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976485945_859890_49513"" base_Class=""_18_0_1_ae502ce_1419976485930_957797_49512"" Text="""" Id=""80.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976715360_785200_49968"" base_Class=""_18_0_1_ae502ce_1419976715360_191215_49967"" Text="""" Id=""80.4.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976702459_609128_49921"" base_Class=""_18_0_1_ae502ce_1419976702459_235073_49920"" Text="""" Id=""80.4.1""/>",
+_18_0_1_ae502ce_1409009668791_925342_14413,"The system shall detect and monitor forest fires in the United States and Canada while meeting specified requirements for performance, compatibility, operational constraints, and secondary mission objectives.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409009668791_108471_14412"" name=""Mission Requirements-Refined"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409161510139_989275_14323"" name=""Detect and Monitor Forest Fires in US and Canada"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334780484_691427_44156"" name=""Image Quality""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334755617_965270_44074"" name=""Detection Time""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334891259_483824_44238"" name=""False Alarm Rate""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334745192_873951_44033"" name=""Coverage""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414342348543_871154_44129"" name=""Location Accuracy""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416076245609_299458_45217"" name=""Weather Environment""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334827159_300920_44197"" name=""Launch Vehicle Compatibility""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334773105_64547_44115"" name=""Mission Life""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414335048418_548130_44285"" name=""Ground Station Compatibility""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416076342937_712894_45259"" name=""Secondary Mission""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416078823538_394849_45434"" name=""Data Distribution &amp; Delivery""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416079619193_764569_45677"" name=""Regulations""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416079685420_707746_45724"" name=""Lifecycle Cost""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416079711089_436609_45765"" name=""Launch Schedule""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416142168615_87885_46554"" name=""Spacecraft Survivability""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416142322447_78754_46599"" name=""Mission Availability""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421597694513_882355_47539"" name=""Data Archive""/>
+</packagedElement>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409009668791_925342_14413"" base_Class=""_18_0_1_ae502ce_1409009668791_108471_14412"" Text="""" Id=""5""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409161510139_260462_14324"" base_Class=""_18_0_1_ae502ce_1409161510139_989275_14323"" Text=""The mission is"" Id=""5.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334780484_5416_44157"" base_Class=""_18_0_1_ae502ce_1414334780484_691427_44156"" Text="""" Id=""5.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334755617_798980_44075"" base_Class=""_18_0_1_ae502ce_1414334755617_965270_44074"" Text="""" Id=""5.1.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416076245610_86856_45218"" base_Class=""_18_0_1_ae502ce_1416076245609_299458_45217"" Text=""The mission performance shall be maintained under the weather environment defined in Table 1."" Id=""5.1.7""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414342348543_10_44130"" base_Class=""_18_0_1_ae502ce_1414342348543_871154_44129"" Text="""" Id=""5.1.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334773105_824679_44116"" base_Class=""_18_0_1_ae502ce_1414334773105_64547_44115"" Text=""The mission life shall be a minimum of 8 years"" Id=""5.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416079619193_170472_45678"" base_Class=""_18_0_1_ae502ce_1416079619193_764569_45677"" Text="""" Id=""5.8""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334891259_87434_44239"" base_Class=""_18_0_1_ae502ce_1414334891259_483824_44238"" Text="""" Id=""5.1.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416079685420_371494_45725"" base_Class=""_18_0_1_ae502ce_1416079685420_707746_45724"" Text="""" Id=""5.9""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416142168615_131536_46555"" base_Class=""_18_0_1_ae502ce_1416142168615_87885_46554"" Text="""" Id=""5.11""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416078823554_584647_45435"" base_Class=""_18_0_1_ae502ce_1416078823538_394849_45434"" Text=""Distribute Data to end users specified in Table 3."" Id=""5.7""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416076342937_912409_45260"" base_Class=""_18_0_1_ae502ce_1416076342937_712894_45259"" Text=""Monitor changes in mean forest temperature to +/- 2 deg C"" Id=""5.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416079711090_838646_45766"" base_Class=""_18_0_1_ae502ce_1416079711089_436609_45765"" Text="""" Id=""5.10""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416142322447_751070_46600"" base_Class=""_18_0_1_ae502ce_1416142322447_78754_46599"" Text="""" Id=""5.12""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334827159_728043_44198"" base_Class=""_18_0_1_ae502ce_1414334827159_300920_44197"" Text="""" Id=""5.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334745192_123972_44034"" base_Class=""_18_0_1_ae502ce_1414334745192_873951_44033"" Text="""" Id=""5.1.5""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421597694513_701553_47540"" base_Class=""_18_0_1_ae502ce_1421597694513_882355_47539"" Text="""" Id=""5.13""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414335048418_765537_44286"" base_Class=""_18_0_1_ae502ce_1414335048418_548130_44285"" Text="""" Id=""5.4""/>",
+_18_0_1_ae502ce_1409161510139_260462_14324,"The system shall detect and monitor forest fires in the United States and Canada while meeting specified performance criteria for image quality, detection time, false alarm rate, coverage, location accuracy, and operational resilience under defined weather conditions.","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409161510139_989275_14323"" name=""Detect and Monitor Forest Fires in US and Canada"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334780484_691427_44156"" name=""Image Quality""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334755617_965270_44074"" name=""Detection Time""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334891259_483824_44238"" name=""False Alarm Rate""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334745192_873951_44033"" name=""Coverage""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414342348543_871154_44129"" name=""Location Accuracy""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416076245609_299458_45217"" name=""Weather Environment""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409161510139_260462_14324"" base_Class=""_18_0_1_ae502ce_1409161510139_989275_14323"" Text=""The mission is"" Id=""5.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334780484_5416_44157"" base_Class=""_18_0_1_ae502ce_1414334780484_691427_44156"" Text="""" Id=""5.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334755617_798980_44075"" base_Class=""_18_0_1_ae502ce_1414334755617_965270_44074"" Text="""" Id=""5.1.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416076245610_86856_45218"" base_Class=""_18_0_1_ae502ce_1416076245609_299458_45217"" Text=""The mission performance shall be maintained under the weather environment defined in Table 1."" Id=""5.1.7""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414342348543_10_44130"" base_Class=""_18_0_1_ae502ce_1414342348543_871154_44129"" Text="""" Id=""5.1.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334891259_87434_44239"" base_Class=""_18_0_1_ae502ce_1414334891259_483824_44238"" Text="""" Id=""5.1.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334745192_123972_44034"" base_Class=""_18_0_1_ae502ce_1414334745192_873951_44033"" Text="""" Id=""5.1.5""/>",
+_18_0_1_ae502ce_1415638726238_280116_44927,"The forest monitoring system shall detect emerging fires and track temperature changes in specified US forest areas with twice-daily coverage, 50-meter resolution, 1-km geolocation accuracy, interpreted data delivery within 5 minutes, and 95% operational availability while meeting all defined performance, survivability, and cost requirements.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415638726238_901931_44926"" name=""Mission Requirements-SMAD Table 3-4"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415638805174_234101_44998"" name=""Performance"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415640091437_61293_45858"" name=""Weather""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415640116382_678218_45899"" name=""Resolution""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415640190654_836169_45940"" name=""Geo-location Accuracy""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639512207_53514_45456"" name=""User Equipment""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639616775_145426_45620"" name=""Regulations""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639326949_560310_45087"" name=""Interpretation""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639637913_398934_45702"" name=""Environment""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639351301_896611_45169"" name=""Secondary Missions""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639404598_117089_45292"" name=""System Availability""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639421743_416162_45333"" name=""Survivability""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639438248_928211_45374"" name=""Data Distribution""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639480898_645922_45415"" name=""Data Content, Form, and Format""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639538759_688959_45497"" name=""Cost""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415638813052_615694_45039"" name=""Coverage""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639660799_256065_45784"" name=""Development Constraints""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639607041_716642_45579"" name=""Risk""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639628351_240217_45661"" name=""Political""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639370645_445303_45210"" name=""Commanding""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639336699_343873_45128"" name=""Timeliness""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639378788_422484_45251"" name=""Mission Design Life""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639653264_383121_45743"" name=""Interfaces""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415639595918_820899_45538"" name=""Schedule""/>
+</packagedElement>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415638726238_280116_44927"" base_Class=""_18_0_1_ae502ce_1415638726238_901931_44926"" Text="""" Id=""34""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415640091437_350992_45859"" base_Class=""_18_0_1_ae502ce_1415640091437_61293_45858"" Text=""Work through light clouds"" Id=""34.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415640190654_125281_45941"" base_Class=""_18_0_1_ae502ce_1415640190654_836169_45940"" Text=""1 km geolocation accuracy "" Id=""34.1.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415638805174_588877_44999"" base_Class=""_18_0_1_ae502ce_1415638805174_234101_44998"" Text="""" Id=""34.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639512207_16795_45457"" base_Class=""_18_0_1_ae502ce_1415639512207_53514_45456"" Text=""10 X 20 cm display with zoom and touch controls, built-in GPS quality map"" Id=""34.12""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639404598_503805_45293"" base_Class=""_18_0_1_ae502ce_1415639404598_117089_45292"" Text=""95% excluding weather. 24 hour maximum downtime"" Id=""34.8""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639660799_943301_45785"" base_Class=""_18_0_1_ae502ce_1415639660799_256065_45784"" Text=""None"" Id=""34.20""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639616775_694367_45621"" base_Class=""_18_0_1_ae502ce_1415639616775_145426_45620"" Text=""Orbital debris, civil program regulations"" Id=""34.16""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639607041_862138_45580"" base_Class=""_18_0_1_ae502ce_1415639607041_716642_45579"" Text=""Probability of success&gt;90%"" Id=""34.15""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639421743_331265_45334"" base_Class=""_18_0_1_ae502ce_1415639421743_416162_45333"" Text=""Natural environment only. not in radiation belts."" Id=""34.9""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639637913_797158_45703"" base_Class=""_18_0_1_ae502ce_1415639637913_398934_45702"" Text=""Natural"" Id=""34.18""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415638813052_381275_45040"" base_Class=""_18_0_1_ae502ce_1415638813052_615694_45039"" Text=""Coverage of specified forest areas within the US at least twice daily."" Id=""34.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639336699_796910_45129"" base_Class=""_18_0_1_ae502ce_1415639336699_343873_45128"" Text=""Interpreted data to end user within 5 minutes"" Id=""34.4""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415640116382_836088_45900"" base_Class=""_18_0_1_ae502ce_1415640116382_678218_45899"" Text=""50 meter resolution"" Id=""34.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639326949_15236_45088"" base_Class=""_18_0_1_ae502ce_1415639326949_560310_45087"" Text=""Identify an emerging forest fire within 8 hours with less than 10% false positives"" Id=""34.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639653264_770953_45744"" base_Class=""_18_0_1_ae502ce_1415639653264_383121_45743"" Text=""Interoperable through NOAA ground stations"" Id=""34.19""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639378788_215584_45252"" base_Class=""_18_0_1_ae502ce_1415639378788_422484_45251"" Text=""8 years"" Id=""34.7""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639351301_671619_45170"" base_Class=""_18_0_1_ae502ce_1415639351301_896611_45169"" Text=""Monitor changes in mean forest temperature to +/- 2 C"" Id=""34.5""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639370645_540395_45211"" base_Class=""_18_0_1_ae502ce_1415639370645_445303_45210"" Text=""Commandable within 3 min of events. download units of stored coverage areas."" Id=""34.6""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639480898_899506_45416"" base_Class=""_18_0_1_ae502ce_1415639480898_645922_45415"" Text=""Location amd extent in lat/long for local plotting. avg temp for each 40 m2"" Id=""34.11""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639438248_638455_45375"" base_Class=""_18_0_1_ae502ce_1415639438248_928211_45374"" Text=""Up to 500 fire-monitoring offices + 2,000 rangers worldwide (max of 100 simultaneous users)"" Id=""34.10""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639538759_957337_45498"" base_Class=""_18_0_1_ae502ce_1415639538759_688959_45497"" Text=""Non-recurring&lt;$10M
+Recurring&lt;$3M/year"" Id=""34.13""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639628351_478059_45662"" base_Class=""_18_0_1_ae502ce_1415639628351_240217_45661"" Text=""Responsive to public demand for action"" Id=""34.17""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415639595918_205370_45539"" base_Class=""_18_0_1_ae502ce_1415639595918_820899_45538"" Text=""Operational within 3 years"" Id=""34.14""/>",
+_18_0_1_ae502ce_1415638805174_588877_44999,"The system shall work through light clouds, provide 50 meter resolution, and achieve 1 km geolocation accuracy.","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415638805174_234101_44998"" name=""Performance"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415640091437_61293_45858"" name=""Weather""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415640116382_678218_45899"" name=""Resolution""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1415640190654_836169_45940"" name=""Geo-location Accuracy""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415638805174_588877_44999"" base_Class=""_18_0_1_ae502ce_1415638805174_234101_44998"" Text="""" Id=""34.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415640091437_350992_45859"" base_Class=""_18_0_1_ae502ce_1415640091437_61293_45858"" Text=""Work through light clouds"" Id=""34.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415640190654_125281_45941"" base_Class=""_18_0_1_ae502ce_1415640190654_836169_45940"" Text=""1 km geolocation accuracy "" Id=""34.1.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1415640116382_836088_45900"" base_Class=""_18_0_1_ae502ce_1415640116382_678218_45899"" Text=""50 meter resolution"" Id=""34.1.2""/>",
+_18_0_1_ae502ce_1418498442781_192786_44948,"The system shall satisfy orbit requirements for operational orbit (including altitude and plane specifications), de-orbit, and transfer orbit.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498442781_980660_44947"" name=""Orbit Requirements"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498498411_320780_45070"" name=""Operational-orbit Requirement"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059438052_802751_48325"" name=""Orbit Altitude""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421604540580_845715_48146"" name=""Orbit Plane""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498480767_196848_44988"" name=""De-orbit Requirement""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498489425_793366_45029"" name=""Transfer-orbit Requirement""/>
+</packagedElement>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498442781_192786_44948"" base_Class=""_18_0_1_ae502ce_1418498442781_980660_44947"" Text="""" Id=""75""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421604540580_680973_48147"" base_Class=""_18_0_1_ae502ce_1421604540580_845715_48146"" Text="""" Id=""75.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498480767_695618_44989"" base_Class=""_18_0_1_ae502ce_1418498480767_196848_44988"" Text="""" Id=""75.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498489425_151698_45030"" base_Class=""_18_0_1_ae502ce_1418498489425_793366_45029"" Text="""" Id=""75.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1420059438052_248362_48326"" base_Class=""_18_0_1_ae502ce_1420059438052_802751_48325"" Text="""" Id=""75.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498498411_307915_45071"" base_Class=""_18_0_1_ae502ce_1418498498411_320780_45070"" Text="""" Id=""75.1""/>",
+_18_0_1_ae502ce_1418498498411_307915_45071,The system shall operate in an orbit at the specified altitude and within the specified orbital plane.,"<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498498411_320780_45070"" name=""Operational-orbit Requirement"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059438052_802751_48325"" name=""Orbit Altitude""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421604540580_845715_48146"" name=""Orbit Plane""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498498411_307915_45071"" base_Class=""_18_0_1_ae502ce_1418498498411_320780_45070"" Text="""" Id=""75.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421604540580_680973_48147"" base_Class=""_18_0_1_ae502ce_1421604540580_845715_48146"" Text="""" Id=""75.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1420059438052_248362_48326"" base_Class=""_18_0_1_ae502ce_1420059438052_802751_48325"" Text="""" Id=""75.1.1""/>",

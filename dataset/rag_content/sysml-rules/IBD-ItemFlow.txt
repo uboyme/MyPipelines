@@ -1,0 +1,37 @@
+In SysML’s Internal Block Diagram (IBD), ItemFlow is a specialization of InformationFlow, used to describe the types and directions of physical objects, energy, or data items transmitted through structural connectors (Connectors). Compared to the abstract nature of InformationFlow, ItemFlow emphasizes the specific “flowing content” and its implementation path along structural connections. In XMI representation, ItemFlow is modeled by the sysml:ItemFlow element, whose base_InformationFlow attribute references a pre-defined uml:InformationFlow element, which specifies the transmitted content, source, target, and the associated connector.
+
+Key Aspects of ItemFlow
+Each ItemFlow depends on a corresponding InformationFlow that clearly defines the conveyed property representing the transferred item—typically a uml:Class denoting information, signals, data, etc.
+
+These conveyed items should have unique identifiers (xmi:id) and be pre-defined within the model.
+
+For example, in a thermal control subsystem, "Heater Control" or "Temperature Signal" can be defined as conveyed items for control signals and measurement signals respectively.
+
+Structural Relationships
+The base_InformationFlow of an ItemFlow must explicitly specify informationSource and informationTarget, which are usually Ports or Properties.
+
+These elements should reside within concrete Blocks and be consistent with the actual UML Connector ends (ConnectorEnd) to properly associate the structural connection and information flow paths.
+
+Semantic Consistency Between Structure and Behavior
+To ensure semantic consistency, each InformationFlow is recommended to use the realizingConnector attribute to reference a uml:Connector element.
+
+This Connector represents the physical or logical path for information transmission in the structural diagram and typically consists of two ConnectorEnds corresponding to the InformationFlow’s source and target.
+
+Within the IBD, this structural mapping clarifies what is transmitted along which connection via the ItemFlow.
+
+Modeling Best Practices
+Each ItemFlow should have a clear name and use precise ConnectorEnd and propertyPath references to support model traceability and system verification.
+
+ItemFlow is particularly suitable for scenarios requiring modeling of concrete data or energy transmission, such as electric power, temperature signals, or control commands—whether physical entities or abstract information.
+
+When combined with FlowPort or FullPort, ItemFlow can further enhance directionality and type consistency, achieving more complete semantic modeling.
+
+Modeling Constraints and Considerations
+Modelers must ensure the conveyed items exist in the model and have logically clear contexts.
+
+It is invalid to create ItemFlows for classes or ports that are undefined or not bound to connectors, as this causes inconsistencies or verification failures.
+
+Especially during system simulation or code generation, the type information provided by ItemFlow is a critical modeling basis.
+
+Summary
+ItemFlow is an essential mechanism for structured, type-safe modeling of information/data transmission. It is suitable for system engineering projects with high fidelity requirements. By explicitly defining the transmitted item, connection path, and modeling context, ItemFlow builds a bridge between structural connectors and system behavior, significantly enhancing model expressiveness and verifiability.

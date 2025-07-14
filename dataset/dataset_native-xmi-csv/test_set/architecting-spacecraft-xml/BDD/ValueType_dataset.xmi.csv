@@ -1,0 +1,80 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1408718461933_437089_19279,The system shall represent drag force as a specialized type of force.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408718461933_686245_19278"" name=""Drag Force"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408724293813_752425_20073"" general=""_18_0_1_ae502ce_1408723801388_607116_19992""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408718461933_437089_19279"" base_DataType=""_18_0_1_ae502ce_1408718461933_686245_19278""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408723801388_607116_19992"" name=""Force"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408723801388_621365_19993,The system shall represent force as a real number.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408723801388_607116_19992"" name=""Force"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408724282051_337369_20070"">
+    <general href=""http://www.omg.org/spec/SysML/20181001/SysML.xmi#SysML_dataType.Real""/>
+  </generalization>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408723801388_621365_19993"" base_DataType=""_18_0_1_ae502ce_1408723801388_607116_19992""/>",
+_18_0_1_ae502ce_1408724509577_854132_20087,The system shall represent total force as a specialized type of force.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408724509577_108852_20086"" name=""Total Force"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408724524491_507437_20109"" general=""_18_0_1_ae502ce_1408723801388_607116_19992""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408724509577_854132_20087"" base_DataType=""_18_0_1_ae502ce_1408724509577_108852_20086""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408723801388_607116_19992"" name=""Force"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408724866246_39580_20202,Define Separation Force as a specialized type of Force for representing distinct force characteristics in separation scenarios.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408724866246_468312_20201"" name=""Separation Force"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408724878196_387114_20224"" general=""_18_0_1_ae502ce_1408723801388_607116_19992""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408724866246_39580_20202"" base_DataType=""_18_0_1_ae502ce_1408724866246_468312_20201""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408723801388_607116_19992"" name=""Force"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408725202113_726174_20343,The system shall define solar radiation as a specialized type of radiation.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408725202113_325740_20342"" name=""Solar Radiation"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408725282829_951722_20419"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408725202113_726174_20343"" base_DataType=""_18_0_1_ae502ce_1408725202113_325740_20342""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408724218528_865763_20048,The system shall define thrust as a type of force.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408724218528_353947_20047"" name=""Thrust"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408724301957_528198_20082"" general=""_18_0_1_ae502ce_1408723801388_607116_19992""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408724218528_865763_20048"" base_DataType=""_18_0_1_ae502ce_1408724218528_353947_20047""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408723801388_607116_19992"" name=""Force"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408725212285_456907_20367,Define EM Radiation as a specialized form of Radiation for precise system data representation.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408725212285_619432_20366"" name=""EM Radiation"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408725247464_135511_20413"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408725212285_456907_20367"" base_DataType=""_18_0_1_ae502ce_1408725212285_619432_20366""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408723807456_464992_20017,The system shall define GForce as a specialized kind of force.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408723807456_171679_20016"" name=""GForce"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408724299055_248744_20079"" general=""_18_0_1_ae502ce_1408723801388_607116_19992""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408723807456_464992_20017"" base_DataType=""_18_0_1_ae502ce_1408723807456_171679_20016""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408723801388_607116_19992"" name=""Force"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408723784649_936082_19969,The system shall consider any LV Force as a Force.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408723784649_648904_19968"" name=""LV Force"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408724296356_146585_20076"" general=""_18_0_1_ae502ce_1408723801388_607116_19992""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408723784649_936082_19969"" base_DataType=""_18_0_1_ae502ce_1408723784649_648904_19968""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408723801388_607116_19992"" name=""Force"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408725801981_553490_20729,Define emissions as a specialized form of radiation.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408725801981_199173_20728"" name=""Emissions"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408725878499_121276_20751"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408725801981_553490_20729"" base_DataType=""_18_0_1_ae502ce_1408725801981_199173_20728""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1413162145115_168406_45670,The system shall represent star light as a specialized form of radiation.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1413162145115_107871_45669"" name=""Star Light"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1413162170106_251143_45695"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1413162145115_168406_45670"" base_DataType=""_18_0_1_ae502ce_1413162145115_107871_45669""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"" xmi:type=""uml:DataType""/>"
+_18_1_ae502ce_1424545571212_152719_55861,Define Reflected Light as a specialized type of Radiation.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_1_ae502ce_1424545571212_540227_55860"" name=""Reflected Light"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_1_ae502ce_1424545612358_434870_55907"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_1_ae502ce_1424545571212_152719_55861"" base_DataType=""_18_1_ae502ce_1424545571212_540227_55860""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1413162696487_808013_45877,The system shall treat RF as a specific category of Radiation in all data representations.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1413162696487_780553_45876"" name=""RF"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1413162712945_343092_45899"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1413162696487_808013_45877"" base_DataType=""_18_0_1_ae502ce_1413162696487_780553_45876""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408725195514_126755_20319,The system shall represent radiation values as real numbers.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408725258118_175632_20416"">
+    <general href=""http://www.omg.org/spec/SysML/20181001/SysML.xmi#SysML_dataType.Real""/>
+  </generalization>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408725195514_126755_20319"" base_DataType=""_18_0_1_ae502ce_1408725195514_344689_20318""/>",
+_18_0_1_ae502ce_1419960766180_594631_46537,The system shall define the data rate unit megabits per second (mbps).,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1419960766180_334198_46536"" name=""mbps"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1419960802122_759131_46572"" general=""_18_0_1_ae502ce_1419960734902_100818_46510""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1419960766180_594631_46537"" base_DataType=""_18_0_1_ae502ce_1419960766180_334198_46536""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1419960734902_100818_46510"" name=""Data Rate"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1408725225187_934062_20391,The system shall define Thermal Radiation as a specialized type of Radiation for all thermal energy transfer calculations.,"<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408725225187_114886_20390"" name=""Thermal Radiation"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408725289615_621819_20422"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1408725225187_934062_20391"" base_DataType=""_18_0_1_ae502ce_1408725225187_114886_20390""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1408725195514_344689_20318"" name=""Radiation"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1419959276703_700600_46370,"The system shall represent a shape with dimensions for length, width, and height, each measured in metres.","<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1419959276703_281931_46369"" name=""Shape"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419959322637_757932_46394"" name=""length"" visibility=""public"" type=""_18_0_1_ae502ce_1419977713222_73423_50384""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419959330079_435405_46395"" name=""width"" visibility=""public"" type=""_18_0_1_ae502ce_1419977713222_73423_50384""/>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1419959335273_419417_46396"" name=""height"" visibility=""public"" type=""_18_0_1_ae502ce_1419977713222_73423_50384""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1419959276703_700600_46370"" base_DataType=""_18_0_1_ae502ce_1419959276703_281931_46369""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1419977713222_73423_50384"" name=""metre"" xmi:type=""uml:DataType""/>"
+_18_0_1_ae502ce_1419963373801_942869_47896,The system shall restrict the status of an item to COTS or Developed Item.,"<packagedElement xmi:type=""uml:Enumeration"" xmi:id=""_18_0_1_ae502ce_1419963373801_939256_47895"" name=""Status Kind"">
+  <ownedLiteral xmi:type=""uml:EnumerationLiteral"" xmi:id=""_18_0_1_ae502ce_1419963395883_679263_47919"" name=""COTS""/>
+  <ownedLiteral xmi:type=""uml:EnumerationLiteral"" xmi:id=""_18_0_1_ae502ce_1419963401234_309917_47921"" name=""Develoed Item""/>
+</packagedElement>
+<sysml:ValueType xmi:id=""_18_0_1_ae502ce_1419963373801_942869_47896"" base_DataType=""_18_0_1_ae502ce_1419963373801_939256_47895""/>",

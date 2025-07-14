@@ -1,0 +1,23 @@
+In SysML requirements modeling, the Requirement is the most fundamental modeling element used to express the conditions or capabilities that a system must satisfy throughout development, design, manufacturing, and verification processes. SysML extends the UML Class element by defining the sysml:Requirement stereotype, integrating general modeling language constructs with engineering requirement semantics, thereby enabling modeling tools to express both system structure and requirement logic simultaneously.
+
+In the .xmi file, a Requirement exists as a uml:Class element, semantically annotated with the sysml:Requirement stereotype. Each sysml:Requirement is bound to a specific uml:Class instance via the base_Class attribute, establishing a unique identifier and structural information for the requirement. This uml:Class typically includes a name attribute to denote the requirement’s name. The sysml:Requirement stereotype itself defines two key attributes:
+
+Id: The requirement identifier, used for uniquely identifying the requirement item. This identifier usually adopts a hierarchical numbering scheme (e.g., 3.1, 3.1.4, 75.1.2) to express the requirement’s hierarchical structure, facilitating management and traceability.
+
+Text: The textual content of the requirement, which is the natural language description that clearly states the functions, performances, constraints, or other conditions the system must meet. This field serves as a direct explanation for the engineering team and is the primary basis for requirement review and verification.
+
+Structurally, SysML allows multiple child uml:Class elements to be nested via the nestedClassifier mechanism, thereby forming a structured representation of parent and child requirements. Each subclass can be marked as a new Requirement instance with its own unique identifier and text. This nesting structure not only reflects the logical decomposition of requirements but also facilitates modeling tools in automatically organizing the requirement tree structure (such as expanding packages in Requirements Diagrams).
+
+Key modeling rules and considerations for using Requirement include:
+
+Unique binding to a UML Class: Each sysml:Requirement must uniquely bind to one base_Class element; multiple bindings are prohibited to avoid ambiguity.
+
+Logical consistency of requirement identifiers: Hierarchical numbering (e.g., 3.1.4, 75.1.2) should reflect the semantic structure of the system requirements and clearly express parent-child relationships.
+
+Clear, standardized, and verifiable textual descriptions: The Text attribute content should follow engineering requirement writing standards (such as IEEE 830 or INCOSE formats) to ensure that the requirements are measurable, traceable, and testable.
+
+Support for layered requirement structuring: Parent-child logical and structural relationships can be represented through nested classes, but nested classes must also be properly annotated with the sysml:Requirement stereotype.
+
+Graphical representation support: In modeling tools, requirements are typically displayed as boxes showing the Id and Text, and linked to other model elements via dependency relationships (e.g., deriveReqt, refine, satisfy), supporting full lifecycle traceability.
+
+In summary, Requirement modeling in SysML provides a standardized and structured way for systems engineering to express requirements. This approach not only visualizes and manages requirements but also deeply integrates them with other model elements such as structure, behavior, and constraints, supporting a closed-loop system development process. Modelers should appropriately apply the Requirement stereotype and nesting mechanisms, combined with hierarchical numbering and clear textual descriptions, to build a logically rigorous, hierarchically clear, and content-complete requirements modeling framework.

@@ -1,0 +1,23 @@
+Modeling Rules for Stakeholders in UCD
+In the Use Case Diagram (UCD), Stakeholders are typically modeled as Actors, representing entities external to the system that interact with it. These can be people, organizations, systems, or other interest groups. The definition of an Actor must clearly specify its name and identity to ensure that a particular stakeholder is uniquely identified within the model. For example, the Fire Department is defined as an Actor using the <packagedElement xmi:type="uml:Actor" ... name="Fire Department"/> construct.
+
+The attributes of an Actor can be further refined by associations or extensions that express its specific roles and responsibilities. In SysML or UML, an Actor can be linked via generalization relationships to more specialized role classes (such as “Viewpoint” or “View” classes), forming a hierarchy that reflects different stakeholder perspectives and concerns within the system. For instance, in the example, “Fire Department Viewpoint” and “Fire Department View” are connected through generalization relationships to the “Fire Department” Actor, supporting the expression of requirements and separation of views.
+
+When modeling Stakeholders, Actors should be connected to Use Cases via association relationships, reflecting the stakeholders’ requirements for or participation in system functions. Use Cases are defined by <packagedElement xmi:type="uml:UseCase" ...>. The relationships between Stakeholders (Actors) and Use Cases are typically expressed as Associations or Dependencies, indicating how stakeholders trigger or engage with system behavior. For example, there is an association between the “Fire Department” Actor and the Use Case “Detect and Monitor Forest Fires in US and Canada,” showing that this stakeholder needs or participates in that system functionality.
+
+Moreover, modeling the internal attributes of an Actor is an important aspect, especially when refining the composition of a Stakeholder. In the example, the Fire Department Actor contains multiple ownedAttribute elements, described via composite aggregation (aggregation="composite") to represent its constituent subparts (PartProperties). This supports structured and hierarchical management of the model. These attributes usually identify the concrete entities or subsystems that compose the Stakeholder, helping to illustrate its internal organizational structure.
+
+To enhance model readability and contextual understanding, related elements often include comments that describe business meanings and design intentions. The example uses <ownedComment> to explain the business objectives of each viewpoint and role, facilitating the clarification and communication of stakeholder requirements.
+
+Summary of Stakeholder Modeling Rules in UCD
+Clear Actor Definition: Each Stakeholder must be defined as a unique Actor element with a clear name and identifier.
+
+Hierarchical Role Expression: Use Generalization relationships to establish hierarchical structures of viewpoints and views, meeting the needs of diverse stakeholder perspectives.
+
+Use Case Association: Stakeholders must be connected to system Use Cases through associations to reflect requirements involvement and trigger relationships.
+
+Internal Structure Refinement: Describe the internal composition of Actors via composite aggregation attributes, showing specific constituent parts of the stakeholder.
+
+Additional Annotations: Use comments to explain business goals and design background, enhancing semantic clarity.
+
+These rules ensure that Stakeholder modeling in UCD is systematic, hierarchical, and comprehensible, facilitating subsequent system requirements analysis and design processes.

@@ -1,0 +1,62 @@
+In SysML’s Internal Block Diagram (IBD), a Connector is used to represent structural connections between internal elements of the system. These connectors typically link different parts or ports to express physical connections, signal transmission, energy flow, or other structural or behavioral dependencies among components. Connectors are one of the core modeling elements in IBDs, providing a clear depiction of communication and coupling relationships within the system.
+
+Connector Definition and XMI Representation
+A Connector is defined within a Block, manifested as an <ownedConnector> child element inside the Block’s uml:Class element.
+
+Each Connector usually contains two <end> elements pointing to the connected parts or ports.
+
+Each ConnectorEnd has a role attribute specifying the connected property, while the optional partWithPort attribute indicates the connection is established on a port of a particular part.
+
+For connections involving nested structures—such as ports or properties of parts nested within other parts—<sysml:NestedConnectorEnd> must be used, with the propertyPath attribute explicitly defining the connection path.
+
+Handling Nested Connections
+When a connector spans multiple nested levels (e.g., connecting a subpart’s subpart), the use of sysml:NestedConnectorEnd is mandatory.
+
+The propertyPath records the path from the top-level Block down through successive nested properties, with multiple nested property IDs separated by spaces.
+
+This mechanism ensures that modeling tools can accurately locate connector endpoints, which is critical for multi-level hierarchical structures.
+
+Failure to correctly set nested paths can lead to model errors or ambiguous behavioral semantics.
+
+Semantic and Modeling Rules for Connectors
+Both endpoints of a Connector must be declared within the current Block’s scope; connections cannot cross into other Blocks.
+
+Connected properties or ports should have matching types or consistent communication semantics—for example, connecting two ports of the same ValueType, or connecting a ProxyPort with its corresponding InterfaceBlock type port.
+
+Self-connections (connecting a property to itself) should be avoided unless explicitly intended and clearly documented within the model.
+
+Modeling Best Practices
+It is recommended to name Connectors, especially in complex system structures with numerous connections, to improve model readability and maintainability.
+
+When connecting ports, prioritize using ProxyPort combined with InterfaceBlock to enhance modularity and decoupling.
+
+Before defining Connectors, ensure all involved properties and ports are defined to avoid referencing non-existent or undefined model elements, preventing modeling errors.
+
+Special Cases and Extensions
+If the Connector represents a condition where two property values remain equal—such as establishing equality constraints between simulation parameters—the BindingConnector stereotype can be applied.
+
+In IBDs, such binding connectors are typically used to synchronize parameter values or model structural consistency.
+
+For modeling physical or information flows (e.g., electrical current, data communication), ItemFlow or InformationFlow may be defined on the Connector, combined with directional modeling on ports using FlowProperty.
+
+XMI Structure Overview
+The main elements involved in representing a Connector in XMI include:
+
+uml:Connector (the connector itself)
+
+uml:ConnectorEnd (the two connection endpoints)
+
+Optional sysml:BindingConnector stereotype (for binding connectors)
+
+sysml:NestedConnectorEnd (for nested path specification)
+
+The use of propertyPath depends on whether the connection path involves nested parts.
+
+Precise modeling of these structures is essential for model interoperability (e.g., XMI export) and tool compatibility.
+
+Summary
+Connectors in IBD serve not only as structural links but also express the hierarchical nature of the model. Correct and rigorous use of Connectors—adhering to rules regarding nested paths, type consistency, and connection boundaries—is critical to ensuring the correctness and engineering feasibility of SysML models.
+
+
+
+

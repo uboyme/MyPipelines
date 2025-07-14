@@ -1,0 +1,14 @@
+In SysML’s Block Definition Diagram (BDD), ValueType is a special data type used to describe quantities with explicit numerical meaning within the system, such as physical quantities and units. It is typically represented in the model as a uml:DataType element and distinguished from ordinary data types and classes by the sysml:ValueType stereotype.
+
+Key points in the definition of ValueType include:
+
+First, a ValueType appears in the XMI file as a uml:DataType element with a unique xmi:id and a corresponding name attribute, such as “Drag Force” or “Force” in examples. This represents the actual data type entity corresponding to the ValueType. The ValueType is linked to this uml:DataType element via the sysml:ValueType stereotype, i.e., the base_DataType property points to the associated uml:DataType, thereby integrating SysML semantics with UML.
+
+Second, ValueTypes can inherit from other data types, enabling hierarchical modeling of numerical types. For example, in the case, “Drag Force” inherits from “Force,” which in turn inherits from the standard SysML library’s Real type. This inheritance is expressed through generalization elements, allowing reuse and extension of different numerical types within the model, in accordance with object-oriented design principles.
+
+Additionally, ValueTypes generally do not contain complex behaviors (operations) or states but focus on defining their numerical properties and structure. They are essentially immutable, emphasizing the semantics of the value rather than object identity or lifecycle.
+
+Finally, ValueTypes are designed for integration with other model elements, such as property types in Blocks, which can directly use the numerical types defined by ValueTypes. This ensures consistency and standardization of data types across the system model.
+
+In summary, the modeling rules for ValueType in BDD emphasize constructing hierarchical data types through inheritance, applying the SysML ValueType stereotype to uml:DataType elements, and focusing on the expression of values. These rules meet systems engineering requirements for precise definition of physical quantities and units.
+

@@ -1,0 +1,101 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1409004081554_658210_13562,"The system shall provide forest fire monitoring and data services to minimize loss of life and property, while satisfying mission requirements within cost and schedule constraints and ensuring spacecraft health and safety.","<packagedElement xmi:type=""uml:Package"" xmi:id=""_17_0_5_ae502ce_1404310812161_866217_12484"" name=""Viewpoints"">
+  <ownedComment xmi:type=""uml:Comment"" xmi:id=""_18_5_1_ae502ce_1499620256641_416665_52358"" body=""Loss of life &amp; property due to fire""/>
+  <ownedComment xmi:type=""uml:Comment"" xmi:id=""_18_5_1_ae502ce_1499620560717_709467_52373"" body=""Extinguish fire with minimal loss of life &amp; property""/>
+  <ownedComment xmi:type=""uml:Comment"" xmi:id=""_18_5_1_ae502ce_1499620913608_246452_52376"" body=""Satisfy mission req'ts within cost &amp; schedule""/>
+  <ownedComment xmi:type=""uml:Comment"" xmi:id=""_18_5_1_ae502ce_1499621127746_610384_52380"" body=""System design that satisfies req's within cost &amp; schedule""/>
+  <ownedComment xmi:type=""uml:Comment"" xmi:id=""_18_5_1_ae502ce_1499621383015_917770_52383"" body=""Operate Spacecraft to meet mission objectives""/>
+  <packagedElement xmi:type=""uml:Actor"" xmi:id=""_18_0_1_ae502ce_1409003868986_82055_13428"" name=""Sponsor""/>
+  <packagedElement xmi:type=""uml:Actor"" xmi:id=""_18_0_1_ae502ce_1409003908674_676820_13451"" name=""Fire Department""/>
+  <packagedElement xmi:type=""uml:Actor"" xmi:id=""_18_0_1_ae502ce_1409003914407_252114_13473"" name=""Forest Service""/>
+  <packagedElement xmi:type=""uml:Actor"" xmi:id=""_18_0_1_ae502ce_1409003941809_166401_13495"" name=""Program Manager""/>
+  <packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1409004035768_902734_13556"">
+    <client xmi:idref=""_18_0_1_ae502ce_1409003908674_676820_13451""/>
+    <supplier xmi:idref=""_18_0_1_ae502ce_1408738254668_175396_21510""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409004817329_450685_13739"" name=""Forest Service Viewpoint""/>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409004949581_560620_13781"" name=""Forest Service View"">
+    <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1416091268178_31219_49855"" general=""_18_0_1_ae502ce_1409004817329_450685_13739""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Actor"" xmi:id=""_18_0_1_ae502ce_1409005153699_379414_13825"" name=""Development Contractor""/>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005332087_561420_13863"" name=""Development Contractor View"">
+    <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1416091264467_376122_49842"" general=""_18_0_1_ae502ce_1409005332087_437791_13864""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005332087_437791_13864"" name=""Development Contractor Viewpoint""/>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005337859_445366_13883"" name=""Fire Department View"">
+    <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1416091271130_611005_49868"" general=""_18_0_1_ae502ce_1409005337859_325154_13884""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005337859_325154_13884"" name=""Fire Department Viewpoint""/>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005343085_379444_13903"" name=""Sponsor View"">
+    <ownedComment xmi:type=""uml:Comment"" xmi:id=""_18_1_ae502ce_1465485738120_275227_49024"" body=""This is the sponsor view"">
+      <annotatedElement xmi:idref=""_18_0_1_ae502ce_1409005343085_379444_13903""/>
+    </ownedComment>
+    <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1416091273955_426677_49881"" general=""_18_0_1_ae502ce_1409005343085_528_13904""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005343085_528_13904"" name=""Sponsor Viewpoint""/>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005346018_919029_13923"" name=""Program Mgr View"">
+    <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1416091278099_951860_49894"" general=""_18_0_1_ae502ce_1409005346018_700244_13924""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409005346018_700244_13924"" name=""Program Mgr Viewpoint""/>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416091129002_960588_49741"" name=""Operator Viewpoint""/>
+  <packagedElement xmi:type=""uml:Actor"" xmi:id=""_18_0_1_ae502ce_1416091142977_218896_49770"" name=""Operator""/>
+  <packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416091183201_199375_49798"" name=""Operator View"">
+    <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_1_ae502ce_1423365768942_822253_53203"" general=""_18_0_1_ae502ce_1416091129002_960588_49741""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Association"" xmi:id=""_18_0_1_ae502ce_1421596778976_980746_47114"">
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596778976_807979_47115""/>
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596778976_71536_47116""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596778976_807979_47115""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596778976_71536_47116""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596778976_807979_47115"" visibility=""public"" type=""_18_0_1_ae502ce_1421596384113_41036_46946"" association=""_18_0_1_ae502ce_1421596778976_980746_47114""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596778976_71536_47116"" visibility=""public"" type=""_18_0_1_ae502ce_1409003914407_252114_13473"" association=""_18_0_1_ae502ce_1421596778976_980746_47114""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Association"" xmi:id=""_18_0_1_ae502ce_1421596821239_412885_47171"">
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596821239_364268_47172""/>
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596821239_101347_47173""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596821239_364268_47172""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596821239_101347_47173""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596821239_364268_47172"" visibility=""public"" type=""_18_0_1_ae502ce_1421596702972_557276_47028"" association=""_18_0_1_ae502ce_1421596821239_412885_47171""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596821239_101347_47173"" visibility=""public"" type=""_18_0_1_ae502ce_1416091142977_218896_49770"" association=""_18_0_1_ae502ce_1421596821239_412885_47171""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Association"" xmi:id=""_18_0_1_ae502ce_1421596915139_150458_47291"">
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596915139_866631_47292""/>
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596915139_215283_47293""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596915139_866631_47292""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596915139_215283_47293""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596915139_866631_47292"" visibility=""public"" type=""_18_0_1_ae502ce_1421596845157_931862_47231"" association=""_18_0_1_ae502ce_1421596915139_150458_47291""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596915139_215283_47293"" visibility=""public"" type=""_18_0_1_ae502ce_1416091142977_218896_49770"" association=""_18_0_1_ae502ce_1421596915139_150458_47291""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Association"" xmi:id=""_18_0_1_ae502ce_1421596918321_9930_47316"">
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596918321_482481_47317""/>
+    <memberEnd xmi:idref=""_18_0_1_ae502ce_1421596918321_345135_47318""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596918321_482481_47317""/>
+    <navigableOwnedEnd xmi:idref=""_18_0_1_ae502ce_1421596918321_345135_47318""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596918321_482481_47317"" visibility=""public"" type=""_18_0_1_ae502ce_1421596866747_581518_47255"" association=""_18_0_1_ae502ce_1421596918321_9930_47316""/>
+    <ownedEnd xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1421596918321_345135_47318"" visibility=""public"" type=""_18_0_1_ae502ce_1416091142977_218896_49770"" association=""_18_0_1_ae502ce_1421596918321_9930_47316""/>
+  </packagedElement>
+  <packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_1_ae502ce_1465485553396_387647_49018"">
+    <client xmi:idref=""_18_0_1_ae502ce_1409005343085_379444_13903""/>
+    <supplier xmi:idref=""_18_0_1_ae502ce_1409009564638_685815_14256""/>
+  </packagedElement>
+</packagedElement>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1408738254668_175396_21510"" name=""Fire Department"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1416079292588_74643_45584"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1416079103852_399632_45480"" association=""_18_0_1_ae502ce_1416079292588_642640_45583"">
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1416079443385_618742_45648"" value=""*""/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1416079296300_205791_45610"" visibility=""public"" aggregation=""composite"" type=""_18_0_1_ae502ce_1416079199464_19487_45541"" association=""_18_0_1_ae502ce_1416079296300_164784_45609"">
+    <upperValue xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_0_1_ae502ce_1416079433050_921686_45642"" value=""*""/>
+  </ownedAttribute>
+  <ownedConnector xmi:type=""uml:Connector"" xmi:id=""_18_1_ae502ce_1442599545992_446550_47350"" visibility=""public"">
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_1_ae502ce_1442599545992_428906_47351"" role=""_18_0_1_ae502ce_1416079292588_74643_45584""/>
+    <end xmi:type=""uml:ConnectorEnd"" xmi:id=""_18_1_ae502ce_1442599545992_908602_47352"" role=""_18_0_1_ae502ce_1416079296300_205791_45610""/>
+  </ownedConnector>
+</packagedElement>
+<MD_Customization_for_SysML__additional_stereotypes:PartProperty xmi:id=""_18_0_1_ae502ce_1416079292650_305018_45592"" base_Property=""_18_0_1_ae502ce_1416079292588_74643_45584""/>
+<MD_Customization_for_SysML__additional_stereotypes:PartProperty xmi:id=""_18_0_1_ae502ce_1416079296316_917821_45618"" base_Property=""_18_0_1_ae502ce_1416079296300_205791_45610""/>
+<sysml:Block xmi:id=""_18_0_1_ae502ce_1408738254668_286215_21511"" base_Class=""_18_0_1_ae502ce_1408738254668_175396_21510""/>
+<packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596384113_41036_46946"" name=""Detect and Monitor Forest Fires in US and Canada"">
+  <include xmi:type=""uml:Include"" xmi:id=""_18_0_1_ae502ce_1421596805481_137166_47141"" visibility=""public"" addition=""_18_0_1_ae502ce_1421596702972_557276_47028""/>
+</packagedElement>
+<packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596702972_557276_47028"" name=""Provide Forest Fire Data in Near Real Time""/>
+<packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596845157_931862_47231"" name=""Archive Data""/>
+<packagedElement xmi:type=""uml:UseCase"" xmi:id=""_18_0_1_ae502ce_1421596866747_581518_47255"" name=""Monitor and Maintain Health &amp; Safety of FireSat II""/>"

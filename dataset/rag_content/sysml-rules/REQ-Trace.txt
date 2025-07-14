@@ -1,0 +1,36 @@
+In SysML requirements modeling, the Trace relationship is used to represent traceability links between requirements themselves or between requirements and other model elements. It is a crucial tool for requirements management and verification. Typically, Trace is implemented as a uml:Abstraction element, with the following fundamental usage and rules:
+
+Structure Implementation of Trace
+The Trace relationship is usually represented in the XMI file as a uml:Abstraction element, which contains two core attributes: client and supplier. The client refers to the traced (dependent) requirement element, while the supplier refers to the source requirement or model element being traced to. SysML further specifies this uml:Abstraction as a Trace type through the <sysml:Trace> stereotype tag, which references the corresponding uml:Abstraction via the base_Abstraction attribute.
+
+Target and Context of Trace
+Trace commonly connects two sysml:Requirement elements, indicating that one requirement originates from or is associated with another.
+
+It can also connect requirements to other system model elements (such as classes or components), to demonstrate the mapping between requirements and design elements.
+
+Requirement elements themselves reference UML Class elements via the base_Class attribute, serving as the concrete implementation carrier of the requirement.
+
+Hierarchy and Nesting
+Requirements models often adopt layered, nested structures to organize requirements. Trace relationships can be established across different hierarchy levels, such as tracing from top-level requirements to more detailed child requirements, supporting decomposition and refined management.
+
+Requirement ID and Text Attributes
+Each sysml:Requirement contains an Id field, which uniquely identifies the requirement number, and a Text field describing the requirement content. The Trace relationship does not directly affect these attributes but helps clarify the logical connections among requirements by linking them.
+
+Application Scenarios of Trace
+Requirements Traceability: Enables source tracking between requirements, facilitating change management and verification.
+
+Requirements Origin Analysis: Confirms which requirements underpin design decisions.
+
+Verification and Validation Support: Assists testing and validation activities to ensure design compliance with requirements.
+
+Typical XMI Representation of Trace
+Taking an example, the uml:Abstraction defines the Trace connection, with client and supplier corresponding respectively to the start and end requirements. The sysml:Trace stereotype binds this relationship via the base_Abstraction attribute, making it a SysML Trace instance.
+
+Representation in Modeling Tools
+In tools, Trace relationships may appear as connecting lines between two requirements or between requirements and other model elements.
+
+It is important to ensure uniqueness and clarity of requirement elements’ hierarchical structure so that Trace relationships are correctly established.
+
+Maintaining complete requirement IDs and textual descriptions is recommended to facilitate subsequent trace analysis.
+
+In summary, the core rule of SysML Trace modeling is to use the uml:Abstraction element to establish traceability links between requirements, explicitly defining the semantics with the sysml:Trace stereotype. This relationship supports hierarchical requirement management, change impact analysis, and design verification, ensuring traceability and standardization throughout the systems engineering process.

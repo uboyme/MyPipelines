@@ -1,0 +1,172 @@
+id,requirement,focus_element,related_elements
+_18_5_1_ae502ce_1499712055848_376913_54563,The project shall derive the mass requirement (3.1.1) from the launch vehicle compatibility requirement (5.2).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_5_1_ae502ce_1499712055848_520281_54562"">
+  <client xmi:idref=""_18_0_1_ae502ce_1409009622038_349215_14338""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414334827159_300920_44197""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_5_1_ae502ce_1499712055848_376913_54563"" base_Abstraction=""_18_5_1_ae502ce_1499712055848_520281_54562""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409009622038_349215_14338"" name=""Mass""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409009622038_93073_14339"" base_Class=""_18_0_1_ae502ce_1409009622038_349215_14338"" Text="""" Id=""3.1.1""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334827159_300920_44197"" name=""Launch Vehicle Compatibility""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334827159_728043_44198"" base_Class=""_18_0_1_ae502ce_1414334827159_300920_44197"" Text="""" Id=""5.2""/>"
+_18_0_1_ae502ce_1418499450621_70545_45270,"The spacecraft shall provide sufficient delta-V to achieve the required operational orbit (including specified altitude and plane), transfer orbit, and de-orbit parameters.","<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1418499450621_573398_45269"">
+  <client xmi:idref=""_18_0_1_ae502ce_1414339558428_698777_45830""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1418498442781_980660_44947""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1418499450621_70545_45270"" base_Abstraction=""_18_0_1_ae502ce_1418499450621_573398_45269""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339558428_698777_45830"" name=""DeltaV""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339558444_729022_45831"" base_Class=""_18_0_1_ae502ce_1414339558428_698777_45830"" Text="""" Id=""3.2.6""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498442781_980660_44947"" name=""Orbit Requirements"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498498411_320780_45070"" name=""Operational-orbit Requirement"">
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059438052_802751_48325"" name=""Orbit Altitude""/>
+    <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421604540580_845715_48146"" name=""Orbit Plane""/>
+  </nestedClassifier>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498480767_196848_44988"" name=""De-orbit Requirement""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498489425_793366_45029"" name=""Transfer-orbit Requirement""/>
+</packagedElement>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421604540580_680973_48147"" base_Class=""_18_0_1_ae502ce_1421604540580_845715_48146"" Text="""" Id=""75.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498480767_695618_44989"" base_Class=""_18_0_1_ae502ce_1418498480767_196848_44988"" Text="""" Id=""75.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498489425_151698_45030"" base_Class=""_18_0_1_ae502ce_1418498489425_793366_45029"" Text="""" Id=""75.3""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1420059438052_248362_48326"" base_Class=""_18_0_1_ae502ce_1420059438052_802751_48325"" Text="""" Id=""75.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498442781_192786_44948"" base_Class=""_18_0_1_ae502ce_1418498442781_980660_44947"" Text="""" Id=""75""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498498411_307915_45071"" base_Class=""_18_0_1_ae502ce_1418498498411_320780_45070"" Text="""" Id=""75.1""/>"
+_18_0_1_ae502ce_1420059537487_402094_48402,The requirement for Probability of Detection (Id 3.2.2) shall be derived from the requirement for Detection Time (Id 5.1.3).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1420059537487_21264_48401"">
+  <client xmi:idref=""_18_0_1_ae502ce_1414337881927_501954_45318""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414334755617_965270_44074""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1420059537487_402094_48402"" base_Abstraction=""_18_0_1_ae502ce_1420059537487_21264_48401""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337881927_501954_45318"" name=""Probability of Detection""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337881927_371056_45319"" base_Class=""_18_0_1_ae502ce_1414337881927_501954_45318"" Text="""" Id=""3.2.2""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334755617_965270_44074"" name=""Detection Time""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334755617_798980_44075"" base_Class=""_18_0_1_ae502ce_1414334755617_965270_44074"" Text="""" Id=""5.1.3""/>"
+_18_4_ae502ce_1490835018465_929649_51616,Derive the mass requirement (3.1.1) from the number of launch vehicles requirement (100).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_4_ae502ce_1490835018465_779924_51615"">
+  <client xmi:idref=""_18_0_1_ae502ce_1409009622038_349215_14338""/>
+  <supplier xmi:idref=""_18_1_ae502ce_1424291512579_758485_48444""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_4_ae502ce_1490835018465_929649_51616"" base_Abstraction=""_18_4_ae502ce_1490835018465_779924_51615""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409009622038_349215_14338"" name=""Mass""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409009622038_93073_14339"" base_Class=""_18_0_1_ae502ce_1409009622038_349215_14338"" Text="""" Id=""3.1.1""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424291512579_758485_48444"" name=""Number of Launch Vehicles""/>
+<sysml:Requirement xmi:id=""_18_1_ae502ce_1424291512579_849170_48445"" base_Class=""_18_1_ae502ce_1424291512579_758485_48444"" Text="""" Id=""100""/>"
+_18_0_1_ae502ce_1418499445972_64415_45257,The system's delta-v capability shall be derived from the system mass requirement.,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1418499445972_964205_45256"">
+  <client xmi:idref=""_18_0_1_ae502ce_1409009622038_349215_14338""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414339558428_698777_45830""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1418499445972_64415_45257"" base_Abstraction=""_18_0_1_ae502ce_1418499445972_964205_45256""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409009622038_349215_14338"" name=""Mass""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1409009622038_93073_14339"" base_Class=""_18_0_1_ae502ce_1409009622038_349215_14338"" Text="""" Id=""3.1.1""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414339558428_698777_45830"" name=""DeltaV""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414339558444_729022_45831"" base_Class=""_18_0_1_ae502ce_1414339558428_698777_45830"" Text="""" Id=""3.2.6""/>"
+_18_0_1_ae502ce_1420059631321_500431_48468,The system shall sense thermal emissions with a sensitivity less than TBD and a resolution of less than 3 miliiradians (80.3.1) to achieve the required probability of detection (3.2.2).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1420059631321_177863_48467"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419976632890_942000_49826""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414337881927_501954_45318""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1420059631321_500431_48468"" base_Abstraction=""_18_0_1_ae502ce_1420059631321_177863_48467""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976632890_942000_49826"" name=""Sensing""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976632890_928940_49827"" base_Class=""_18_0_1_ae502ce_1419976632890_942000_49826"" Text=""The sensor shall sense thermal emissions with a sensitivity less than TBD, and a resolution of less than 3 miliiradians."" Id=""80.3.1""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414337881927_501954_45318"" name=""Probability of Detection""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414337881927_371056_45319"" base_Class=""_18_0_1_ae502ce_1414337881927_501954_45318"" Text="""" Id=""3.2.2""/>"
+_18_0_1_ae502ce_1420059769133_399142_48682,The system shall sense thermal emissions with a sensitivity less than TBD and a resolution of less than 3 miliiradians at the specified orbit altitude.,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1420059769133_554488_48681"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419976632890_942000_49826""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1420059438052_802751_48325""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1420059769133_399142_48682"" base_Abstraction=""_18_0_1_ae502ce_1420059769133_554488_48681""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419976632890_942000_49826"" name=""Sensing""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419976632890_928940_49827"" base_Class=""_18_0_1_ae502ce_1419976632890_942000_49826"" Text=""The sensor shall sense thermal emissions with a sensitivity less than TBD, and a resolution of less than 3 miliiradians."" Id=""80.3.1""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059438052_802751_48325"" name=""Orbit Altitude""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1420059438052_248362_48326"" base_Class=""_18_0_1_ae502ce_1420059438052_802751_48325"" Text="""" Id=""75.1.1""/>"
+_18_0_1_ae502ce_1418498592479_785030_45109,Derive the Operational-orbit Requirement (75.1) including Orbit Altitude (75.1.1) and Orbit Plane (75.1.2) from the Coverage requirement (5.1.5).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1418498592479_170347_45108"">
+  <client xmi:idref=""_18_0_1_ae502ce_1418498498411_320780_45070""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414334745192_873951_44033""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1418498592479_785030_45109"" base_Abstraction=""_18_0_1_ae502ce_1418498592479_170347_45108""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498498411_320780_45070"" name=""Operational-orbit Requirement"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059438052_802751_48325"" name=""Orbit Altitude""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421604540580_845715_48146"" name=""Orbit Plane""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421604540580_680973_48147"" base_Class=""_18_0_1_ae502ce_1421604540580_845715_48146"" Text="""" Id=""75.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1420059438052_248362_48326"" base_Class=""_18_0_1_ae502ce_1420059438052_802751_48325"" Text="""" Id=""75.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498498411_307915_45071"" base_Class=""_18_0_1_ae502ce_1418498498411_320780_45070"" Text="""" Id=""75.1""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334745192_873951_44033"" name=""Coverage""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334745192_123972_44034"" base_Class=""_18_0_1_ae502ce_1414334745192_873951_44033"" Text="""" Id=""5.1.5""/>"
+_18_0_1_ae502ce_1418498658467_402817_45140,The spacecraft shall achieve a transfer orbit compatible with the launch vehicle.,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1418498658467_431840_45139"">
+  <client xmi:idref=""_18_0_1_ae502ce_1418498489425_793366_45029""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414334827159_300920_44197""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1418498658467_402817_45140"" base_Abstraction=""_18_0_1_ae502ce_1418498658467_431840_45139""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498489425_793366_45029"" name=""Transfer-orbit Requirement""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498489425_151698_45030"" base_Class=""_18_0_1_ae502ce_1418498489425_793366_45029"" Text="""" Id=""75.3""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334827159_300920_44197"" name=""Launch Vehicle Compatibility""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334827159_728043_44198"" base_Class=""_18_0_1_ae502ce_1414334827159_300920_44197"" Text="""" Id=""5.2""/>"
+_18_0_1_ae502ce_1419874569901_220986_47460,The number of spacecraft requirement (ID 79) shall be derived from the coverage requirement (ID 5.1.5).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1419874569901_144879_47459"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419874511369_518837_47410""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414334745192_873951_44033""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1419874569901_220986_47460"" base_Abstraction=""_18_0_1_ae502ce_1419874569901_144879_47459""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419874511369_518837_47410"" name=""Number of Spacecraft""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419874511369_841782_47411"" base_Class=""_18_0_1_ae502ce_1419874511369_518837_47410"" Text="""" Id=""79""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334745192_873951_44033"" name=""Coverage""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334745192_123972_44034"" base_Class=""_18_0_1_ae502ce_1414334745192_873951_44033"" Text="""" Id=""5.1.5""/>"
+_18_0_1_ae502ce_1419874573864_352890_47476,Derive the Number of Spacecraft requirement from the Revisit Time requirement.,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1419874573864_678112_47475"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419874511369_518837_47410""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1421603849823_24090_47821""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1419874573864_352890_47476"" base_Abstraction=""_18_0_1_ae502ce_1419874573864_678112_47475""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419874511369_518837_47410"" name=""Number of Spacecraft""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419874511369_841782_47411"" base_Class=""_18_0_1_ae502ce_1419874511369_518837_47410"" Text="""" Id=""79""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421603849823_24090_47821"" name=""Revisit Time""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421603849823_836284_47822"" base_Class=""_18_0_1_ae502ce_1421603849823_24090_47821"" Text="""" Id=""97""/>"
+_18_0_1_ae502ce_1419874578060_534452_47490,Derive the number of spacecraft requirement (ID:79) from the launch vehicle compatibility requirement (ID:5.2).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1419874578060_422198_47489"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419874511369_518837_47410""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414334827159_300920_44197""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1419874578060_534452_47490"" base_Abstraction=""_18_0_1_ae502ce_1419874578060_422198_47489""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419874511369_518837_47410"" name=""Number of Spacecraft""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419874511369_841782_47411"" base_Class=""_18_0_1_ae502ce_1419874511369_518837_47410"" Text="""" Id=""79""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334827159_300920_44197"" name=""Launch Vehicle Compatibility""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334827159_728043_44198"" base_Class=""_18_0_1_ae502ce_1414334827159_300920_44197"" Text="""" Id=""5.2""/>"
+_18_0_1_ae502ce_1419874936829_903352_47590,The Number of Spacecraft requirement shall be derived from the Mission Availability requirement.,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1419874936829_779315_47589"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419874511369_518837_47410""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1416142322447_78754_46599""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1419874936829_903352_47590"" base_Abstraction=""_18_0_1_ae502ce_1419874936829_779315_47589""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419874511369_518837_47410"" name=""Number of Spacecraft""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419874511369_841782_47411"" base_Class=""_18_0_1_ae502ce_1419874511369_518837_47410"" Text="""" Id=""79""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416142322447_78754_46599"" name=""Mission Availability""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416142322447_751070_46600"" base_Class=""_18_0_1_ae502ce_1416142322447_78754_46599"" Text="""" Id=""5.12""/>"
+_18_0_1_ae502ce_1419874970572_767997_47633,The system shall derive the number of spacecraft from the lifecycle cost requirement.,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1419874970572_95568_47632"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419874511369_518837_47410""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1416079685420_707746_45724""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1419874970572_767997_47633"" base_Abstraction=""_18_0_1_ae502ce_1419874970572_95568_47632""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419874511369_518837_47410"" name=""Number of Spacecraft""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419874511369_841782_47411"" base_Class=""_18_0_1_ae502ce_1419874511369_518837_47410"" Text="""" Id=""79""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416079685420_707746_45724"" name=""Lifecycle Cost""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1416079685420_371494_45725"" base_Class=""_18_0_1_ae502ce_1416079685420_707746_45724"" Text="""" Id=""5.9""/>"
+_18_1_ae502ce_1424291570733_905635_48503,"The number of launch vehicles shall be derived from the operational-orbit requirement, including its orbit altitude and orbit plane specifications.","<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_1_ae502ce_1424291570733_925767_48502"">
+  <client xmi:idref=""_18_1_ae502ce_1424291512579_758485_48444""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1418498498411_320780_45070""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_1_ae502ce_1424291570733_905635_48503"" base_Abstraction=""_18_1_ae502ce_1424291570733_925767_48502""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424291512579_758485_48444"" name=""Number of Launch Vehicles""/>
+<sysml:Requirement xmi:id=""_18_1_ae502ce_1424291512579_849170_48445"" base_Class=""_18_1_ae502ce_1424291512579_758485_48444"" Text="""" Id=""100""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498498411_320780_45070"" name=""Operational-orbit Requirement"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059438052_802751_48325"" name=""Orbit Altitude""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421604540580_845715_48146"" name=""Orbit Plane""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421604540580_680973_48147"" base_Class=""_18_0_1_ae502ce_1421604540580_845715_48146"" Text="""" Id=""75.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1420059438052_248362_48326"" base_Class=""_18_0_1_ae502ce_1420059438052_802751_48325"" Text="""" Id=""75.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498498411_307915_45071"" base_Class=""_18_0_1_ae502ce_1418498498411_320780_45070"" Text="""" Id=""75.1""/>"
+_18_1_ae502ce_1424291578446_682623_48522,The requirement for the number of launch vehicles (ID: 100) shall be derived from the requirement for the number of spacecraft (ID: 79).,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_1_ae502ce_1424291578446_730728_48521"">
+  <client xmi:idref=""_18_1_ae502ce_1424291512579_758485_48444""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1419874511369_518837_47410""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_1_ae502ce_1424291578446_682623_48522"" base_Abstraction=""_18_1_ae502ce_1424291578446_730728_48521""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424291512579_758485_48444"" name=""Number of Launch Vehicles""/>
+<sysml:Requirement xmi:id=""_18_1_ae502ce_1424291512579_849170_48445"" base_Class=""_18_1_ae502ce_1424291512579_758485_48444"" Text="""" Id=""100""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419874511369_518837_47410"" name=""Number of Spacecraft""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1419874511369_841782_47411"" base_Class=""_18_0_1_ae502ce_1419874511369_518837_47410"" Text="""" Id=""79""/>"
+_18_0_1_ae502ce_1421604109782_375891_47888,"Derive the revisit time requirement from the operational orbit requirements, including orbit altitude and orbit plane.","<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1421604109782_268785_47887"">
+  <client xmi:idref=""_18_0_1_ae502ce_1418498498411_320780_45070""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1421603849823_24090_47821""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1421604109782_375891_47888"" base_Abstraction=""_18_0_1_ae502ce_1421604109782_268785_47887""/>","<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1418498498411_320780_45070"" name=""Operational-orbit Requirement"">
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059438052_802751_48325"" name=""Orbit Altitude""/>
+  <nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421604540580_845715_48146"" name=""Orbit Plane""/>
+</nestedClassifier>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421604540580_680973_48147"" base_Class=""_18_0_1_ae502ce_1421604540580_845715_48146"" Text="""" Id=""75.1.2""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1420059438052_248362_48326"" base_Class=""_18_0_1_ae502ce_1420059438052_802751_48325"" Text="""" Id=""75.1.1""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1418498498411_307915_45071"" base_Class=""_18_0_1_ae502ce_1418498498411_320780_45070"" Text="""" Id=""75.1""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421603849823_24090_47821"" name=""Revisit Time""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421603849823_836284_47822"" base_Class=""_18_0_1_ae502ce_1421603849823_24090_47821"" Text="""" Id=""97""/>"
+_18_0_1_ae502ce_1418498601449_356817_45124,The system shall derive the revisit time requirement from the detection time requirement.,"<packagedElement xmi:type=""uml:Abstraction"" xmi:id=""_18_0_1_ae502ce_1418498601449_264100_45123"">
+  <client xmi:idref=""_18_0_1_ae502ce_1421603849823_24090_47821""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414334755617_965270_44074""/>
+</packagedElement>
+<sysml:DeriveReqt xmi:id=""_18_0_1_ae502ce_1418498601449_356817_45124"" base_Abstraction=""_18_0_1_ae502ce_1418498601449_264100_45123""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1421603849823_24090_47821"" name=""Revisit Time""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1421603849823_836284_47822"" base_Class=""_18_0_1_ae502ce_1421603849823_24090_47821"" Text="""" Id=""97""/>
+<nestedClassifier xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414334755617_965270_44074"" name=""Detection Time""/>
+<sysml:Requirement xmi:id=""_18_0_1_ae502ce_1414334755617_798980_44075"" base_Class=""_18_0_1_ae502ce_1414334755617_965270_44074"" Text="""" Id=""5.1.3""/>"

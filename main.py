@@ -30,7 +30,7 @@ import subprocess
 import traceback
 
 from config import API_KEY, PIPELINES_DIR, LOG_LEVELS
-
+from fastapi import UploadFile, File
 if not os.path.exists(PIPELINES_DIR):
     os.makedirs(PIPELINES_DIR)
 
@@ -125,7 +125,7 @@ async def load_module_from_path(module_name, module_path):
 
     try:
         # Read the module content
-        with open(module_path, "r") as file:
+        with open(module_path, "r",encoding="utf-8") as file:
             content = file.read()
 
         # Parse frontmatter
@@ -141,6 +141,9 @@ async def load_module_from_path(module_name, module_path):
             install_frontmatter_requirements(frontmatter["requirements"])
 
         # Load the module
+        if module_name in sys.modules:
+            del sys.modules[module_name]
+            
         spec = importlib.util.spec_from_file_location(module_name, module_path)
         module = importlib.util.module_from_spec(spec)
         print(f"➡️ Loading: {module_name} from {module_path}")
@@ -785,3 +788,20 @@ async def generate_openai_chat_completion(form_data: OpenAIChatCompletionForm):
                 }
 
     return await run_in_threadpool(job)
+@app.post("/v1/upload-xmi")
+@app.post("/upload-xmi")
+async def upload_xmi(file: UploadFile = File(...)):
+    """
+    接收来自 OpenWebUI 上传的 .xmi 文件，并保存到本地 uploaded_xmi 文件夹。
+    """
+    save_dir = os.path.join(os.getcwd(), "uploaded_xmi")
+    os.makedirs(save_dir, exist_ok=True)
+
+    file_path = os.path.join(save_dir, file.filename)
+    try:
+        contents = await file.read()
+        with open(file_path, "wb") as f:
+            f.write(contents)
+        return {"status": "success", "detail": f"XMI file saved to {file_path}"}
+    except Exception as e:
+        return {"status": "error", "detail": str(e)}

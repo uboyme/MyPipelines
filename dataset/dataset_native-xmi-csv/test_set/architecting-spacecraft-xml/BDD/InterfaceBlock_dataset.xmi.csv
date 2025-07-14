@@ -1,0 +1,28 @@
+id,requirement,focus_element,related_elements
+_18_1_ae502ce_1423410078232_694386_53923,The system shall provide an interface named 'PWR IF-a' with two interaction points named 'p1' and 'p2'.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1423410078231_794289_53922"" name=""PWR IF-a"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_1_ae502ce_1423410138591_517303_53948"" name=""p1"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_1_ae502ce_1423410143712_822180_53950"" name=""p2"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<sysml:InterfaceBlock xmi:id=""_18_1_ae502ce_1423410078232_694386_53923"" base_Class=""_18_1_ae502ce_1423410078231_794289_53922""/>
+<sysml:ProxyPort xmi:id=""_18_1_ae502ce_1423410138593_568951_53949"" base_Port=""_18_1_ae502ce_1423410138591_517303_53948""/>
+<sysml:ProxyPort xmi:id=""_18_1_ae502ce_1423410143713_640387_53951"" base_Port=""_18_1_ae502ce_1423410143712_822180_53950""/>",
+_18_0_1_ae502ce_1409014388334_438287_19193,The system shall provide an LV Electrical Interface comprising a low voltage power interface and a command and telemetry interface.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409014388334_928579_19192"" name=""LV Elecrictal I/F"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409014459127_488788_19230"" name=""lv power i/f"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409014469860_461580_19233"" name=""cmd&amp;tlm i/f"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<sysml:InterfaceBlock xmi:id=""_18_0_1_ae502ce_1409014388334_438287_19193"" base_Class=""_18_0_1_ae502ce_1409014388334_928579_19192""/>",
+_18_0_1_ae502ce_1409322435220_221822_15370,The system shall provide a command and telemetry interface comprising distinct command and telemetry communication channels.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409322435220_699700_15369"" name=""Cmd&amp;Tlm I/F"">
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409322595261_551757_15413"" name=""cmd i/f"" visibility=""public"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409322602532_518732_15416"" name=""tlm i/f"" visibility=""public"" aggregation=""composite""/>
+</packagedElement>
+<sysml:InterfaceBlock xmi:id=""_18_0_1_ae502ce_1409322435220_221822_15370"" base_Class=""_18_0_1_ae502ce_1409322435220_699700_15369""/>",
+_18_0_1_ae502ce_1413163250662_689251_45930,The Ground Track Interface shall support bidirectional exchange of radio frequency data.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1413163250662_580209_45929"" name=""Gnd Track I/F"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1413163275365_156839_45967"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+</packagedElement>
+<sysml:InterfaceBlock xmi:id=""_18_0_1_ae502ce_1413163250662_689251_45930"" base_Class=""_18_0_1_ae502ce_1413163250662_580209_45929""/>
+<sysml:FlowProperty xmi:id=""_18_0_1_ae502ce_1413163275365_549920_45968"" base_Property=""_18_0_1_ae502ce_1413163275365_156839_45967"" direction=""inout""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"" xmi:type=""uml:Class""/>"
+_18_0_1_ae502ce_1413163385985_893172_45976,The Ground Command and Data Interface shall support bidirectional flow of RF signals.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1413163385985_440939_45975"" name=""GndCmd&amp;Data I/F"">
+  <ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1413167209348_520610_43362"" visibility=""public"" type=""_18_0_1_ae502ce_1414674706370_708988_44691""/>
+</packagedElement>
+<sysml:InterfaceBlock xmi:id=""_18_0_1_ae502ce_1413163385985_893172_45976"" base_Class=""_18_0_1_ae502ce_1413163385985_440939_45975""/>
+<sysml:FlowProperty xmi:id=""_18_0_1_ae502ce_1413167209348_403625_43363"" base_Property=""_18_0_1_ae502ce_1413167209348_520610_43362"" direction=""inout""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1414674706370_708988_44691"" name=""RF"" xmi:type=""uml:Class""/>"

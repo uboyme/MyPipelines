@@ -1,0 +1,63 @@
+In XMI-formatted SysML models, model elements are represented by packagedElement as core nodes for various UML/SysML elements. Their attributes and relationships are expressed via nested child elements. Specifically for systems engineering modeling needs, key objects include Block, Property (especially ValueProperty, PartProperty, and ReferenceProperty), Port, Operation, and behavioral elements. The following rules apply to general SysML model construction compliant with this format, ensuring semantic accuracy and clear structure.
+
+1. Block Modeling Rules
+A Block is the primary modeling unit of a system, typically mapped as a packagedElement of type uml:Class, and stereotyped with sysml:Block for SysML semantics. Blocks represent physical or logical entities in the system. Modeling rules include:
+
+Each Block must define a unique xmi:id and name attribute to ensure element uniqueness and identifiability.
+
+A Block may own multiple attributes (ownedAttribute), which must specify their type (pointing to corresponding DataType or Class elements) and aggregation kind (e.g., composite or shared) to reflect part-whole or reference relationships.
+
+Blocks can define behaviors (ownedBehavior), such as state machines (StateMachine), associated via the classifierBehavior attribute to describe lifecycle or state transitions.
+
+Operations corresponding to the Block’s behavior are defined via ownedOperation, requiring clear operation names and visibility; these operations represent the Block’s functional responsibilities.
+
+Structural reuse and polymorphism are realized via inheritance (generalization), where child Blocks redefine parent properties using mechanisms like redefinedProperty, supporting refinement or overriding of attributes.
+
+2. Property Modeling Rules
+Properties are the core structural components of Blocks, describing intrinsic characteristics. SysML refines Properties based on semantic meaning:
+
+ValueProperty: Represents quantitative features of a Block, such as mass, power, or life, typically holding concrete values. ValueProperties should be stereotyped with MD_Customization_for_SysML__additional_stereotypes:ValueProperty and link their base_Property to the actual ownedAttribute.
+
+PartProperty: Represents internal parts composing the Block, reflecting composite relationships to other Blocks, indicating physical nesting. PartProperties must have aggregation kind composite and associate with specific sub-Block types, supporting hierarchical modeling.
+
+ReferenceProperty: Represents references to external elements, not ownership relationships, usually with aggregation kind shared. Used to describe dependencies, associations, or shared data relationships. Identified by the stereotype MD_Customization_for_SysML__additional_stereotypes:ReferenceProperty.
+
+3. Port Modeling Rules
+Ports define interface points for Blocks interacting with the external environment or other Blocks, representing physical or logical input/output connections. Modeling requirements include:
+
+Ports are a kind of ownedAttribute with type uml:Port, requiring clear names and visibility.
+
+The type attribute of Ports should reference defined interface classes or Blocks (e.g., LV electrical interface, ground command & data interface), ensuring semantic clarity of the interface.
+
+Aggregation kind is typically composite, indicating that the Port is part of the Block.
+
+It is recommended to set appropriate interface constraints and behavioral specifications on Ports to support interface consistency and interaction modeling.
+
+4. Operation Modeling Rules
+Operations define executable behavioral functions of a Block and are key to behavioral modeling:
+
+Each Operation should be defined in the Block’s ownedOperation section, with unique names and specified visibility.
+
+Operations may have parameters and return values; although not always fully expressed in XML fragments, complete definitions are recommended to support interface contracts.
+
+Operation names should be semantically clear and aligned with system functional requirements (e.g., “control attitude,” “manage faults”).
+
+Operations should be integrated with signals (Reception) and state machine trigger events to realize behavior-driven execution.
+
+5. Behavior and State Machine Modeling Rules
+Blocks may own state machine behaviors describing state transitions and lifecycle:
+
+State machines are linked via ownedBehavior nodes, of type uml:StateMachine, and should define comprehensive states, events, and transitions.
+
+The state machine is linked to the Block’s dynamic behavior through the classifierBehavior property.
+
+It is recommended to provide clear triggering conditions and behavior action descriptions for state machines to facilitate simulation and verification.
+
+6. Inheritance and Redefinition Rules
+To support layered system design and reuse:
+
+Inheritance among Blocks is realized through generalization, where child Blocks explicitly specify their parent via the general property.
+
+Child Blocks can refine or replace inherited properties from parent Blocks using the redefinedProperty mechanism, enhancing model flexibility and extensibility.
+
+The inheritance hierarchy should follow principles of clear layering and well-defined responsibilities, avoiding property conflicts and redundant definitions.

@@ -1,0 +1,74 @@
+InterfaceBlock is a key SysML modeling element used to define interface specifications, typically describing communication boundaries and interaction contracts between systems or subsystems. It is essentially a specialized class (uml:Class), distinguished by the stereotype sysml:InterfaceBlock. An InterfaceBlock mainly consists of properties (Ports or Properties) and ports (such as Port, ProxyPort, FlowProperty), reflecting the structural and behavioral characteristics of the interface.
+
+1. Definition and XMI Representation of InterfaceBlock
+In XMI format, an InterfaceBlock is represented as a uml:Class element stereotyped with sysml:InterfaceBlock. It is associated with a corresponding base class (base_Class attribute points to the Class’s xmi:id).
+
+The base class contains the concrete interface structure definitions, including ports and properties.
+
+2. Property and Port Definition Rules
+Interface elements defined in the base class associated with an InterfaceBlock are typically ownedAttribute elements, with types mostly uml:Port or uml:Property.
+
+These attributes must have explicit names that represent the meaning of data or signals in the interface (e.g., “p1”, “p2”, or properties referencing other classes).
+
+Visibility of these attributes is usually set to public to ensure interface openness.
+
+Aggregation kinds are generally composite (ports as composite parts) or default association relationships.
+
+3. Port Types and Stereotype Extensions
+Common port types within InterfaceBlock include:
+
+Port: Standard ports representing interface connection points.
+
+ProxyPort: Marked with the stereotype sysml:ProxyPort, indicating the port acts as a proxy, typically used to forward messages or signals. In examples, a ProxyPort is linked via the base_Port property to a specific Port in the base class.
+
+FlowProperty: Marked with the stereotype sysml:FlowProperty, representing properties with data flow direction, usually accompanied by a direction attribute (such as in, out, or inout) to specify data flow direction explicitly.
+
+4. Directionality and Data Flow Specifications
+For FlowProperty, the direction must be explicitly specified to indicate whether the data flow is input (in), output (out), or bidirectional (inout).
+
+The directionality of ports and properties is central to the interface specification, ensuring consistent understanding of data and signal flow between interacting parties.
+
+ProxyPorts typically serve as proxies for ports and do not individually specify direction; their corresponding base class Ports carry the responsibility for concrete data interactions.
+
+5. Association Types and Reuse
+InterfaceBlock supports type associations with other classes, e.g., the ownedAttribute in the base class may point to other classes via the type attribute, representing hierarchical and reusable interface structures.
+
+This association supports modular interface design, allowing complex interfaces to be composed of multiple sub-interfaces.
+
+Inheritance and implementation mechanisms can extend or refine InterfaceBlocks, enabling polymorphism of interfaces.
+
+6. Typical Structure Summary
+InterfaceBlock (sysml:InterfaceBlock)
+
+base_Class: points to the Class owning interface properties
+
+ownedAttribute (uml:Port or uml:Property)
+
+name: name of the port or property
+
+visibility: typically public
+
+aggregation: e.g., composite
+
+type: if associated with other classes, points to their xmi:id
+
+Stereotyped port extensions:
+
+ProxyPort (sysml:ProxyPort)
+
+base_Port: links to base class Port
+
+FlowProperty (sysml:FlowProperty)
+
+base_Property: links to base class Property
+
+direction: in / out / inout
+
+7. Modeling Recommendations
+Attribute and port names in the base class of an InterfaceBlock should accurately reflect interface semantics to ensure clarity of interface definitions.
+
+Port types and directions must be clearly defined to avoid ambiguities in interface usage.
+
+Appropriately use ProxyPort and FlowProperty stereotypes to enhance expressiveness and reusability of interfaces.
+
+Interface design should consider modularization and hierarchical structure to facilitate maintenance and scalability.

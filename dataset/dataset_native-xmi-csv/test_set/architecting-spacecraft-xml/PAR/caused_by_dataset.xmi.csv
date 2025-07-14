@@ -1,0 +1,253 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1419801299923_318792_47804,The system shall attribute any mission failure to a launch failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419801198664_984245_47696"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414075627655_440311_44652""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419801299923_318792_47804"" base_Element=""_18_0_1_ae502ce_1419801198664_984245_47696""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419801134204_389922_47633"" name=""Mission Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419801134220_599632_47659"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419801134220_503377_47660""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419801134204_809553_47634"" base_Class=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075627655_440311_44652"" name=""Launch Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075627686_613717_44678"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075627655_440311_44652""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075627686_953432_44679""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075627655_19678_44653"" base_Class=""_18_0_1_ae502ce_1414075627655_440311_44652""/>"
+_18_0_1_ae502ce_1419801338050_648954_47846,The system shall account for Trajectory Failures caused by Attitude Control Failures.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419801319595_885398_47823"">
+  <client xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1419800939187_832983_47455""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419801338050_648954_47846"" base_Element=""_18_0_1_ae502ce_1419801319595_885398_47823""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075717448_223240_44742"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075717448_905253_44743""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075717402_308257_44717"" base_Class=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419800939187_832983_47455"" name=""Attitude Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419800939203_972460_47481"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419800939187_832983_47455""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419800939203_700539_47482""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419800939187_147665_47456"" base_Class=""_18_0_1_ae502ce_1419800939187_832983_47455""/>"
+_18_0_1_ae502ce_1419801239520_703074_47742,The system shall ensure that a Trajectory Failure causes a Mission Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419801210177_711910_47714"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419801239520_703074_47742"" base_Element=""_18_0_1_ae502ce_1419801210177_711910_47714""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419801134204_389922_47633"" name=""Mission Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419801134220_599632_47659"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419801134220_503377_47660""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419801134204_809553_47634"" base_Class=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075717448_223240_44742"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075717448_905253_44743""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075717402_308257_44717"" base_Class=""_18_0_1_ae502ce_1414075717402_898899_44716""/>"
+_18_0_1_ae502ce_1419803457349_797644_51087,The system shall prevent Steady State Attitude Control Failure to avoid Trajectory Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419803357383_549606_50996"">
+  <client xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1419803260749_128381_50888""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419803457349_797644_51087"" base_Element=""_18_0_1_ae502ce_1419803357383_549606_50996""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075717448_223240_44742"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075717448_905253_44743""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075717402_308257_44717"" base_Class=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419803260749_128381_50888"" name=""Steady State Attitude Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419803260764_604526_50914"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419803260749_128381_50888""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419803260764_974016_50915""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419803260749_990213_50889"" base_Class=""_18_0_1_ae502ce_1419803260749_128381_50888""/>"
+_18_0_1_ae502ce_1419803460656_330094_51097,The system shall ensure that an Attitude Rate Control Failure causes a Trajectory Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419803361626_602261_51005"">
+  <client xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419803460656_330094_51097"" base_Element=""_18_0_1_ae502ce_1419803361626_602261_51005""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075717448_223240_44742"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075717448_905253_44743""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075717402_308257_44717"" base_Class=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419803290022_919121_50924"" name=""Attitude Rate Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419803290053_68863_50950"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419803290053_119386_50951""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419803290038_842157_50925"" base_Class=""_18_0_1_ae502ce_1419803290022_919121_50924""/>"
+_18_0_1_ae502ce_1419863273897_204306_45961,The Maintain Operations Failure shall cause a Mission Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419863206348_94057_45915"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414075801049_707269_44844""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419863273897_204306_45961"" base_Element=""_18_0_1_ae502ce_1419863206348_94057_45915""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419801134204_389922_47633"" name=""Mission Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419801134220_599632_47659"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419801134220_503377_47660""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419801134204_809553_47634"" base_Class=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075801049_707269_44844"" name=""Maintain Operations Fallure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075801080_182889_44870"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075801049_707269_44844""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075801080_207536_44871""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075801049_391175_44845"" base_Class=""_18_0_1_ae502ce_1414075801049_707269_44844""/>"
+_18_0_1_ae502ce_1419863276845_549547_45971,Ensure that Mission Failure is caused by Deploy Mechanism Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419863214523_676173_45924"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414075847599_826444_44876""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419863276845_549547_45971"" base_Element=""_18_0_1_ae502ce_1419863214523_676173_45924""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419801134204_389922_47633"" name=""Mission Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419801134220_599632_47659"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419801134220_503377_47660""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419801134204_809553_47634"" base_Class=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075847599_826444_44876"" name=""Deploy Mechanism Falure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075847631_396316_44902"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075847599_826444_44876""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075847631_102369_44903""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075847599_72328_44877"" base_Class=""_18_0_1_ae502ce_1414075847599_826444_44876""/>"
+_18_0_1_ae502ce_1419863279981_148139_45981,The system shall ensure that a Provide Data Failure causes a Mission Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419863231075_363173_45933"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414075780441_686351_44812""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419863279981_148139_45981"" base_Element=""_18_0_1_ae502ce_1419863231075_363173_45933""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419801134204_389922_47633"" name=""Mission Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419801134220_599632_47659"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419801134220_503377_47660""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419801134204_809553_47634"" base_Class=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075780441_686351_44812"" name=""Provide Data Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075780473_873200_44838"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075780441_686351_44812""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075780473_963428_44839""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075780441_515279_44813"" base_Class=""_18_0_1_ae502ce_1414075780441_686351_44812""/>"
+_18_1_ae502ce_1424566485956_485234_62703,The system shall recognize that Attitude Rate Control Failure is caused by Attitude Rate Too Low.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_1_ae502ce_1424566464077_821831_62691"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+  <supplier xmi:idref=""_18_1_ae502ce_1424566414859_361821_62631""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_1_ae502ce_1424566485956_485234_62703"" base_Element=""_18_1_ae502ce_1424566464077_821831_62691""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419803290022_919121_50924"" name=""Attitude Rate Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419803290053_68863_50950"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419803290053_119386_50951""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419803290038_842157_50925"" base_Class=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424566414859_361821_62631"" name=""Attitude Rate Too Low"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_1_ae502ce_1424566414869_307482_62658"">
+    <constrainedElement xmi:idref=""_18_1_ae502ce_1424566414859_361821_62631""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_1_ae502ce_1424566414869_442957_62659""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_1_ae502ce_1424566414859_543800_62632"" base_Class=""_18_1_ae502ce_1424566414859_361821_62631""/>"
+_18_1_ae502ce_1424566493007_111752_62717,The Spin Rate Sensing Failure shall cause the Attitude Rate Too High condition.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_1_ae502ce_1424566444413_970859_62676"">
+  <client xmi:idref=""_18_1_ae502ce_1424566385736_909941_62588""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1419800971262_74135_47495""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_1_ae502ce_1424566493007_111752_62717"" base_Element=""_18_1_ae502ce_1424566444413_970859_62676""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424566385736_909941_62588"" name=""Attitude Rate Too High"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_1_ae502ce_1424566385746_326615_62615"">
+    <constrainedElement xmi:idref=""_18_1_ae502ce_1424566385736_909941_62588""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_1_ae502ce_1424566385746_308884_62616""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_1_ae502ce_1424566385736_292306_62589"" base_Class=""_18_1_ae502ce_1424566385736_909941_62588""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419800971262_74135_47495"" name=""Spin Rate Sensing Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419800971278_702118_47521"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419800971262_74135_47495""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419800971278_465992_47522""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419800971262_97566_47496"" base_Class=""_18_0_1_ae502ce_1419800971262_74135_47495""/>"
+_18_0_1_ae502ce_1419802287299_383604_50336,The system shall ensure that an Acceleration Control Failure causes a Trajectory Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419802282011_932395_50326"">
+  <client xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1419802220437_900924_50269""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419802287299_383604_50336"" base_Element=""_18_0_1_ae502ce_1419802282011_932395_50326""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075717448_223240_44742"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075717448_905253_44743""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075717402_308257_44717"" base_Class=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419802220437_900924_50269"" name=""Acceleration Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419802220453_670105_50295"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419802220437_900924_50269""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419802220453_71851_50296""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419802220437_71786_50270"" base_Class=""_18_0_1_ae502ce_1419802220437_900924_50269""/>"
+_18_0_1_ae502ce_1419801284417_8782_47780,The system shall prevent separation failures from causing mission failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419801202361_467075_47705"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1414075700179_120156_44684""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419801284417_8782_47780"" base_Element=""_18_0_1_ae502ce_1419801202361_467075_47705""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419801134204_389922_47633"" name=""Mission Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419801134220_599632_47659"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419801134220_503377_47660""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419801134204_809553_47634"" base_Class=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075700179_120156_44684"" name=""Separation Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075700210_159275_44710"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075700179_120156_44684""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075700210_411994_44711""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075700179_517574_44685"" base_Class=""_18_0_1_ae502ce_1414075700179_120156_44684""/>"
+_18_0_1_ae502ce_1419801341872_209135_47856,The system shall attribute any Attitude Control Failure to a Spin Rate Sensing Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419801334337_541434_47836"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419800939187_832983_47455""/>
+  <supplier xmi:idref=""_18_0_1_ae502ce_1419800971262_74135_47495""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419801341872_209135_47856"" base_Element=""_18_0_1_ae502ce_1419801334337_541434_47836""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419800939187_832983_47455"" name=""Attitude Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419800939203_972460_47481"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419800939187_832983_47455""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419800939203_700539_47482""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419800939187_147665_47456"" base_Class=""_18_0_1_ae502ce_1419800939187_832983_47455""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419800971262_74135_47495"" name=""Spin Rate Sensing Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419800971278_702118_47521"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419800971262_74135_47495""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419800971278_465992_47522""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419800971262_97566_47496"" base_Class=""_18_0_1_ae502ce_1419800971262_74135_47495""/>"
+_18_0_1_ae502ce_1419804532615_934738_52018,The system shall prevent Attitude Rate Too High in the event of an Attitude Rate Control Failure.,"<packagedElement xmi:type=""uml:Dependency"" xmi:id=""_18_0_1_ae502ce_1419803525318_407541_51206"">
+  <client xmi:idref=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+  <supplier xmi:idref=""_18_1_ae502ce_1424566385736_909941_62588""/>
+</packagedElement>
+<Custom_Stereotypes:caused_by xmi:id=""_18_0_1_ae502ce_1419804532615_934738_52018"" base_Element=""_18_0_1_ae502ce_1419803525318_407541_51206""/>","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419803290022_919121_50924"" name=""Attitude Rate Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419803290053_68863_50950"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419803290053_119386_50951""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419803290038_842157_50925"" base_Class=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424566385736_909941_62588"" name=""Attitude Rate Too High"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_1_ae502ce_1424566385746_326615_62615"">
+    <constrainedElement xmi:idref=""_18_1_ae502ce_1424566385736_909941_62588""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_1_ae502ce_1424566385746_308884_62616""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_1_ae502ce_1424566385736_292306_62589"" base_Class=""_18_1_ae502ce_1424566385736_909941_62588""/>"

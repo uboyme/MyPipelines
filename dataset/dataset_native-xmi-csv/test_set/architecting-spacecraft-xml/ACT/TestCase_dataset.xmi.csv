@@ -1,0 +1,173 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1420131827671_77751_52210,The system shall verify sensor sensitivity by executing the 'Verify Sensor Sensitivity' test procedure.,"<ownedOperation xmi:type=""uml:Operation"" xmi:id=""_18_0_1_ae502ce_1420131698846_237695_52170"" name=""verify sensor sensitivity"" visibility=""public"">
+  <method xmi:idref=""_18_0_1_ae502ce_1420060459539_606171_49027""/>
+</ownedOperation>
+<sysml:TestCase xmi:id=""_18_0_1_ae502ce_1420131827671_77751_52210"" base_Operation=""_18_0_1_ae502ce_1420131698846_237695_52170""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1420060459539_606171_49027"" name=""Verify Sensor Sensitivity"" xmi:type=""uml:Activity""/>"
+_18_0_1_ae502ce_1420060496706_141395_49076,"The test case shall verify the sensor resolution by having the Test Operator control the Thermal Source and Unit-Under-Test to generate Thermal Emissions, sense the emissions via the System-Under-Test, process the data into Thermal Imagery through the Signal Processor and Display, then measure the resolution and assess pass/fail.","<packagedElement xmi:type=""uml:Activity"" xmi:id=""_18_0_1_ae502ce_1420060496706_890376_49075"" name=""Verify Sensor Resolution"" specification=""_18_0_1_ae502ce_1420131684930_444248_52169"">
+  <partition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+  <partition xmi:idref=""_18_0_1_ae502ce_1420135936355_745196_56647""/>
+  <partition xmi:idref=""_18_0_1_ae502ce_1420135942236_691043_56674""/>
+  <partition xmi:idref=""_18_1_ae502ce_1424482959119_519447_55385""/>
+  <partition xmi:idref=""_18_1_ae502ce_1424482962676_544156_55389""/>
+  <edge xmi:type=""uml:ObjectFlow"" xmi:id=""_18_1_ae502ce_1424557339535_214763_59628"" visibility=""public"" source=""_18_1_ae502ce_1424557326424_700907_59595"" target=""_18_1_ae502ce_1424557339545_490627_59630"">
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424557339545_835452_59629"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ObjectFlow"" xmi:id=""_18_1_ae502ce_1424557616795_543505_59911"" visibility=""public"" source=""_18_1_ae502ce_1424557590861_74085_59880"" target=""_18_1_ae502ce_1424549526132_312176_57516"">
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424557616795_822271_59912"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ObjectFlow"" xmi:id=""_18_1_ae502ce_1424557804435_320008_60003"" visibility=""public"" source=""_18_1_ae502ce_1424550153612_232279_58048"" target=""_18_1_ae502ce_1424557454700_347027_59743"">
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424557804435_712438_60004"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ObjectFlow"" xmi:id=""_18_1_ae502ce_1424557925607_420907_60043"" visibility=""public"" source=""_18_1_ae502ce_1424557454700_385658_59744"" target=""_18_1_ae502ce_1424557925607_562624_60045"">
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424557925607_510064_60044"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ObjectFlow"" xmi:id=""_18_1_ae502ce_1424558185889_212015_60193"" visibility=""public"" source=""_18_1_ae502ce_1424557977936_758201_60122"" target=""_18_1_ae502ce_1424558185899_21630_60195"">
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424558185889_307804_60194"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ObjectFlow"" xmi:id=""_18_1_ae502ce_1424558408631_397921_60453"" visibility=""public"" source=""_18_1_ae502ce_1424557135187_876298_59466"" target=""_18_1_ae502ce_1424549868250_178220_57942"">
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424558408631_303605_60454"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ControlFlow"" xmi:id=""_18_1_ae502ce_1424558545142_916324_60561"" visibility=""public"" source=""_18_1_ae502ce_1424557960753_25089_60091"" target=""_18_1_ae502ce_1424558535881_569255_60532"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424558545142_954160_60562"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ControlFlow"" xmi:id=""_18_1_ae502ce_1424558562245_731428_60581"" visibility=""public"" source=""_18_1_ae502ce_1424558535881_569255_60532"" target=""_18_1_ae502ce_1424558558354_60137_60569"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424558562245_717775_60582"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ControlFlow"" xmi:id=""_18_1_ae502ce_1424558585068_620805_61057"" visibility=""public"" source=""_18_1_ae502ce_1424558583118_958672_61047"" target=""_18_1_ae502ce_1424557582689_515307_59856"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424558585068_811922_61058"" value=""1""/>
+  </edge>
+  <edge xmi:type=""uml:ControlFlow"" xmi:id=""_18_1_ae502ce_1424558659217_502680_61100"" visibility=""public"" source=""_18_1_ae502ce_1424557582689_515307_59856"" target=""_18_1_ae502ce_1424557234892_847999_59551"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+    <weight xmi:type=""uml:LiteralUnlimitedNatural"" xmi:id=""_18_1_ae502ce_1424558659217_271292_61101"" value=""1""/>
+  </edge>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_0_1_ae502ce_1420135936339_501745_56645"" visibility=""public"" represents=""_18_0_1_ae502ce_1414363776810_114281_46481"">
+    <edge xmi:idref=""_18_1_ae502ce_1424558545142_916324_60561""/>
+    <edge xmi:idref=""_18_1_ae502ce_1424558562245_731428_60581""/>
+    <edge xmi:idref=""_18_1_ae502ce_1424558585068_620805_61057""/>
+    <edge xmi:idref=""_18_1_ae502ce_1424558659217_502680_61100""/>
+    <node xmi:idref=""_18_1_ae502ce_1424557234892_847999_59551""/>
+    <node xmi:idref=""_18_1_ae502ce_1424557582689_515307_59856""/>
+    <node xmi:idref=""_18_1_ae502ce_1424557960753_25089_60091""/>
+    <node xmi:idref=""_18_1_ae502ce_1424558535881_569255_60532""/>
+    <node xmi:idref=""_18_1_ae502ce_1424558558354_60137_60569""/>
+    <node xmi:idref=""_18_1_ae502ce_1424558583118_958672_61047""/>
+  </group>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_0_1_ae502ce_1420135936355_745196_56647"" visibility=""public"" represents=""_18_0_1_ae502ce_1420131640931_540415_52119"">
+    <node xmi:idref=""_18_1_ae502ce_1424557117934_346160_59432""/>
+  </group>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_0_1_ae502ce_1420135942236_691043_56674"" visibility=""public"" represents=""_18_0_1_ae502ce_1420131916365_785128_52220"">
+    <node xmi:idref=""_18_0_1_ae502ce_1420136136737_493058_56798""/>
+    <subpartition xmi:type=""uml:ActivityPartition"" xmi:id=""_18_0_1_ae502ce_1420135948273_525013_56677"" visibility=""public"" represents=""_18_0_1_ae502ce_1420132170091_456735_52537"">
+      <node xmi:idref=""_18_0_1_ae502ce_1420136136737_493058_56798""/>
+    </subpartition>
+  </group>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_1_ae502ce_1424482959119_519447_55385"" visibility=""public"" represents=""_18_1_ae502ce_1424482603716_591130_55107"">
+    <node xmi:idref=""_18_1_ae502ce_1424557454680_778825_59732""/>
+  </group>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_1_ae502ce_1424482962676_544156_55389"" visibility=""public"" represents=""_18_1_ae502ce_1424482611001_938457_55153"">
+    <node xmi:idref=""_18_1_ae502ce_1424557401603_382786_59682""/>
+  </group>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_0_1_ae502ce_1420136136737_493058_56798"" visibility=""public"" behavior=""_18_0_1_ae502ce_1418966828363_937299_46629"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135942236_691043_56674""/>
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135948273_525013_56677""/>
+    <argument xmi:type=""uml:InputPin"" xmi:id=""_18_1_ae502ce_1424549526132_312176_57516"" visibility=""public"" type=""_18_1_ae502ce_1424549488527_53237_57469""/>
+    <argument xmi:type=""uml:InputPin"" xmi:id=""_18_1_ae502ce_1424549868250_178220_57942"" visibility=""public"" type=""_18_0_1_ae502ce_1408725801981_199173_20728""/>
+    <result xmi:type=""uml:OutputPin"" xmi:id=""_18_1_ae502ce_1424550153612_232279_58048"" visibility=""public"" type=""_18_1_ae502ce_1424549949840_981432_57985""/>
+  </node>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_1_ae502ce_1424557117934_346160_59432"" visibility=""public"" behavior=""_18_1_ae502ce_1424557106913_829728_59418"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936355_745196_56647""/>
+    <argument xmi:type=""uml:InputPin"" xmi:id=""_18_1_ae502ce_1424557339545_490627_59630"" visibility=""public""/>
+    <result xmi:type=""uml:OutputPin"" xmi:id=""_18_1_ae502ce_1424557135187_876298_59466"" name=""thermal"" visibility=""public"" type=""_18_0_1_ae502ce_1408725801981_199173_20728""/>
+  </node>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_1_ae502ce_1424557234892_847999_59551"" visibility=""public"" behavior=""_18_1_ae502ce_1424557218650_612059_59537"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+    <result xmi:type=""uml:OutputPin"" xmi:id=""_18_1_ae502ce_1424557326424_700907_59595"" visibility=""public""/>
+  </node>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_1_ae502ce_1424557401603_382786_59682"" visibility=""public"" behavior=""_18_1_ae502ce_1424557388021_578348_59666"">
+    <inPartition xmi:idref=""_18_1_ae502ce_1424482962676_544156_55389""/>
+    <argument xmi:type=""uml:InputPin"" xmi:id=""_18_1_ae502ce_1424557925607_562624_60045"" visibility=""public"" type=""_17_0_5_ae502ce_1404252304846_451545_12855""/>
+    <result xmi:type=""uml:OutputPin"" xmi:id=""_18_1_ae502ce_1424557977936_758201_60122"" visibility=""public"" type=""_18_1_ae502ce_1424558268489_650400_60264""/>
+  </node>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_1_ae502ce_1424557454680_778825_59732"" visibility=""public"" behavior=""_18_0_1_ae502ce_1418966942290_127040_46630"">
+    <inPartition xmi:idref=""_18_1_ae502ce_1424482959119_519447_55385""/>
+    <argument xmi:type=""uml:InputPin"" xmi:id=""_18_1_ae502ce_1424557454700_347027_59743"" visibility=""public"" type=""_18_1_ae502ce_1424549949840_981432_57985""/>
+    <result xmi:type=""uml:OutputPin"" xmi:id=""_18_1_ae502ce_1424557454700_385658_59744"" visibility=""public"" type=""_17_0_5_ae502ce_1404252304846_451545_12855""/>
+  </node>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_1_ae502ce_1424557582689_515307_59856"" visibility=""public"" behavior=""_18_1_ae502ce_1424557558396_868838_59795"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+    <result xmi:type=""uml:OutputPin"" xmi:id=""_18_1_ae502ce_1424557590861_74085_59880"" visibility=""public"" type=""_18_1_ae502ce_1424549488527_53237_57469""/>
+  </node>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_1_ae502ce_1424557960753_25089_60091"" visibility=""public"" behavior=""_18_1_ae502ce_1424557950601_666277_60075"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+    <argument xmi:type=""uml:InputPin"" xmi:id=""_18_1_ae502ce_1424558185899_21630_60195"" visibility=""public"" type=""_18_1_ae502ce_1424558268489_650400_60264""/>
+  </node>
+  <node xmi:type=""uml:CallBehaviorAction"" xmi:id=""_18_1_ae502ce_1424558535881_569255_60532"" visibility=""public"" behavior=""_18_1_ae502ce_1424558520769_591761_60516"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+  </node>
+  <node xmi:type=""uml:ActivityFinalNode"" xmi:id=""_18_1_ae502ce_1424558558354_60137_60569"" visibility=""public"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+  </node>
+  <node xmi:type=""uml:InitialNode"" xmi:id=""_18_1_ae502ce_1424558583118_958672_61047"" visibility=""public"">
+    <inPartition xmi:idref=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+  </node>
+</packagedElement>
+<sysml:TestCase xmi:id=""_18_0_1_ae502ce_1420060496706_141395_49076"" base_Behavior=""_18_0_1_ae502ce_1420060496706_890376_49075""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_0_1_ae502ce_1420135936355_416273_56649"" base_ActivityPartition=""_18_0_1_ae502ce_1420135936339_501745_56645""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_0_1_ae502ce_1420135936355_95283_56650"" base_ActivityPartition=""_18_0_1_ae502ce_1420135936355_745196_56647""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_0_1_ae502ce_1420135942236_439974_56675"" base_ActivityPartition=""_18_0_1_ae502ce_1420135942236_691043_56674""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_1_ae502ce_1424482959119_806509_55386"" base_ActivityPartition=""_18_1_ae502ce_1424482959119_519447_55385""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_0_1_ae502ce_1420135948273_442962_56679"" base_ActivityPartition=""_18_0_1_ae502ce_1420135948273_525013_56677""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_1_ae502ce_1424482962691_310907_55390"" base_ActivityPartition=""_18_1_ae502ce_1424482962676_544156_55389""/>","<ownedOperation xmi:type=""uml:Operation"" xmi:id=""_18_0_1_ae502ce_1420131684930_444248_52169"" name=""verify sensor resolution"" visibility=""public"">
+  <method xmi:idref=""_18_0_1_ae502ce_1420060496706_890376_49075""/>
+</ownedOperation>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1414363776810_114281_46481"" name=""Test Operator"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1420131640931_540415_52119"" name=""Optical Bench"" xmi:type=""uml:Class""/>
+<ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1420131916365_785128_52220"" name=""system-under-test"" aggregation=""shared"" type=""_17_0_5_ae502ce_1404332515899_286636_12094"" association=""_18_0_1_ae502ce_1420131916365_154940_52219""/>
+<ownedAttribute xmi:type=""uml:Property"" xmi:id=""_18_0_1_ae502ce_1420132170091_456735_52537"" name=""unit-under-test"" aggregation=""shared"" type=""_18_0_1_ae502ce_1419958216351_171956_46083"" association=""_18_0_1_ae502ce_1420132170091_108445_52536"">
+  <redefinedProperty xmi:idref=""_17_0_5_ae502ce_1404334109035_132548_12367""/>
+</ownedAttribute>
+<packagedElement xmi:id=""_18_1_ae502ce_1424482603716_591130_55107"" name=""Signal Processor"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424482611001_938457_55153"" name=""Display"" xmi:type=""uml:Class""/>
+<doActivity xmi:id=""_18_0_1_ae502ce_1418966828363_937299_46629"" name=""Sense Thermal Emissions"" xmi:type=""uml:Activity""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424549488527_53237_57469"" name=""Sensor CMD"" xmi:type=""uml:Class""/>
+<packagedElement xmi:type=""uml:DataType"" xmi:id=""_18_0_1_ae502ce_1408725801981_199173_20728"" name=""Emissions"">
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1408725878499_121276_20751"" general=""_18_0_1_ae502ce_1408725195514_344689_20318""/>
+</packagedElement>
+<packagedElement xmi:id=""_18_1_ae502ce_1424549949840_981432_57985"" name=""Payload Sensor Data"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424557106913_829728_59418"" name=""Generate Thermal Emission"" xmi:type=""uml:Activity""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424557218650_612059_59537"" name=""Control Thermal Source"" xmi:type=""uml:Activity""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424557388021_578348_59666"" name=""Display Imagery"" xmi:type=""uml:Activity""/>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1404252304846_451545_12855"" name=""Observation Data"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424558268489_650400_60264"" name=""Thermal Imagery"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1418966942290_127040_46630"" name=""Process Signal"" xmi:type=""uml:Activity""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424557558396_868838_59795"" name=""Control Unit-Under-Test"" xmi:type=""uml:Activity""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424557950601_666277_60075"" name=""Measure Resolution"" xmi:type=""uml:Activity""/>
+<packagedElement xmi:id=""_18_1_ae502ce_1424558520769_591761_60516"" name=""Assess Pass/Fail"" xmi:type=""uml:Activity""/>"
+_18_0_1_ae502ce_1420131811954_999709_52207,The system shall verify the sensor resolution by executing the 'Verify Sensor Resolution' test procedure.,"<ownedOperation xmi:type=""uml:Operation"" xmi:id=""_18_0_1_ae502ce_1420131684930_444248_52169"" name=""verify sensor resolution"" visibility=""public"">
+  <method xmi:idref=""_18_0_1_ae502ce_1420060496706_890376_49075""/>
+</ownedOperation>
+<sysml:TestCase xmi:id=""_18_0_1_ae502ce_1420131811954_999709_52207"" base_Operation=""_18_0_1_ae502ce_1420131684930_444248_52169""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1420060496706_890376_49075"" name=""Verify Sensor Resolution"" xmi:type=""uml:Activity""/>"
+_18_0_1_ae502ce_1414363483076_732447_46387,The 'Verify Mass' test case shall verify the mass of the Spacecraft-Physical using a Scale operated by a Test Operator.,"<packagedElement xmi:type=""uml:Activity"" xmi:id=""_18_0_1_ae502ce_1414363483076_556099_46386"" name=""Verify Mass"" specification=""_18_0_1_ae502ce_1414363319043_254990_46380"">
+  <partition xmi:idref=""_18_0_1_ae502ce_1414363750978_339755_46453""/>
+  <partition xmi:idref=""_18_0_1_ae502ce_1414363750988_343875_46455""/>
+  <partition xmi:idref=""_18_0_1_ae502ce_1414363765709_730915_46478""/>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_0_1_ae502ce_1414363750978_339755_46453"" visibility=""public"" represents=""_18_0_1_ae502ce_1414363216839_811617_46315""/>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_0_1_ae502ce_1414363750988_343875_46455"" visibility=""public"" represents=""_17_0_5_ae502ce_1404332515899_286636_12094""/>
+  <group xmi:type=""uml:ActivityPartition"" xmi:id=""_18_0_1_ae502ce_1414363765709_730915_46478"" visibility=""public"" represents=""_18_0_1_ae502ce_1414363776810_114281_46481""/>
+</packagedElement>
+<sysml:TestCase xmi:id=""_18_0_1_ae502ce_1414363483076_732447_46387"" base_Behavior=""_18_0_1_ae502ce_1414363483076_556099_46386""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_0_1_ae502ce_1414363750988_117030_46457"" base_ActivityPartition=""_18_0_1_ae502ce_1414363750978_339755_46453""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_0_1_ae502ce_1414363765709_772527_46479"" base_ActivityPartition=""_18_0_1_ae502ce_1414363765709_730915_46478""/>
+<sysml:AllocateActivityPartition xmi:id=""_18_0_1_ae502ce_1414363750988_237504_46458"" base_ActivityPartition=""_18_0_1_ae502ce_1414363750988_343875_46455""/>","<ownedOperation xmi:type=""uml:Operation"" xmi:id=""_18_0_1_ae502ce_1414363319043_254990_46380"" name=""verify mass"" visibility=""public"">
+  <method xmi:idref=""_18_0_1_ae502ce_1414363483076_556099_46386""/>
+</ownedOperation>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1414363216839_811617_46315"" name=""Scale"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_17_0_5_ae502ce_1404332515899_286636_12094"" name=""Spacecraft-Physical"" xmi:type=""uml:Class""/>
+<packagedElement xmi:id=""_18_0_1_ae502ce_1414363776810_114281_46481"" name=""Test Operator"" xmi:type=""uml:Class""/>"
+_18_0_1_ae502ce_1414363359489_860717_46382,The system shall verify the mass using the 'Verify Mass' test procedure.,"<ownedOperation xmi:type=""uml:Operation"" xmi:id=""_18_0_1_ae502ce_1414363319043_254990_46380"" name=""verify mass"" visibility=""public"">
+  <method xmi:idref=""_18_0_1_ae502ce_1414363483076_556099_46386""/>
+</ownedOperation>
+<sysml:TestCase xmi:id=""_18_0_1_ae502ce_1414363359489_860717_46382"" base_Operation=""_18_0_1_ae502ce_1414363319043_254990_46380""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1414363483076_556099_46386"" name=""Verify Mass"" xmi:type=""uml:Activity""/>"

@@ -1,0 +1,371 @@
+id,requirement,focus_element,related_elements
+_18_0_1_ae502ce_1409010313636_34109_14980,"The orbit analysis model shall define the mathematical relationships among the orbital parameters—semi-major axis, inclination, eccentricity, number of planes, vehicles per plane—and the performance metrics—revisit time, coverage, required coverage, max beta angle, percent time in eclipse, yaw slews per year, average drag—to evaluate satellite constellation performance.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409010313636_650447_14979"" name=""Orbit Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1409010313652_398924_15005"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1409010313636_650447_14979""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1409010313652_508938_15006""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1420128034621_564518_49761"" name=""revisit time"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1420128042717_547560_49764"" name=""coverage"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420315947585_763113_50388"" name=""required coverage"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250407966_755489_47453"" name=""semi-major axis"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250429358_950651_47456"" name=""inclination"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420315970633_509310_50431"" name=""eccentricity"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250459312_267704_47461"" name=""number of planes"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250467015_582034_47464"" name=""vehicles per plane"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420316199061_292518_51017"" name=""max beta angle"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420316208313_515466_51098"" name=""percent time in eclipse"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420317642396_195706_52691"" name=""yaw slews per year"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420317675590_95241_52832"" name=""average drag"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1409010313636_34109_14980"" base_Class=""_18_0_1_ae502ce_1409010313636_650447_14979""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1420128034621_780663_49762"" base_Port=""_18_0_1_ae502ce_1420128034621_564518_49761""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250407966_120062_47454"" base_Port=""_18_0_2_1a82048c_1420250407966_755489_47453""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420315947585_773601_50389"" base_Port=""_18_0_2_1a82048c_1420315947585_763113_50388""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250429358_588031_47457"" base_Port=""_18_0_2_1a82048c_1420250429358_950651_47456""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420316199061_720702_51018"" base_Port=""_18_0_2_1a82048c_1420316199061_292518_51017""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420316208313_738324_51099"" base_Port=""_18_0_2_1a82048c_1420316208313_515466_51098""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420317642396_721913_52692"" base_Port=""_18_0_2_1a82048c_1420317642396_195706_52691""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420317675590_788531_52833"" base_Port=""_18_0_2_1a82048c_1420317675590_95241_52832""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250459312_83588_47462"" base_Port=""_18_0_2_1a82048c_1420250459312_267704_47461""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420315970633_172471_50432"" base_Port=""_18_0_2_1a82048c_1420315970633_509310_50431""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250467015_42806_47465"" base_Port=""_18_0_2_1a82048c_1420250467015_582034_47464""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1420128042717_72936_49765"" base_Port=""_18_0_1_ae502ce_1420128042717_547560_49764""/>",
+_18_0_1_ae502ce_1409325801392_806024_17209,The system shall analyze geopositioning errors using a constraint that incorporates location accuracy.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409325801392_44904_17208"" name=""Geopositioning Error Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1409325801407_497549_17234"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1409325801392_44904_17208""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1409325801407_153184_17235""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409325887956_80978_17267"" name=""location accuracy"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1409325801392_806024_17209"" base_Class=""_18_0_1_ae502ce_1409325801392_44904_17208""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409325887956_719868_17268"" base_Port=""_18_0_1_ae502ce_1409325887956_80978_17267""/>",
+_18_0_1_ae502ce_1409330431455_38784_17320,The mission life analysis model shall incorporate a mission life value for system performance evaluation.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409330431455_677158_17319"" name=""Mission Life Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1409330431470_516676_17345"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1409330431455_677158_17319""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1409330431470_118490_17346""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1420058466648_158806_47959"" name=""mssion life"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1409330431455_38784_17320"" base_Class=""_18_0_1_ae502ce_1409330431455_677158_17319""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1420058466648_228694_47960"" base_Port=""_18_0_1_ae502ce_1420058466648_158806_47959""/>",
+_18_0_1_ae502ce_1409010217556_321853_14888,The system design shall incorporate an analysis model that relates the probability of detection to the probability of false alarm.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409010217556_826474_14887"" name=""Probability of Detection and False Alarm Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1409010217587_840582_14913"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1409010217556_826474_14887""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1409010217587_261178_14914""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409010571399_301876_15071"" name=""probability of false alarm"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1420129205255_213300_50577"" name=""probabiity of detection"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1409010217556_321853_14888"" base_Class=""_18_0_1_ae502ce_1409010217556_826474_14887""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1420129205255_507550_50578"" base_Port=""_18_0_1_ae502ce_1420129205255_213300_50577""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409010571399_994746_15072"" base_Port=""_18_0_1_ae502ce_1409010571399_301876_15071""/>",
+_18_0_1_ae502ce_1420059925757_446831_48795,The system shall include an image quality analysis model that incorporates an image quality parameter.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420059925757_443389_48794"" name=""Image Quality Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1420059925804_365244_48820"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1420059925757_443389_48794""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1420059925804_384717_48821""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1420059943330_993236_48827"" name=""image quality"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1420059925757_446831_48795"" base_Class=""_18_0_1_ae502ce_1420059925757_443389_48794""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1420059943330_194553_48828"" base_Port=""_18_0_1_ae502ce_1420059943330_993236_48827""/>",
+_18_0_1_ae502ce_1409010274683_498539_14948,The system shall compute the cost effectiveness as the sum of the utilities of the effectiveness measures.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1409010274683_314448_14947"" name=""Cost Effectiveness Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1409010274714_942435_14973"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1409010274683_314448_14947""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1409010274714_404704_14974"">
+      <body>cost-effectivenesss=sum (utility of moe's)</body>
+    </specification>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409010611881_515577_15074"" name=""moe1"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409010618185_965068_15077"" name=""moe2"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409010624144_954519_15080"" name=""moe3"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409010630930_516380_15083"" name=""moe4"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1414335788272_892606_44462"" name=""moe5"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1414336095329_59686_44493"" name=""moe6"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1414336111850_879102_44496"" name=""moe7"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409011727642_608855_15540"" name=""cost"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1409011707596_230589_15537"" name=""cost effectiveness"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1409010274683_498539_14948"" base_Class=""_18_0_1_ae502ce_1409010274683_314448_14947""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409010611881_547227_15075"" base_Port=""_18_0_1_ae502ce_1409010611881_515577_15074""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409010624144_268616_15081"" base_Port=""_18_0_1_ae502ce_1409010624144_954519_15080""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409010618185_454267_15078"" base_Port=""_18_0_1_ae502ce_1409010618185_965068_15077""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1414335788272_155136_44463"" base_Port=""_18_0_1_ae502ce_1414335788272_892606_44462""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1414336095329_138605_44494"" base_Port=""_18_0_1_ae502ce_1414336095329_59686_44493""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1414336111850_81321_44497"" base_Port=""_18_0_1_ae502ce_1414336111850_879102_44496""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409011707596_292257_15538"" base_Port=""_18_0_1_ae502ce_1409011707596_230589_15537""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409010630930_491339_15084"" base_Port=""_18_0_1_ae502ce_1409010630930_516380_15083""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1409011727642_412433_15541"" base_Port=""_18_0_1_ae502ce_1409011727642_608855_15540""/>",
+_18_0_1_ae502ce_1420128163648_452614_49813,Formulate a lifecycle cost analysis equation that incorporates the lifecycle cost variable.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1420128163648_158723_49812"" name=""Lifecycle Cost Analysis"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1420128163664_316847_49838"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1420128163648_158723_49812""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1420128163664_168531_49839""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1420128179365_554334_49845"" name=""lifecycle cost"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1420128163648_452614_49813"" base_Class=""_18_0_1_ae502ce_1420128163648_158723_49812""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1420128179365_974061_49846"" base_Port=""_18_0_1_ae502ce_1420128179365_554334_49845""/>",
+_18_0_2_1a82048c_1420249021707_878491_46893,"The system shall compute the required fuel for propulsion using the equation: required fuel = (mass multiplied by the exponential of the required delta v, divided by Isp, multiplied by 9.81) minus mass.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_2_1a82048c_1420249021691_321590_46892"" name=""System Propulsion Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_2_1a82048c_1420249021707_122365_46918"">
+    <constrainedElement xmi:idref=""_18_0_2_1a82048c_1420249021691_321590_46892""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_2_1a82048c_1420249021707_742939_46919"">
+      <body>required fuel = (mass * exp(required delta v)/Isp*9.81) - mass</body>
+    </specification>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250174756_213253_47414"" name=""mass"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250186493_695066_47417"" name=""orbital altitude"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250198980_885524_47420"" name=""insertion altitude"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250205480_334445_47423"" name=""inclination error"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250226715_804580_47426"" name=""yaw slews per year"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250236731_721733_47429"" name=""mission length"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250249356_668323_47432"" name=""drag factor"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250258418_93280_47435"" name=""deorbit requirement"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250266356_599200_47438"" name=""required delta v"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250274825_978169_47441"" name=""required fuel"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250348716_803180_47448"" name=""Isp"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_2_1a82048c_1420249021707_878491_46893"" base_Class=""_18_0_2_1a82048c_1420249021691_321590_46892""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250174756_663446_47415"" base_Port=""_18_0_2_1a82048c_1420250174756_213253_47414""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250186493_366212_47418"" base_Port=""_18_0_2_1a82048c_1420250186493_695066_47417""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250205480_7995_47424"" base_Port=""_18_0_2_1a82048c_1420250205480_334445_47423""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250198996_683871_47421"" base_Port=""_18_0_2_1a82048c_1420250198980_885524_47420""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250226715_741701_47427"" base_Port=""_18_0_2_1a82048c_1420250226715_804580_47426""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250266356_632105_47439"" base_Port=""_18_0_2_1a82048c_1420250266356_599200_47438""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250274825_51178_47442"" base_Port=""_18_0_2_1a82048c_1420250274825_978169_47441""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250348716_729385_47449"" base_Port=""_18_0_2_1a82048c_1420250348716_803180_47448""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250249356_520473_47433"" base_Port=""_18_0_2_1a82048c_1420250249356_668323_47432""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250236731_516424_47430"" base_Port=""_18_0_2_1a82048c_1420250236731_721733_47429""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250258418_750025_47436"" base_Port=""_18_0_2_1a82048c_1420250258418_93280_47435""/>",
+_18_0_2_1a82048c_1420248988012_513052_46849,The power margin shall equal the solar power capacity minus the power budget.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_2_1a82048c_1420248988012_244061_46848"" name=""System Power Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_2_1a82048c_1420248988027_548910_46874"">
+    <constrainedElement xmi:idref=""_18_0_2_1a82048c_1420248988012_244061_46848""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_2_1a82048c_1420248988027_694068_46875"">
+      <body>power margin = solar power capacity - power budget</body>
+    </specification>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249521472_767133_47250"" name=""system configuration"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249533472_508143_47253"" name=""power budget"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249553332_754232_47256"" name=""solar power capacity"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249574009_197615_47259"" name=""power margin"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420316985032_843894_51784"" name=""solar panel size"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_2_1a82048c_1420248988012_513052_46849"" base_Class=""_18_0_2_1a82048c_1420248988012_244061_46848""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249553332_572353_47257"" base_Port=""_18_0_2_1a82048c_1420249553332_754232_47256""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420316985048_631925_51785"" base_Port=""_18_0_2_1a82048c_1420316985032_843894_51784""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249574009_777052_47260"" base_Port=""_18_0_2_1a82048c_1420249574009_197615_47259""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249533472_173500_47254"" base_Port=""_18_0_2_1a82048c_1420249533472_508143_47253""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249521472_720554_47251"" base_Port=""_18_0_2_1a82048c_1420249521472_767133_47250""/>",
+_18_0_2_1a82048c_1420248972604_688168_46815,Calculate the system mass estimate by summing the masses of the selected components.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_2_1a82048c_1420248972588_118704_46814"" name=""System Mass Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_2_1a82048c_1420248972604_29731_46840"">
+    <constrainedElement xmi:idref=""_18_0_2_1a82048c_1420248972588_118704_46814""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_2_1a82048c_1420248972604_48474_46841"">
+      <body>mass estimate = sum (selected component mass)</body>
+    </specification>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249242194_845814_47123"" name=""system configuration"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249286222_862183_47126"" name=""mass budget"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249324416_231144_47131"" name=""mass estimate"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249499706_316152_47243"" name=""mass margin"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1421713222859_6516_53238"" name=""dry mass"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_1_ae502ce_1421713229661_463700_53241"" name=""fuel mass"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_2_1a82048c_1420248972604_688168_46815"" base_Class=""_18_0_2_1a82048c_1420248972588_118704_46814""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1421713222875_85593_53239"" base_Port=""_18_0_1_ae502ce_1421713222859_6516_53238""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249286222_460212_47127"" base_Port=""_18_0_2_1a82048c_1420249286222_862183_47126""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_1_ae502ce_1421713229661_453032_53242"" base_Port=""_18_0_1_ae502ce_1421713229661_463700_53241""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249324416_105434_47132"" base_Port=""_18_0_2_1a82048c_1420249324416_231144_47131""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249242194_125217_47124"" base_Port=""_18_0_2_1a82048c_1420249242194_845814_47123""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249499722_561531_47244"" base_Port=""_18_0_2_1a82048c_1420249499706_316152_47243""/>",
+_18_0_2_1a82048c_1420249367794_482248_47149,The Solar Array Sizing Model shall compute the solar array size by dividing the required power by the product of the solar cell power density and the solar array efficiency.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_2_1a82048c_1420249367794_727354_47148"" name=""Solar Array Sizing Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_2_1a82048c_1420249367794_409220_47174"">
+    <constrainedElement xmi:idref=""_18_0_2_1a82048c_1420249367794_727354_47148""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_2_1a82048c_1420249367794_493155_47175"">
+      <body>area = required power / (capacity * efficiency)</body>
+    </specification>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249739394_164703_47299"" name=""required power"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249786988_842431_47308"" name=""solar array efficiency"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249767269_293462_47305"" name=""solar cell power density"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249810754_332951_47311"" name=""solar array size"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249827694_940218_47314"" name=""solar array mass"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420314733375_955658_49598"" name=""max beta angle"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_2_1a82048c_1420249367794_482248_47149"" base_Class=""_18_0_2_1a82048c_1420249367794_727354_47148""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249786988_323851_47309"" base_Port=""_18_0_2_1a82048c_1420249786988_842431_47308""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249827694_739489_47315"" base_Port=""_18_0_2_1a82048c_1420249827694_940218_47314""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420314733375_255227_49599"" base_Port=""_18_0_2_1a82048c_1420314733375_955658_49598""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249810754_593351_47312"" base_Port=""_18_0_2_1a82048c_1420249810754_332951_47311""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249767269_951679_47306"" base_Port=""_18_0_2_1a82048c_1420249767269_293462_47305""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249739394_619749_47300"" base_Port=""_18_0_2_1a82048c_1420249739394_164703_47299""/>",
+_18_0_2_1a82048c_1420311873198_834346_47776,"The system shall compute the required power by summing the average required power multiplied by the time in eclipse divided by the power system efficiency in eclipse and the average required power multiplied by the time in daylight divided by the power system efficiency in daylight, then dividing the result by the percent time in daylight.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_2_1a82048c_1420311873198_361556_47775"" name=""Effective Power Need Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_2_1a82048c_1420311873214_660420_47801"">
+    <constrainedElement xmi:idref=""_18_0_2_1a82048c_1420311873198_361556_47775""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_2_1a82048c_1420311873214_672595_47802"">
+      <body>required power = ((avg rev power * time in eclipse / efficiency in eclipse) + (avg rev power * time in daylight / efficiency in daylight)) / percent time in daylight</body>
+    </specification>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249928459_396878_47353"" name=""avg rev power"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420249749113_615930_47302"" name=""percent time in eclipse"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420250067605_633303_47375"" name=""power system efficiency in eclipse"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420311978022_690990_47885"" name=""power system efficiency in daylight"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420312005578_353534_47888"" name=""required power"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_2_1a82048c_1420311873198_834346_47776"" base_Class=""_18_0_2_1a82048c_1420311873198_361556_47775""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420250067605_654999_47376"" base_Port=""_18_0_2_1a82048c_1420250067605_633303_47375""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420312005578_891855_47889"" base_Port=""_18_0_2_1a82048c_1420312005578_353534_47888""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420311978022_593034_47886"" base_Port=""_18_0_2_1a82048c_1420311978022_690990_47885""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249749113_24440_47303"" base_Port=""_18_0_2_1a82048c_1420249749113_615930_47302""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420249928459_202111_47354"" base_Port=""_18_0_2_1a82048c_1420249928459_396878_47353""/>",
+_18_5_1_9250291_1506473511941_684275_53837,"The system shall compute the required delta-v based on inclination error, yaw slews per year, insertion altitude, mission length, deorbit requirement, and drag factor.","<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_5_1_9250291_1506473511941_327966_53836"" name=""Delta-V Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_5_1_9250291_1506473511956_118609_53863"">
+    <constrainedElement xmi:idref=""_18_5_1_9250291_1506473511941_327966_53836""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_5_1_9250291_1506473511956_649661_53864""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_5_1_9250291_1506473538241_685444_53876"" name=""inclination error"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_5_1_9250291_1506473542879_353786_53880"" name=""yaw slews per year"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_5_1_9250291_1506473602153_462889_53883"" name=""inserion altitude"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_5_1_9250291_1506473605941_703721_53886"" name=""mission length"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_5_1_9250291_1506473608913_891447_53889"" name=""deorbit requirement"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_5_1_9250291_1506473790522_363453_53892"" name=""drag factor"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_5_1_9250291_1506474086818_660971_54723"" name=""required delta-v"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_5_1_9250291_1506473511941_684275_53837"" base_Class=""_18_5_1_9250291_1506473511941_327966_53836""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_5_1_9250291_1506473542879_496265_53881"" base_Port=""_18_5_1_9250291_1506473542879_353786_53880""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_5_1_9250291_1506473602153_981523_53884"" base_Port=""_18_5_1_9250291_1506473602153_462889_53883""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_5_1_9250291_1506473790522_282977_53893"" base_Port=""_18_5_1_9250291_1506473790522_363453_53892""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_5_1_9250291_1506473608913_540871_53890"" base_Port=""_18_5_1_9250291_1506473608913_891447_53889""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_5_1_9250291_1506473605941_348435_53887"" base_Port=""_18_5_1_9250291_1506473605941_703721_53886""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_5_1_9250291_1506474086818_964977_54724"" base_Port=""_18_5_1_9250291_1506474086818_660971_54723""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_5_1_9250291_1506473538241_296647_53877"" base_Port=""_18_5_1_9250291_1506473538241_685444_53876""/>",
+_18_0_1_ae502ce_1414362441713_422033_46024,The mass analysis model shall define the relationship between dry mass and fuel mass.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414362441713_450501_46023"" name=""Mass Analysis Model"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414362441733_697021_46025"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414362441713_450501_46023""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414362441733_861371_46026""/>
+  </ownedRule>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420317142992_684808_52398"" name=""dry mass"" visibility=""private"" aggregation=""composite""/>
+  <ownedAttribute xmi:type=""uml:Port"" xmi:id=""_18_0_2_1a82048c_1420318048760_87870_53093"" name=""fuel mass"" visibility=""private"" aggregation=""composite""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414362441713_422033_46024"" base_Class=""_18_0_1_ae502ce_1414362441713_450501_46023""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420318048760_980006_53094"" base_Port=""_18_0_2_1a82048c_1420318048760_87870_53093""/>
+<MD_Customization_for_SysML__additional_stereotypes:ConstraintParameter xmi:id=""_18_0_2_1a82048c_1420317142992_443276_52399"" base_Port=""_18_0_2_1a82048c_1420317142992_684808_52398""/>",
+_18_0_1_ae502ce_1414075627655_19678_44653,Define the conditions that constitute a launch failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075627655_440311_44652"" name=""Launch Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075627686_613717_44678"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075627655_440311_44652""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075627686_953432_44679""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075627655_19678_44653"" base_Class=""_18_0_1_ae502ce_1414075627655_440311_44652""/>",
+_18_0_1_ae502ce_1414075801049_391175_44845,The system shall maintain operations during a failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075801049_707269_44844"" name=""Maintain Operations Fallure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075801080_182889_44870"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075801049_707269_44844""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075801080_207536_44871""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075801049_391175_44845"" base_Class=""_18_0_1_ae502ce_1414075801049_707269_44844""/>",
+_18_0_1_ae502ce_1419801134204_809553_47634,The system shall define the conditions that constitute a mission failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419801134204_389922_47633"" name=""Mission Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419801134220_599632_47659"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419801134204_389922_47633""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419801134220_503377_47660""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419801134204_809553_47634"" base_Class=""_18_0_1_ae502ce_1419801134204_389922_47633""/>",
+_18_0_1_ae502ce_1419800971262_97566_47496,The system shall define the spin rate sensing failure condition.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419800971262_74135_47495"" name=""Spin Rate Sensing Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419800971278_702118_47521"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419800971262_74135_47495""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419800971278_465992_47522""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419800971262_97566_47496"" base_Class=""_18_0_1_ae502ce_1419800971262_74135_47495""/>",
+_18_0_1_ae502ce_1416857381478_349550_43739,The system shall classify orbit transfer failures as a specific type of trajectory failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1416857381478_550510_43738"" name=""Orbit Transfer Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1416857381494_595154_43764"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1416857381478_550510_43738""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1416857381494_8045_43765""/>
+  </ownedRule>
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1417999254133_596451_44335"" general=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1416857381478_349550_43739"" base_Class=""_18_0_1_ae502ce_1416857381478_550510_43738""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"" xmi:type=""uml:Class""/>"
+_18_0_1_ae502ce_1414075700179_517574_44685,Specify the conditions that constitute a separation failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075700179_120156_44684"" name=""Separation Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075700210_159275_44710"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075700179_120156_44684""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075700210_411994_44711""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075700179_517574_44685"" base_Class=""_18_0_1_ae502ce_1414075700179_120156_44684""/>",
+_18_0_1_ae502ce_1419803260749_990213_50889,The attitude control system shall not experience a steady-state attitude control failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419803260749_128381_50888"" name=""Steady State Attitude Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419803260764_604526_50914"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419803260749_128381_50888""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419803260764_974016_50915""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419803260749_990213_50889"" base_Class=""_18_0_1_ae502ce_1419803260749_128381_50888""/>",
+_18_0_1_ae502ce_1414075847599_72328_44877,Define the conditions under which the deployment mechanism fails.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075847599_826444_44876"" name=""Deploy Mechanism Falure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075847631_396316_44902"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075847599_826444_44876""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075847631_102369_44903""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075847599_72328_44877"" base_Class=""_18_0_1_ae502ce_1414075847599_826444_44876""/>",
+_18_1_ae502ce_1424566385736_292306_62589,The system shall detect when the attitude rate exceeds the maximum allowed threshold.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424566385736_909941_62588"" name=""Attitude Rate Too High"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_1_ae502ce_1424566385746_326615_62615"">
+    <constrainedElement xmi:idref=""_18_1_ae502ce_1424566385736_909941_62588""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_1_ae502ce_1424566385746_308884_62616""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_1_ae502ce_1424566385736_292306_62589"" base_Class=""_18_1_ae502ce_1424566385736_909941_62588""/>",
+_18_0_1_ae502ce_1414075717402_308257_44717,Define the condition that constitutes a trajectory failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075717448_223240_44742"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075717448_905253_44743""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075717402_308257_44717"" base_Class=""_18_0_1_ae502ce_1414075717402_898899_44716""/>",
+_18_0_1_ae502ce_1414075780441_515279_44813,The system shall not fail to provide data.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075780441_686351_44812"" name=""Provide Data Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075780473_873200_44838"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075780441_686351_44812""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075780473_963428_44839""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075780441_515279_44813"" base_Class=""_18_0_1_ae502ce_1414075780441_686351_44812""/>",
+_18_0_1_ae502ce_1414075733953_72465_44749,Classify orbit maintenance failure as a trajectory failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075733953_497825_44748"" name=""Orbit Maintenance Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075733984_183772_44774"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075733953_497825_44748""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075733984_826284_44775""/>
+  </ownedRule>
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1417999257441_935271_44338"" general=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075733953_72465_44749"" base_Class=""_18_0_1_ae502ce_1414075733953_497825_44748""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"" xmi:type=""uml:Class""/>"
+_18_0_1_ae502ce_1414075757447_626038_44781,The deorbit failure condition shall be defined as a specialized case of the trajectory failure condition.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1414075757447_250068_44780"" name=""Deorbit Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1414075757478_893856_44806"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1414075757447_250068_44780""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1414075757478_722767_44807""/>
+  </ownedRule>
+  <generalization xmi:type=""uml:Generalization"" xmi:id=""_18_0_1_ae502ce_1417999260779_954705_44341"" general=""_18_0_1_ae502ce_1414075717402_898899_44716""/>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1414075757447_626038_44781"" base_Class=""_18_0_1_ae502ce_1414075757447_250068_44780""/>","<packagedElement xmi:id=""_18_0_1_ae502ce_1414075717402_898899_44716"" name=""Trajectory Failure"" xmi:type=""uml:Class""/>"
+_18_1_ae502ce_1424566414859_543800_62632,The system shall detect when the attitude rate falls below the minimum required threshold.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_1_ae502ce_1424566414859_361821_62631"" name=""Attitude Rate Too Low"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_1_ae502ce_1424566414869_307482_62658"">
+    <constrainedElement xmi:idref=""_18_1_ae502ce_1424566414859_361821_62631""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_1_ae502ce_1424566414869_442957_62659""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_1_ae502ce_1424566414859_543800_62632"" base_Class=""_18_1_ae502ce_1424566414859_361821_62631""/>",
+_18_0_1_ae502ce_1419802220437_71786_50270,The system shall define the conditions that constitute acceleration control failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419802220437_900924_50269"" name=""Acceleration Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419802220453_670105_50295"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419802220437_900924_50269""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419802220453_71851_50296""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419802220437_71786_50270"" base_Class=""_18_0_1_ae502ce_1419802220437_900924_50269""/>",
+_18_0_1_ae502ce_1419800939187_147665_47456,The attitude control system shall define the conditions that constitute a failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419800939187_832983_47455"" name=""Attitude Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419800939203_972460_47481"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419800939187_832983_47455""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419800939203_700539_47482""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419800939187_147665_47456"" base_Class=""_18_0_1_ae502ce_1419800939187_832983_47455""/>",
+_18_0_1_ae502ce_1419803290038_842157_50925,Define the condition that constitutes an attitude rate control failure.,"<packagedElement xmi:type=""uml:Class"" xmi:id=""_18_0_1_ae502ce_1419803290022_919121_50924"" name=""Attitude Rate Control Failure"">
+  <ownedRule xmi:type=""uml:Constraint"" xmi:id=""_18_0_1_ae502ce_1419803290053_68863_50950"">
+    <constrainedElement xmi:idref=""_18_0_1_ae502ce_1419803290022_919121_50924""/>
+    <specification xmi:type=""uml:OpaqueExpression"" xmi:id=""_18_0_1_ae502ce_1419803290053_119386_50951""/>
+  </ownedRule>
+</packagedElement>
+<sysml:ConstraintBlock xmi:id=""_18_0_1_ae502ce_1419803290038_842157_50925"" base_Class=""_18_0_1_ae502ce_1419803290022_919121_50924""/>",
