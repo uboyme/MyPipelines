@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<xmi:XMI xmlns:sysml="http://www.omg.org/spec/SysML/20181001/SysML" xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+  <xmi:documentation xmi:type="xmi:Documentation">
+    <xmi:exporter>MagicDraw Clean XMI Exporter</xmi:exporter>
+    <xmi:exporterVersion>2022x v7</xmi:exporterVersion>
+  </xmi:documentation>
+  <uml:Model xmi:type="uml:Model" xmi:id="eee_1045467100313_135436_1" name="Data">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_17_0_5_ae502ce_1403989437566_256279_11604" body="Author:Sanford.
+Created:6/28/14 5:03 PM.
+Title:.
+Comment:.
+">
+      <annotatedElement xmi:idref="eee_1045467100313_135436_1"/>
+    </ownedComment>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_17_0_5_ae502ce_1403989437566_955454_11605">
+      <appliedProfile href="http://www.omg.org/spec/SysML/20181001/SysML.xmi#SysML"/>
+    </profileApplication>
+  </uml:Model>
+</xmi:XMI>

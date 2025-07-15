@@ -9,7 +9,6 @@ from llama_index.core.chat_engine.types import (
 from llama_index.core.llms import ChatMessage
 from llama_index.core.tools import QueryEngineTool
 from llama_index.core.query_engine import SubQuestionQueryEngine
-from strategy.tools.tool_utils import global_tool_kernel
 from llm.llm_factory import LlamaIndexLLMFactory
 from typing import List, Optional, Union
 from llama_index.core.agent import ReActAgent, FunctionCallingAgentWorker
@@ -61,6 +60,7 @@ class LlamaIndexAgentStrategy():
     
     def _get_from_FunctionCallingAgentWorker(self, tools, user_msg, **kargs)->AgentChatResponse:
         chat_history = self.chat_history if self.use_chat_history else None
+        
         agent_worker = FunctionCallingAgentWorker.from_tools(
             tools=tools,
             llm=self.llm,
